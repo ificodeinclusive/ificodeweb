@@ -1,361 +1,277 @@
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize particles.js
-    if (document.getElementById('particles-js')) {
-        particlesJS('particles-js', {
-            "particles": {
-                "number": {
-                    "value": 50,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": ["#00C9FF", "#9A29FF"]
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    }
-                },
-                "opacity": {
-                    "value": 0.3,
-                    "random": true,
-                    "anim": {
-                        "enable": true,
-                        "speed": 0.5,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": true,
-                        "speed": 2,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.1,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 1,
-                    "direction": "none",
-                    "random": true,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "grab"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 140,
-                        "line_linked": {
-                            "opacity": 0.3
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
+    // Add interactive effects to modern CTA buttons
+    const modernCtaButtons = document.querySelectorAll('.modern-cta-btn');
+    modernCtaButtons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            const icon = button.querySelector('.modern-cta-btn-icon');
+            if (icon) {
+                icon.style.transform = 'translateX(5px)';
+            }
         });
-    }
-    // Header scroll effect
-    const header = document.querySelector('.header');
-    const scrollThreshold = 100;
-
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const mainNav = document.querySelector('.main-nav');
-
-    // Counter animation elements
-    const counters = document.querySelectorAll('.counter');
-    const counterSection = document.querySelector('.impact');
-    let counterAnimationTriggered = false;
-
-    // Testimonials slider
-    const testimonialsSlider = document.querySelector('.testimonials-slider');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    // Header scroll effect
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > scrollThreshold) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-
-        // Trigger counter animation when impact section is in view
-        if (!counterAnimationTriggered && isElementInViewport(counterSection)) {
-            animateCounters();
-            counterAnimationTriggered = true;
-        }
-    });
-
-    // Mobile menu toggle
-    if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-    }
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            
-            if (targetId === '#') return;
-            
-            e.preventDefault();
-            
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                // Close mobile menu if open
-                if (mainNav.classList.contains('active')) {
-                    mainNav.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                }
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
+        button.addEventListener('mouseleave', () => {
+            const icon = button.querySelector('.modern-cta-btn-icon');
+            if (icon) {
+                icon.style.transform = 'translateX(0)';
             }
         });
     });
-
-    // Counter animation function
-    function animateCounters() {
-        counters.forEach(counter => {
-            const target = parseInt(counter.textContent);
-            let count = 0;
-            const duration = 2000; // 2 seconds
-            const increment = Math.ceil(target / (duration / 30)); // Update every 30ms
-            
-            const timer = setInterval(() => {
-                count += increment;
-                if (count >= target) {
-                    counter.textContent = target;
-                    clearInterval(timer);
-                } else {
-                    counter.textContent = count;
-                }
-            }, 30);
-        });
-    }
-
-    // Check if element is in viewport
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.bottom >= 0
-        );
-    }
-
-    // Testimonials slider drag functionality
-    if (testimonialsSlider) {
-        testimonialsSlider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            testimonialsSlider.classList.add('active');
-            startX = e.pageX - testimonialsSlider.offsetLeft;
-            scrollLeft = testimonialsSlider.scrollLeft;
-        });
-
-        testimonialsSlider.addEventListener('mouseleave', () => {
-            isDown = false;
-            testimonialsSlider.classList.remove('active');
-        });
-
-        testimonialsSlider.addEventListener('mouseup', () => {
-            isDown = false;
-            testimonialsSlider.classList.remove('active');
-        });
-
-        testimonialsSlider.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - testimonialsSlider.offsetLeft;
-            const walk = (x - startX) * 2; // Scroll speed
-            testimonialsSlider.scrollLeft = scrollLeft - walk;
-        });
-
-        // Touch events for mobile
-        testimonialsSlider.addEventListener('touchstart', (e) => {
-            isDown = true;
-            testimonialsSlider.classList.add('active');
-            startX = e.touches[0].pageX - testimonialsSlider.offsetLeft;
-            scrollLeft = testimonialsSlider.scrollLeft;
-        });
-
-        testimonialsSlider.addEventListener('touchend', () => {
-            isDown = false;
-            testimonialsSlider.classList.remove('active');
-        });
-
-        testimonialsSlider.addEventListener('touchmove', (e) => {
-            if (!isDown) return;
-            const x = e.touches[0].pageX - testimonialsSlider.offsetLeft;
-            const walk = (x - startX) * 2;
-            testimonialsSlider.scrollLeft = scrollLeft - walk;
-        });
-    }
-
-    // Add active class to current section in navigation
-    const sections = document.querySelectorAll('section[id]');
     
-    window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
+    // Modern CTA Card 3D Effect
+    const ctaCard = document.querySelector('.modern-cta-card');
+    
+    if (ctaCard) {
+        ctaCard.addEventListener('mousemove', function(e) {
+            const rect = ctaCard.getBoundingClientRect();
+            const x = e.clientX - rect.left; // x position within the element
+            const y = e.clientY - rect.top; // y position within the element
             
-            if (window.scrollY >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
+            // Calculate rotation based on mouse position
+            // The multiplier controls the intensity of the effect
+            const multiplier = 20;
+            const rotateY = ((x / rect.width) - 0.5) * multiplier;
+            const rotateX = ((y / rect.height) - 0.5) * -multiplier; // Negative to make it tilt toward the mouse
+            
+            // Apply the transformation
+            ctaCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+        });
+        
+        // Reset the card when mouse leaves
+        ctaCard.addEventListener('mouseleave', function() {
+            ctaCard.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+            ctaCard.style.transition = 'transform 0.5s ease';
+        });
+        
+        // Remove transition on mouse enter for smoother effect
+        ctaCard.addEventListener('mouseenter', function() {
+            ctaCard.style.transition = 'none';
+        });
+    }
+    
+    // Modern Contact Card 3D Effect
+    const contactCard = document.querySelector('.modern-contact-card');
+    
+    if (contactCard) {
+        contactCard.addEventListener('mousemove', function(e) {
+            const rect = contactCard.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Softer effect for the contact card
+            const multiplier = 10;
+            const rotateY = ((x / rect.width) - 0.5) * multiplier;
+            const rotateX = ((y / rect.height) - 0.5) * -multiplier;
+            
+            // Apply the transformation
+            contactCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(5px)`;
+        });
+        
+        // Reset the card when mouse leaves
+        contactCard.addEventListener('mouseleave', function() {
+            contactCard.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+            contactCard.style.transition = 'transform 0.5s ease';
+        });
+        
+        // Remove transition on mouse enter for smoother effect
+        contactCard.addEventListener('mouseenter', function() {
+            contactCard.style.transition = 'none';
+        });
+    }
+    
+    // Form input focus effects
+    const formGroups = document.querySelectorAll('.modern-form-group');
+    
+    formGroups.forEach(group => {
+        const input = group.querySelector('input, textarea');
+        const label = group.querySelector('label');
+        
+        if (input && label) {
+            // Check initial state
+            if (input.value) {
+                label.classList.add('active');
+            }
+            
+            // Focus events
+            input.addEventListener('focus', () => {
+                label.classList.add('active');
+            });
+            
+            input.addEventListener('blur', () => {
+                if (!input.value) {
+                    label.classList.remove('active');
+                }
+            });
+        }
+    });
+    
+    // Contact details hover effect
+    const contactDetails = document.querySelectorAll('.modern-contact-detail');
+    
+    contactDetails.forEach(detail => {
+        detail.addEventListener('mouseenter', () => {
+            detail.style.transform = 'translateY(-5px)';
+            detail.style.transition = 'transform 0.3s ease';
+        });
+        
+        detail.addEventListener('mouseleave', () => {
+            detail.style.transform = 'translateY(0)';
+        });
+    });
+});
+
+// Add interactive effects for the ultra CTA section
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all buttons with class ultra-cta-btn
+    const ultraCtaButtons = document.querySelectorAll('.ultra-cta-btn');
+    
+    // Add hover effects to buttons
+    ultraCtaButtons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            // We'll let CSS handle the transform for smoother animation
+            if (this.querySelector('.btn-icon')) {
+                if (this.classList.contains('primary')) {
+                    this.querySelector('.btn-icon').style.transform = 'translateX(5px)';
+                }
             }
         });
         
-        document.querySelectorAll('.main-nav ul li a').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
+        button.addEventListener('mouseleave', function() {
+            // Reset the transform
+            if (this.querySelector('.btn-icon')) {
+                this.querySelector('.btn-icon').style.transform = 'translateX(0)';
             }
         });
     });
-
-    // Initialize - check if any section is in view on page load
-    if (!counterAnimationTriggered && isElementInViewport(counterSection)) {
-        animateCounters();
-        counterAnimationTriggered = true;
+    
+    // Add parallax effect to the background elements
+    const ultraCtaSection = document.querySelector('.ultra-cta-section');
+    if (ultraCtaSection) {
+        ultraCtaSection.addEventListener('mousemove', function(e) {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            
+            const glowTop = this.querySelector('.ultra-cta-glow-top');
+            const glowBottom = this.querySelector('.ultra-cta-glow-bottom');
+            const sphere = this.querySelector('.ultra-cta-sphere');
+            
+            if (glowTop) {
+                glowTop.style.transform = `translate(${moveX * -2}px, ${moveY * -2}px)`;
+            }
+            
+            if (glowBottom) {
+                glowBottom.style.transform = `translate(${moveX * 2}px, ${moveY * 2}px)`;
+            }
+            
+            if (sphere) {
+                sphere.style.transform = `translate(calc(-50% + ${moveX * 3}px), calc(-50% + ${moveY * 3}px))`;
+            }
+        });
     }
-
-    // Back to Top Button Functionality
+    
+    // Add animation to feature cards on scroll
+    const ultraFeatures = document.querySelectorAll('.ultra-feature');
+    
+    if (ultraFeatures.length > 0) {
+        // Simple function to check if element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom >= 0
+            );
+        }
+        
+        // Add animation class when scrolled into view
+        function animateOnScroll() {
+            ultraFeatures.forEach((feature, index) => {
+                if (isInViewport(feature)) {
+                    // Add a slight delay for each feature
+                    setTimeout(() => {
+                        feature.style.opacity = '1';
+                        feature.style.transform = 'translateY(0)';
+                    }, index * 150);
+                }
+            });
+        }
+        
+        // Set initial state
+        ultraFeatures.forEach(feature => {
+            feature.style.opacity = '0';
+            feature.style.transform = 'translateY(20px)';
+            feature.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        // Run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+        // Run once on load
+        animateOnScroll();
+    }
+    
+    // Back to Top Button
     const backToTopBtn = document.getElementById('backToTop');
     
-    // Show/hide back to top button based on scroll position
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            backToTopBtn.classList.add('show');
-        } else {
-            backToTopBtn.classList.remove('show');
-        }
-    });
-    
-    // Smooth scroll to top when button is clicked
-    backToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-    
-    // Newsletter form functionality
-    const newsletterForm = document.querySelector('.newsletter-form');
-    const newsletterInput = document.querySelector('.newsletter-input');
-    const newsletterBtn = document.querySelector('.newsletter-btn');
-    
-    if (newsletterBtn) {
-        newsletterBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            const email = newsletterInput.value.trim();
-            
-            if (email && isValidEmail(email)) {
-                // Show success message
-                newsletterBtn.innerHTML = '<i class="fas fa-check"></i>';
-                newsletterBtn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
-                newsletterInput.value = '';
-                
-                // Reset button after 3 seconds
-                setTimeout(() => {
-                    newsletterBtn.innerHTML = '<i class="fas fa-paper-plane"></i>';
-                    newsletterBtn.style.background = 'linear-gradient(135deg, #2ecbff, #b267ff)';
-                }, 3000);
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
             } else {
-                // Show error state
-                newsletterInput.style.borderColor = '#ff6b6b';
-                newsletterInput.style.boxShadow = '0 0 0 3px rgba(255, 107, 107, 0.1)';
-                
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Enhanced Footer Interactions
+        const footerLogo = document.querySelector('.footer-logo');
+        const socialLinks = document.querySelectorAll('.social-link');
+        const footerLinks = document.querySelectorAll('.footer-links a');
+        const contactItems = document.querySelectorAll('.contact-item');
+        const benefitItems = document.querySelectorAll('.benefit');
+        const highlightText = document.querySelector('.highlight-text');
+        
+        // Add subtle pulse animation to the highlight text
+        if (highlightText) {
+            setInterval(() => {
+                highlightText.style.filter = 'brightness(1.2)';
                 setTimeout(() => {
-                    newsletterInput.style.borderColor = 'rgba(255, 255, 255, 0.1)';
-                    newsletterInput.style.boxShadow = 'none';
-                }, 3000);
-            }
-        });
-    }
-    
-    // Email validation function
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-    
-    // Smooth scrolling for footer links
-    const footerLinks = document.querySelectorAll('.footer-links a[href^="#"]');
-    footerLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                    highlightText.style.filter = 'brightness(1)';
+                }, 500);
+            }, 3000);
+        }
+        
+        // Add staggered hover effect for social links
+        if (socialLinks.length) {
+            socialLinks.forEach((link, index) => {
+                link.addEventListener('mouseover', () => {
+                    // Create a ripple effect among neighboring social links
+                    socialLinks.forEach((otherLink, otherIndex) => {
+                        if (otherLink !== link) {
+                            const distance = Math.abs(index - otherIndex);
+                            const delay = distance * 50;
+                            setTimeout(() => {
+                                otherLink.style.transform = 'translateY(-2px)';
+                                setTimeout(() => {
+                                    otherLink.style.transform = '';
+                                }, 300);
+                            }, delay);
+                        }
+                    });
                 });
-            }
-        });
-    });
+            });
+        }
+        
+        // Add subtle hover effect for footer links
+        if (footerLinks.length) {
+            footerLinks.forEach(link => {
+                const originalText = link.textContent;
+                link.addEventListener('mouseenter', () => {
+                    link.style.transition = 'all 0.3s ease';
+                });
+            });
+        }
+    }
 });

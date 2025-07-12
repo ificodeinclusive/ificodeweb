@@ -15,7 +15,7 @@
 
 .modern-cta-section {
   position: relative;
-  padding: 60px 0;
+  padding: 30px 0;
   background: linear-gradient(135deg, #0f1729, #1a1033);
   overflow: hidden;
   display: flex;
@@ -97,8 +97,8 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 50px;
-  padding: 8px 16px;
-  margin-bottom: 24px;
+  padding: 6px 14px;
+  margin-bottom: 20px;
   border: var(--modern-border);
   backdrop-filter: blur(10px);
 }
@@ -113,17 +113,17 @@
 }
 
 .modern-cta-tag-text {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--modern-light);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .modern-cta-headline {
-  font-size: 36px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: var(--modern-light);
 }
 
@@ -146,10 +146,10 @@
 }
 
 .modern-cta-description {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 11px;
+  line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .modern-cta-buttons {
@@ -162,9 +162,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 28px;
+  padding: 10px 20px;
   border-radius: var(--modern-radius);
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
   overflow: hidden;
@@ -223,10 +223,10 @@
 
 /* Right Content - Card */
 .modern-cta-card {
-  flex: 0 0 350px;
+  flex: 0 0 280px;
   background: var(--modern-card-bg);
   border-radius: var(--modern-radius);
-  padding: 30px;
+  padding: 20px;
   border: var(--modern-border);
   backdrop-filter: blur(10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -240,34 +240,34 @@
 }
 
 .modern-cta-card-icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: var(--modern-gradient);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
 }
 
 .modern-cta-card-icon i {
-  font-size: 24px;
+  font-size: 18px;
   color: white;
 }
 
 .modern-cta-card-title {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   color: white;
 }
 
 .modern-cta-card-text {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 10px;
+  line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .modern-cta-features {
@@ -283,19 +283,19 @@
 }
 
 .modern-cta-feature-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background: rgba(67, 97, 238, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--modern-primary);
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .modern-cta-feature-text {
-  font-size: 14px;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.8);
 }
 

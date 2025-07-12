@@ -1,4 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Popup Ad Functionality
+    const popupAd = document.getElementById('popupAd');
+    const popupClose = document.getElementById('popupClose');
+    const popupButton = document.getElementById('popupButton');
+    
+    // Show popup after a short delay when page loads
+    setTimeout(() => {
+        popupAd.classList.add('active');
+    }, 1500);
+    
+    // Close popup when close button is clicked
+    if (popupClose) {
+        popupClose.addEventListener('click', () => {
+            popupAd.classList.remove('active');
+        });
+    }
+    
+    // Handle Get Now button click
+    if (popupButton) {
+        popupButton.addEventListener('click', () => {
+            // You can redirect to a specific page or perform any action
+            alert('Thank you for your interest! We will contact you shortly.');
+            popupAd.classList.remove('active');
+        });
+    }
+    
+    // Close popup when clicking outside the popup container
+    popupAd.addEventListener('click', (e) => {
+        if (e.target === popupAd) {
+            popupAd.classList.remove('active');
+        }
+    });
+
     // Add interactive effects to modern CTA buttons
     const modernCtaButtons = document.querySelectorAll('.modern-cta-btn');
     modernCtaButtons.forEach(button => {
@@ -120,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Add interactive effects for the ultra CTA section
 document.addEventListener('DOMContentLoaded', function() {
+
     // Get all buttons with class ultra-cta-btn
     const ultraCtaButtons = document.querySelectorAll('.ultra-cta-btn');
     

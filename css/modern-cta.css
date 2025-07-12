@@ -15,8 +15,8 @@
 
 .modern-cta-section {
   position: relative;
-  padding: 80px 0;
-  background-color: #0a0a12;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #0f1729, #1a1033);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -42,20 +42,20 @@
 }
 
 .modern-cta-circle-1 {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background: var(--modern-primary);
-  top: -100px;
-  left: -100px;
+  top: -50px;
+  left: -50px;
   animation: float 8s ease-in-out infinite alternate;
 }
 
 .modern-cta-circle-2 {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background: var(--modern-accent);
-  bottom: -50px;
-  right: -50px;
+  bottom: -30px;
+  right: -30px;
   animation: float 6s ease-in-out infinite alternate-reverse;
 }
 
@@ -77,18 +77,19 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  gap: 30px;
 }
 
 /* Left Content */
 .modern-cta-content {
   flex: 1;
-  max-width: 550px;
+  max-width: 500px;
 }
 
 .modern-cta-tag {
@@ -119,10 +120,10 @@
 }
 
 .modern-cta-headline {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: var(--modern-light);
 }
 
@@ -222,14 +223,14 @@
 
 /* Right Content - Card */
 .modern-cta-card {
-  flex: 0 0 400px;
+  flex: 0 0 350px;
   background: var(--modern-card-bg);
   border-radius: var(--modern-radius);
-  padding: 40px;
+  padding: 30px;
   border: var(--modern-border);
   backdrop-filter: blur(10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  transform: perspective(1000px) rotateY(-5deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(-3deg);
   transition: var(--modern-transition);
 }
 
@@ -325,9 +326,13 @@
 
 /* Responsive Styles */
 @media (max-width: 992px) {
+  .modern-cta-section {
+    padding: 50px 0;
+  }
+
   .modern-cta-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   
   .modern-cta-content {
@@ -346,34 +351,59 @@
   
   .modern-cta-card {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     transform: none;
   }
   
   .modern-cta-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+  }
+
+  .modern-cta-stats {
+    justify-content: center;
   }
 }
 
 @media (max-width: 576px) {
   .modern-cta-section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   
   .modern-cta-headline {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  .modern-cta-description {
+    font-size: 15px;
   }
   
   .modern-cta-buttons {
     flex-direction: column;
     width: 100%;
+    gap: 12px;
   }
   
   .modern-cta-btn {
     width: 100%;
+    padding: 12px 24px;
   }
   
   .modern-cta-card {
-    padding: 30px;
+    padding: 25px;
+  }
+
+  .modern-cta-card-title {
+    font-size: 22px;
+  }
+
+  .modern-cta-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .modern-cta-stat {
+    flex: 1 0 50%;
+    padding: 10px 0;
   }
 }

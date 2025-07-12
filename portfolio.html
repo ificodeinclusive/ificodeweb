@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | IFI Code - Web Development & Digital Solutions</title>
+    <meta name="description" content="Explore our portfolio of web development, mobile app, and digital marketing projects. See how we've helped businesses transform their digital presence.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/popup-ad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="IFI Code Logo" class="header-logo-img">
+                        IFI<span>Code</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <a href="index.html#contact" class="btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="IFI Code Logo" class="header-logo-img">
+                    IFI<span>Code</span>
+                </a>
+            </div>
+            <div class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="index.html#contact" class="btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content">
+                <h1>Our <span class="gradient-text">Portfolio</span></h1>
+                <p>Explore our showcase of successful digital projects and transformative solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Categories -->
+    <section class="portfolio-categories">
+        <div class="container">
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Web Development Projects -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Business+Website" alt="Business Website Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-category">Web Development</div>
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Corporate Business Platform</h3>
+                        <p>A comprehensive business website with custom CMS, analytics dashboard, and integrated payment solutions.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=E-Commerce+Store" alt="E-Commerce Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-category">E-Commerce</div>
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Luxury Fashion Boutique</h3>
+                        <p>A high-end e-commerce platform with personalized shopping experience, AR try-on features, and seamless checkout.</p>
+                        <div class="portfolio-tech">
+                            <span>Next.js</span>
+                            <span>Shopify</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Mobile+App" alt="Mobile App Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-category">Mobile App</div>
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Health & Fitness Tracker</h3>
+                        <p>A comprehensive fitness application with workout plans, nutrition tracking, and social community features.</p>
+                        <div class="portfolio-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Projects -->
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=UI+Design" alt="UI Design Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-category">UI/UX Design</div>
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Banking App Redesign</h3>
+                        <p>A complete UX overhaul of a banking application, focusing on simplicity, accessibility, and security.</p>
+                        <div class="portfolio-tech">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Projects -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Educational+Platform" alt="Educational Platform Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-category">Web Development</div>
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Interactive Learning Platform</h3>
+                        <p>An educational website with interactive courses, progress tracking, and certification system.</p>
+                        <div class="portfolio-tech">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Food+Delivery+App" alt="Food Delivery App Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-category">Mobile App</div>
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Food Delivery Service</h3>
+                        <p>A food delivery application with real-time order tracking, payment integration, and restaurant management.</p>
+                        <div class="portfolio-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Google Maps API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="section-title">
+                <div>FEATURED PROJECT</div>
+                <h2>E-Commerce <span class="gradient">Transformation</span></h2>
+            </div>
+            <p class="section-subtitle">How we helped a traditional retailer increase online sales by 300%</p>
+            
+            <div class="showcase-content">
+                <div class="showcase-image">
+                    <img src="https://via.placeholder.com/800x600/1a1a2e/ffffff?text=E-Commerce+Case+Study" alt="E-Commerce Case Study">
+                </div>
+                <div class="showcase-details">
+                    <div class="showcase-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">300%</div>
+                            <div class="stat-label">Sales Increase</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">65%</div>
+                            <div class="stat-label">Mobile Conversion</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">4.8<span>/5</span></div>
+                            <div class="stat-label">Customer Rating</div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>The Challenge</h3>
+                        <p>Our client, a traditional brick-and-mortar retailer with 15+ physical stores, needed to transition to e-commerce during the pandemic. They faced challenges with inventory management, online customer experience, and digital marketing.</p>
+                        
+                        <h3>Our Solution</h3>
+                        <p>We developed a custom e-commerce platform integrated with their existing POS system, implemented a responsive design optimized for mobile shopping, and created a digital marketing strategy focused on customer retention.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Real-time inventory synchronization</li>
+                            <li><i class="fas fa-check-circle"></i> Personalized product recommendations</li>
+                            <li><i class="fas fa-check-circle"></i> Seamless omnichannel experience</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced analytics dashboard</li>
+                        </ul>
+                        
+                        <a href="#" class="btn-primary">View Full Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonial -->
+    <section class="portfolio-testimonial">
+        <div class="container">
+            <div class="testimonial-card featured">
+                <div class="testimonial-header">
+                    <div class="client-info">
+                        <div class="client-image">
+                            <img src="https://via.placeholder.com/100x100/1a1a2e/ffffff?text=Client" alt="Client">
+                        </div>
+                        <div>
+                            <div class="client-name">Sarah Johnson</div>
+                            <div class="client-position">CEO, Fashion Boutique</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Working with IFI Code transformed our business. Their team took the time to understand our unique challenges and created a solution that exceeded our expectations. The e-commerce platform they built not only looks beautiful but has significantly improved our conversion rates and customer satisfaction."</p>
+                </div>
+                <div class="testimonial-metrics">
+                    <div class="metric">
+                        <span class="metric-value">300%</span>
+                        <span class="metric-label">Revenue Growth</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">65%</span>
+                        <span class="metric-label">New Customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Your Next Digital Project?</h2>
+                <p>Let's create something amazing together. Our team is ready to bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn-primary">Start a Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="index.html#services" class="btn-secondary">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="IFI Code Logo" class="header-logo-img">
+                        IFI<span>Code</span>
+                    </a>
+                    <p>Transforming ideas into exceptional digital experiences through innovative web development and design.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="index.html#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="index.html#services">Web Development</a></li>
+                            <li><a href="index.html#services">Mobile Apps</a></li>
+                            <li><a href="index.html#services">UI/UX Design</a></li>
+                            <li><a href="index.html#services">E-Commerce</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 IFI Code. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Ad -->
+    <div class="popup-ad" id="popupAd">
+        <div class="popup-content">
+            <div class="popup-close" id="closePopup">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="popup-image">
+                <img src="images/popupad1.svg" alt="Special Offer">
+            </div>
+            <div class="popup-text">
+                <h3>Special Offer!</h3>
+                <p>Get 20% off on all web development packages this month.</p>
+                <a href="index.html#contact" class="popup-btn">Claim Offer</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

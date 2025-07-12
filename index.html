@@ -11,10 +11,26 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modern-cta.css">
+    <link rel="stylesheet" href="css/modern-cta-stats.css">
     <link rel="stylesheet" href="css/modern-contact.css">
+    <link rel="stylesheet" href="css/popup-ad.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body> 
+    <!-- Popup Ad Section -->
+    <div class="popup-overlay" id="popupAd">
+        <div class="popup-container">
+            <div class="popup-close" id="popupClose"></div>
+            <img src="images/popupad1.svg" alt="Special Offer" class="popup-image">
+            <div class="popup-content">
+                <h3 class="popup-title">Limited Time Offer!</h3>
+                <p class="popup-description">Launch Your Digital Presence at Just NPR 10,000 <br>
+                    Get a secure, mobile-friendly website with free domain & hosting, Google Business setup, IT support & more!</p>
+                <button class="popup-button" id="popupButton">GET NOW</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Section -->
     <header class="header">
         <div class="container">
@@ -95,80 +111,118 @@
     <section id="startup-package" class="startup-package-section redesigned">
         <div class="section-title">
             <div>EXCLUSIVE OFFER</div>
-            <span><span style="color:#fff;">Business</span> <span class="gradient">Packages</span></span>
+            <span><span style="color:#fff;">Premium</span> <span class="gradient">Solutions</span></span>
         </div>
+        <p class="section-description">Tailored packages designed to launch and accelerate your digital presence</p>
         <div class="startup-package-cards">
+            <!-- Creator Package Card -->
+            <div class="startup-card redesigned-card creator">
+                <div class="startup-card-header">
+                    <div class="startup-card-badge">Value Packeds</div>
+                    <div class="startup-card-price">
+                        <span class="currency">NPR</span>
+                        <span class="amount">7,499</span>
+                    </div>
+                </div>
+                <div class="startup-card-title">Personal Portfolio Pro</div>
+                <div class="startup-card-note">Perfect for freelancers, developers, designers & professionals</div>
+                <ul class="startup-card-features">
+                    <li><i class="fas fa-star"></i> Premium One-Page Portfolio</li>
+                    <li><i class="fas fa-globe"></i> Free Domain (.com/.com.np)</li>
+                    <li><i class="fas fa-server"></i> Cloud Hosting (1 Year)</li>
+                    <li><i class="fas fa-mobile-alt"></i> Mobile-First Responsive Design</li>
+                    <li><i class="fas fa-envelope"></i> Contact Form + Email Alerts</li>
+                    <li><i class="fas fa-search"></i> SEO Optimized Structure</li>
+                    <li><i class="fab fa-instagram"></i> Social Media Integration</li>
+                    <li><i class="fas fa-chart-line"></i> Animated Skill & Project Sections</li>
+                    <li><i class="fas fa-palette"></i> Custom Color & Font Styling</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
+                </ul>
+                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">Bonus Features <i class="fas fa-chevron-down"></i></button>
+                <div class="startup-card-addons">
+                    <div class="addons-title">Included Extras</div>
+                    <ul>
+                        <li><i class="fas fa-file-download"></i> Resume Download Button</li>
+                        <li><i class="fab fa-linkedin"></i> LinkedIn, GitHub, Behance, etc. Integration</li>
+                        <li><i class="fas fa-copyright"></i> Logo or Name Branding</li>
+                    </ul>
+                    <div class="startup-card-smallprint">Free domain, hosting, and email valid for first year. Terms & conditions apply.</div>
+                </div>
+                <div class="startup-card-action">
+                    <a href="#contact" class="startup-card-action-link">Showcase Your Talent</a>
+                </div>
+            </div>
             <!-- Startup Package Card -->
             <div class="startup-card redesigned-card">
                 <div class="startup-card-header">
                     <div class="startup-card-badge">Best Value</div>
                     <div class="startup-card-price">
                         <span class="currency">NPR</span>
-                        <span class="amount">10,000</span>
+                        <span class="amount">9,999</span>
                     </div>
                 </div>
-                <div class="startup-card-title">Business Startup Package</div>
-                <div class="startup-card-note">For first two customers only</div>
+                <div class="startup-card-title">Business Launchpad</div>
+                <div class="startup-card-note">Limited offer for first two clients</div>
                 <ul class="startup-card-features">
-                    <li><i class="fas fa-laptop-code"></i> Premium Site (Static)</li>
-                    <li><i class="fas fa-globe"></i> Free domain</li>
-                    <li><i class="fas fa-server"></i> Free hosting</li>
-                    <li><i class="fas fa-mobile-alt"></i> Mobile-responsive site</li>
-                    <li><i class="fab fa-google"></i> Google Business Setup</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Google map setup</li>
-                    <li><i class="fas fa-tools"></i> Free IT Assistance</li>
+                    <li><i class="fas fa-rocket"></i> Premium Static Website</li>
+                    <li><i class="fas fa-globe"></i> Free Domain Registration</li>
+                    <li><i class="fas fa-server"></i> Cloud Hosting (1 Year)</li>
+                    <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                    <li><i class="fab fa-google"></i> Google Business Profile</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Google Maps Integration</li>
+                    <li><i class="fas fa-headset"></i> Priority Support</li>
                 </ul>
-                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">See Add-ons <i class="fas fa-chevron-down"></i></button>
+                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">Premium Add-ons <i class="fas fa-chevron-down"></i></button>
                 <div class="startup-card-addons">
-                    <div class="addons-title">Add-on Features</div>
+                    <div class="addons-title">Value-Added Services</div>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> Business Email</li>
+                        <li><i class="fas fa-envelope"></i> Professional Email</li>
                         <li><i class="fas fa-gavel"></i> Legal Consultation <span class="addon-note">(Legal Heart Nepal)</span></li>
-                        <li><i class="fas fa-university"></i> Company Registration <span class="addon-note">(Legal Heart Nepal)</span></li>
-                        <li><i class="fas fa-paint-brush"></i> Basic Graphic Work</li>
+                        <li><i class="fas fa-university"></i> Business Registration <span class="addon-note">(Legal Heart Nepal)</span></li>
+                        <li><i class="fas fa-paint-brush"></i> Basic Brand Identity</li>
                         <li><i class="fab fa-instagram"></i> Social Media Setup</li>
-                        <li><i class="fas fa-bullhorn"></i> Meta Ads</li>
+                        <li><i class="fas fa-bullhorn"></i> Digital Marketing Starter</li>
                     </ul>
-                    <div class="startup-card-smallprint">Free domain, hosting, and assistance for the first year only. T&amp;C Applies.</div>
+                    <div class="startup-card-smallprint">Free domain, hosting, and support valid for first year. Terms & conditions apply.</div>
                 </div>
                 <div class="startup-card-action">
-                    <a href="#contact" class="startup-card-action-link">Get Started</a>
+                    <a href="#contact" class="startup-card-action-link">Launch Your Business</a>
                 </div>
             </div>
             <!-- Booster Package Card -->
             <div class="startup-card redesigned-card booster">
                 <div class="startup-card-header">
-                    <div class="startup-card-badge alt">Popular</div>
+                    <div class="startup-card-badge alt">Most Popular</div>
                     <div class="startup-card-price">
                         <span class="currency">NPR</span>
                         <span class="amount">16,999</span>
                     </div>
                 </div>
-                <div class="startup-card-title">Business Booster Package</div>
-                <div class="startup-card-note">For small businesses looking to boost online presence.</div>
+                <div class="startup-card-title">Growth Accelerator</div>
+                <div class="startup-card-note">Complete digital presence solution for businesses</div>
                 <ul class="startup-card-features">
-                    <li><i class="fas fa-file-alt"></i> 3-Page Static Website</li>
-                    <li><i class="fas fa-globe"></i> Free domain</li>
-                    <li><i class="fas fa-server"></i> Free hosting</li>
-                    <li><i class="fas fa-mobile-alt"></i> Mobile-responsive website</li>
-                    <li><i class="fab fa-google"></i> Google Business & Map Setup</li>
-                    <li><i class="fab fa-instagram"></i> Social Media Page Creation</li>
-                    <li><i class="fas fa-envelope"></i> Business Email</li>
-                    <li><i class="fas fa-tools"></i> IT Assistance</li>
-                    <li><i class="fas fa-lock"></i> Free SSL Certificate</li>
+                    <li><i class="fas fa-layer-group"></i> Multi-Page Dynamic Website</li>
+                    <li><i class="fas fa-globe"></i> Premium Domain Name</li>
+                    <li><i class="fas fa-server"></i> High-Performance Hosting</li>
+                    <li><i class="fas fa-mobile-alt"></i> Advanced Responsive Design</li>
+                    <li><i class="fab fa-google"></i> Complete Google Integration</li>
+                    <li><i class="fab fa-instagram"></i> Social Media Branding</li>
+                    <li><i class="fas fa-envelope"></i> Business Email Suite</li>
+                    <li><i class="fas fa-shield-alt"></i> SSL Security Certificate</li>
+
                 </ul>
-                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">See Add-ons <i class="fas fa-chevron-down"></i></button>
+                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">Premium Add-ons <i class="fas fa-chevron-down"></i></button>
                 <div class="startup-card-addons">
-                    <div class="addons-title">Add-ons</div>
+                    <div class="addons-title">Growth Boosters</div>
                     <ul>
-                        <li><i class="fas fa-bullhorn"></i> Meta Ads Setup</li>
-                        <li><i class="fas fa-palette"></i> Basic Brand Kit</li>
-                        <li><i class="fas fa-gavel"></i> Legal Consulting <span class="addon-note">(Legal Heart Nepal)</span></li>
+                        <li><i class="fas fa-ad"></i> Digital Ad Campaign Setup</li>
+                        <li><i class="fas fa-palette"></i> Complete Brand Kit</li>
+                        <li><i class="fas fa-gavel"></i> Legal Business Support <span class="addon-note">(Legal Heart Nepal)</span></li>
                     </ul>
-                    <div class="startup-card-smallprint">Free domain, hosting, and assistance for the first year only. T&amp;C Applies.</div>
+                    <div class="startup-card-smallprint">All premium features valid for first year. Terms & conditions apply.</div>
                 </div>
                 <div class="startup-card-action">
-                    <a href="#contact" class="startup-card-action-link">Get Started</a>
+                    <a href="#contact" class="startup-card-action-link">Accelerate Growth</a>
                 </div>
             </div>
         </div>
@@ -400,20 +454,20 @@
                     <div class="expertise-badge">Awarded</div>
                 </div>
                 <div class="expertise-content">
-                    <h3>Award-Winning Innovation</h3>
-                    <p>Recognition for technical excellence and design innovation, setting new industry benchmarks.</p>
+                    <h3>Top-Tier SSL Security</h3>
+                    <p>Grade A+ SSL Certified for advanced encryption, trusted data security, and global cybersecurity compliance.</p>
                     <div class="expertise-benefits">
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Industry Recognition</span>
+                            <span>Military-Grade Encryption</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Cutting-edge Technology</span>
+                            <span>Certified SSL A+ Grade</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Innovation Leadership</span>
+                            <span>Secure Data Transmission</span>
                         </div>
                     </div>
                 </div>
@@ -561,15 +615,53 @@
         
         <!-- Client Logos -->
         <div class="client-logos">
+
             <div class="logo-section">
-                <h4>Trusted by Industry Leaders</h4>
+                <h4>Trusted by Industry Innovators</h4>
+                <p class="logo-section-subtitle">Join the elite network of forward-thinking businesses transforming their digital presence with iFiCode</p>
                 <div class="logo-grid">
-                    <div class="logo-item">🏢 Enterprise Corp</div>
-                    <div class="logo-item">🚀 StartupHub</div>
-                    <div class="logo-item">💼 BusinessPro</div>
-                    <div class="logo-item">🎯 TargetTech</div>
-                    <div class="logo-item">🌟 StarSolutions</div>
-                    <div class="logo-item">⚡ PowerTech</div>
+                    <div class="logo-item">
+                        <i class="fas fa-building-columns"></i>
+                        <span>Enterprise Solutions</span>
+                    </div>
+                    <div class="logo-item">
+                        <i class="fas fa-rocket-launch"></i>
+                        <span>StartupHub</span>
+                    </div>
+                    <div class="logo-item">
+                        <i class="fas fa-briefcase-clock"></i>
+                        <span>BusinessPro</span>
+                    </div>
+                    <div class="logo-item">
+                        <i class="fas fa-bullseye-arrow"></i>
+                        <span>TargetTech</span>
+                    </div>
+                    <div class="logo-item">
+                        <i class="fas fa-stars"></i>
+                        <span>StarSolutions</span>
+                    </div>
+                    <div class="logo-item">
+                        <i class="fas fa-bolt-lightning"></i>
+                        <span>PowerTech</span>
+                    </div>
+                </div>
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <i class="fas fa-badge-check"></i>
+                        <span>Verified Excellence</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-check"></i>
+                        <span>Secure Development</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Award-Winning Design</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-clock-rotate-left"></i>
+                        <span>On-Time Delivery</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -597,57 +689,72 @@
             <div class="modern-cta-content">
                 <div class="modern-cta-tag">
                     <div class="modern-cta-tag-dot"></div>
-                    <div class="modern-cta-tag-text">ELEVATE YOUR BUSINESS</div>
+                    <div class="modern-cta-tag-text">DIGITAL TRANSFORMATION</div>
                 </div>
                 
                 <h2 class="modern-cta-headline">
-                    Transform Your Ideas Into <span class="modern-cta-accent">Digital Reality</span>
+                    Bring Your Vision to <span class="modern-cta-accent">Digital Life</span>
                 </h2>
                 
                 <p class="modern-cta-description">
-                    <span class="highlighted-cta-text">Join innovative companies worldwide who trust our expertise to build exceptional digital experiences that drive growth and engagement.</span>
+                    <span class="highlighted-cta-text">We transform innovative ideas into powerful digital solutions that drive growth and create meaningful user experiences.</span>
                 </p>
                 
                 <div class="modern-cta-buttons">
                     <button class="modern-cta-btn primary">
-                        Start Your Project
+                        Start a Project
                         <span class="modern-cta-btn-icon"><i class="fas fa-arrow-right"></i></span>
                     </button>
                     <button class="modern-cta-btn secondary">
-                        <span class="modern-cta-btn-icon"><i class="fas fa-calendar-alt"></i></span>
-                        Schedule Consultation
+                        <span class="modern-cta-btn-icon"><i class="fas fa-comments"></i></span>
+                        Get a Free Quote
                     </button>
+                </div>
+                
+                <div class="modern-cta-stats">
+                    <div class="modern-cta-stat">
+                        <div class="modern-cta-stat-value">98%</div>
+                        <div class="modern-cta-stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="modern-cta-stat">
+                        <div class="modern-cta-stat-value">24/7</div>
+                        <div class="modern-cta-stat-label">Support</div>
+                    </div>
+                    <div class="modern-cta-stat">
+                        <div class="modern-cta-stat-value">100%</div>
+                        <div class="modern-cta-stat-label">Dedication</div>
+                    </div>
                 </div>
             </div>
             
             <!-- Right Content - Card -->
             <div class="modern-cta-card">
                 <div class="modern-cta-card-icon">
-                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-lightbulb"></i>
                 </div>
                 
-                <h3 class="modern-cta-card-title">Premium Development</h3>
+                <h3 class="modern-cta-card-title">Innovation Hub</h3>
                 
                 <p class="modern-cta-card-text">
-                    <span class="highlighted-cta-text">Our expert team delivers cutting-edge solutions tailored to your specific business needs and goals.</span>
+                    <span class="highlighted-cta-text">Expert solutions tailored to your business needs with cutting-edge technology and creative excellence.</span>
                 </p>
                 
                 <div class="modern-cta-features">
                     <div class="modern-cta-feature">
-                        <div class="modern-cta-feature-icon"><i class="fas fa-check"></i></div>
-                        <div class="modern-cta-feature-text">Custom Web & Mobile Applications</div>
+                        <div class="modern-cta-feature-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="modern-cta-feature-text">Web & Mobile Apps</div>
                     </div>
                     <div class="modern-cta-feature">
-                        <div class="modern-cta-feature-icon"><i class="fas fa-check"></i></div>
-                        <div class="modern-cta-feature-text">UI/UX Design & Development</div>
+                        <div class="modern-cta-feature-icon"><i class="fas fa-palette"></i></div>
+                        <div class="modern-cta-feature-text">UI/UX Design</div>
                     </div>
                     <div class="modern-cta-feature">
-                        <div class="modern-cta-feature-icon"><i class="fas fa-check"></i></div>
-                        <div class="modern-cta-feature-text">E-commerce & Business Solutions</div>
+                        <div class="modern-cta-feature-icon"><i class="fas fa-store"></i></div>
+                        <div class="modern-cta-feature-text">E-commerce Solutions</div>
                     </div>
                     <div class="modern-cta-feature">
-                        <div class="modern-cta-feature-icon"><i class="fas fa-check"></i></div>
-                        <div class="modern-cta-feature-text">24/7 Support & Maintenance</div>
+                        <div class="modern-cta-feature-icon"><i class="fas fa-server"></i></div>
+                        <div class="modern-cta-feature-text">Cloud Services</div>
                     </div>
                 </div>
             </div>
@@ -777,7 +884,7 @@
             
             <!-- Map -->
             <div class="modern-contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.31625953805!2d85.29111341744386!3d27.70895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1653825644590!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209.81527033903214!2d85.30678944077431!3d27.723628124772702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19763c2abb07%3A0x4b9c8f5298e667ea!2siFiCode%20Inclusive!5e1!3m2!1sen!2snp!4v1752293259037!5m2!1sen!2snp" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>

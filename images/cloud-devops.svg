@@ -19,7 +19,7 @@
   
   <!-- Server Units -->
   <rect x="160" y="230" width="180" height="20" rx="2" fill="#34495e" />
-  <rect x="170" y="235" width="10" height="10" rx="1" fill="#00C9FF" opacity="0.8" />
+  <rect x="170" y="235" width="10" height="10" rx="1" fill="#8b5cf6" opacity="0.8" />
   <rect x="190" y="235" width="40" height="10" rx="1" fill="#ffffff" opacity="0.3" />
   
   <rect x="160" y="260" width="180" height="20" rx="2" fill="#34495e" />
@@ -27,37 +27,37 @@
   <rect x="190" y="265" width="40" height="10" rx="1" fill="#ffffff" opacity="0.3" />
   
   <rect x="160" y="290" width="180" height="20" rx="2" fill="#34495e" />
-  <rect x="170" y="295" width="10" height="10" rx="1" fill="#00C9FF" opacity="0.8" />
+  <rect x="170" y="295" width="10" height="10" rx="1" fill="#8b5cf6" opacity="0.8" />
   <rect x="190" y="295" width="40" height="10" rx="1" fill="#ffffff" opacity="0.3" />
   
   <rect x="160" y="320" width="180" height="10" rx="2" fill="#34495e" />
   
   <!-- Connection Lines -->
-  <path d="M250 185 L250 220" stroke="#00C9FF" stroke-width="2" stroke-dasharray="5 3" />
+  <path d="M250 185 L250 220" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 3" />
   
   <!-- DevOps Infinity Symbol -->
-  <path d="M380 260 C380 245 365 235 350 235 C335 235 320 245 320 260 C320 275 335 285 350 285 C365 285 380 275 380 260 Z" fill="none" stroke="#00C9FF" stroke-width="3" />
+  <path d="M380 260 C380 245 365 235 350 235 C335 235 320 245 320 260 C320 275 335 285 350 285 C365 285 380 275 380 260 Z" fill="none" stroke="#8b5cf6" stroke-width="3" />
   <path d="M320 260 C320 245 305 235 290 235 C275 235 260 245 260 260 C260 275 275 285 290 285 C305 285 320 275 320 260 Z" fill="none" stroke="#9A29FF" stroke-width="3" />
   
   <!-- Code/Config Elements -->
-  <rect x="50" y="150" width="100" height="10" rx="2" fill="#00C9FF" opacity="0.8" />
+  <rect x="50" y="150" width="100" height="10" rx="2" fill="#8b5cf6" opacity="0.8" />
   <rect x="50" y="170" width="80" height="10" rx="2" fill="#ffffff" opacity="0.5" />
   <rect x="50" y="190" width="90" height="10" rx="2" fill="#9A29FF" opacity="0.8" />
   
   <rect x="50" y="220" width="70" height="10" rx="2" fill="#ffffff" opacity="0.5" />
-  <rect x="50" y="240" width="60" height="10" rx="2" fill="#00C9FF" opacity="0.8" />
+  <rect x="50" y="240" width="60" height="10" rx="2" fill="#8b5cf6" opacity="0.8" />
   <rect x="50" y="260" width="80" height="10" rx="2" fill="#9A29FF" opacity="0.8" />
   
   <!-- Container Icons -->
-  <rect x="390" y="150" width="30" height="30" rx="4" fill="#00C9FF" opacity="0.6" />
+  <rect x="390" y="150" width="30" height="30" rx="4" fill="#8b5cf6" opacity="0.6" />
   <rect x="430" y="150" width="30" height="30" rx="4" fill="#9A29FF" opacity="0.6" />
   <rect x="390" y="190" width="30" height="30" rx="4" fill="#ffffff" opacity="0.2" />
-  <rect x="430" y="190" width="30" height="30" rx="4" fill="#00C9FF" opacity="0.6" />
+  <rect x="430" y="190" width="30" height="30" rx="4" fill="#8b5cf6" opacity="0.6" />
   
   <!-- Gradients -->
   <defs>
     <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00C9FF" />
+      <stop offset="0%" stop-color="#8b5cf6" />
       <stop offset="100%" stop-color="#0078FF" />
     </linearGradient>
     <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">

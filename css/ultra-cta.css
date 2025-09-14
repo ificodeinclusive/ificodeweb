@@ -166,7 +166,7 @@
   justify-content: center;
   width: 24px;
   height: 24px;
-  background: linear-gradient(135deg, #4a6cf7 0%, #9a29ff 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #9a29ff 100%);
   border-radius: 50%;
   color: #fff;
   font-size: 12px;
@@ -197,7 +197,7 @@
 .ultra-cta-highlight {
   position: relative;
   display: inline-block;
-  background: linear-gradient(135deg, #4a6cf7 0%, #9a29ff 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #9a29ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -258,7 +258,7 @@
 .stat-number {
   font-size: 36px;
   font-weight: 800;
-  background: linear-gradient(135deg, #4a6cf7 0%, #9a29ff 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #9a29ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -318,9 +318,9 @@
 }
 
 .ultra-cta-btn.primary {
-  background: linear-gradient(135deg, #4a6cf7 0%, #9a29ff 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #9a29ff 100%);
   color: #fff;
-  box-shadow: 0 15px 30px rgba(74, 108, 247, 0.3);
+  box-shadow: 0 15px 30px rgba(139, 92, 246, 0.3);
 }
 
 .btn-glow {
@@ -400,7 +400,7 @@
   height: 50px;
   background: linear-gradient(135deg, rgba(74, 108, 247, 0.1) 0%, rgba(154, 41, 255, 0.1) 100%);
   border-radius: 15px;
-  color: #4a6cf7;
+  color: #8b5cf6;
   font-size: 20px;
   flex-shrink: 0;
 }

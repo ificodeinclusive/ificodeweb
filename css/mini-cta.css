@@ -31,7 +31,7 @@
 .mini-cta-highlight {
   position: relative;
   display: inline-block;
-  color: #4a6cf7;
+  color: #8b5cf6;
 }
 
 .mini-cta-body {
@@ -65,7 +65,7 @@
 }
 
 .mini-cta-btn.primary {
-  background-color: #4a6cf7;
+  background-color: #8b5cf6;
   color: #fff;
 }
 
@@ -76,12 +76,12 @@
 
 .mini-cta-btn.secondary {
   background-color: transparent;
-  color: #4a6cf7;
-  border: 1px solid #4a6cf7;
+  color: #8b5cf6;
+    border: 1px solid #8b5cf6;
 }
 
 .mini-cta-btn.secondary:hover {
-  background-color: rgba(74, 108, 247, 0.05);
+  background-color: rgba(139, 92, 246, 0.05);
   transform: translateY(-2px);
 }
 

@@ -3,86 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | IFI Code - Web Development & Digital Solutions</title>
+    <title>Portfolio | iFiCode - Web Development & Digital Solutions</title>
     <meta name="description" content="Explore our portfolio of web development, mobile app, and digital marketing projects. See how we've helped businesses transform their digital presence.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/popup-ad.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/popup-ad.css">
+    <link rel="stylesheet" href="css/modern-cta.css">
+    <link rel="stylesheet" href="css/modern-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
+    <!-- Popup Ad Section -->
+    <div class="popup-overlay" id="popupAd">
+        <div class="popup-container">
+            <div class="popup-close" id="popupClose"></div>
+            <img src="images/popupad1.svg" alt="Special Offer" class="popup-image">
+            <div class="popup-content">
+                <h3 class="popup-title">Limited Time Offer!</h3>
+                <p class="popup-description">Launch Your Digital Presence at Just NPR 10,000 <br>
+                    Get a secure, mobile-friendly website with free domain & hosting, Google Business setup, IT support & more!</p>
+                <button class="popup-button" id="popupButton"><a href="index.html#contact">GET NOW</a></button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Section -->
     <header class="header">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="IFI Code Logo" class="header-logo-img">
-                        IFI<span>Code</span>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ificodesbrandicon.png" alt="iFiCode Logo" class="header-logo-img">
+                    <img src="images/ificodesbrandtext.png" alt="iFiCode" class="header-brand-text">
                     </a>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-buttons">
-                    <a href="index.html#contact" class="btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="solution.html">SOLUTIONS</a></li>
+                    <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                    <li><a href="error.html">BLOG</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <!-- Sign-in option removed as requested -->
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
-        <div class="mobile-menu-header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="IFI Code Logo" class="header-logo-img">
-                    IFI<span>Code</span>
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">
+                    <img src="images/logo.png" alt="iFiCode Logo" class="mobile-logo-icon">
+                    <span>iFiCode</span>
                 </a>
+                <button class="mobile-menu-close" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <div class="mobile-menu-close">
-                <i class="fas fa-times"></i>
+            
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#expertise" class="mobile-nav-link">About</a></li>
+                    <li class="mobile-nav-item"><a href="service.html" class="mobile-nav-link">Services</a></li>
+                    <li class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link active">Portfolio</a></li>
+                    <li class="mobile-nav-item"><a href="error.html" class="mobile-nav-link">Blog</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-footer">
+                <div class="mobile-social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <a href="index.html#contact" class="mobile-cta-button">Start Your Project <i class="fas fa-arrow-right"></i></a>
             </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-menu-footer">
-            <a href="index.html#contact" class="btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <section class="portfolio-hero">
+    <section class="hero">
         <div class="container">
-            <div class="portfolio-hero-content">
-                <h1>Our <span class="gradient-text">Portfolio</span></h1>
-                <p>Explore our showcase of successful digital projects and transformative solutions</p>
+            <h1>
+                Our <span class="gradient-text">Portfolio</span>
+            </h1>
+            <p class="subtext">
+                Explore our showcase of successful digital projects and transformative solutions.
+            </p>
+            <div class="cta-buttons">
+                <button class="btn primary"><a href="index.html#contact">START YOUR PROJECT →</a></button>
+                <button class="btn secondary"><a href="service.html">EXPLORE SERVICES</a></button>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Categories -->
-    <section class="portfolio-categories">
+    <section class="portfolio-categories" style="padding: 40px 0;">
         <div class="container">
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
@@ -106,24 +140,25 @@
                         <h3>Corporate Business Platform</h3>
                         <p>A comprehensive business website with custom CMS, analytics dashboard, and integrated payment solutions.</p>
                         <div class="portfolio-tech">
-                            <span>React</span>
+                            <span>HTML</span>
                             <span>Node.js</span>
                             <span>MongoDB</span>
+                            <span>CSS</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-item" data-category="web ecommerce">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=E-Commerce+Store" alt="E-Commerce Project">
+                        <img src="images/lhwebsite.png" alt="Legal Heart Pvt Ltd">
                         <div class="portfolio-overlay">
                             <div class="portfolio-category">E-Commerce</div>
-                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://aviral-adhikari.github.io/LegalHeart/html/index.html" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3>Luxury Fashion Boutique</h3>
-                        <p>A high-end e-commerce platform with personalized shopping experience, AR try-on features, and seamless checkout.</p>
+                        <h3>Law Firm Website</h3>
+                        <p>A professional website for a law firm, featuring case studies, attorney profiles, and a blog.</p>
                         <div class="portfolio-tech">
                             <span>Next.js</span>
                             <span>Shopify</span>
@@ -264,31 +299,81 @@
         </div>
     </section>
 
+    <!-- Second Project Showcase -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="section-title">
+                <div>FEATURED PROJECT</div>
+                <h2>Portfolio <span class="gradient">Website Redesign</span></h2>
+            </div>
+            <p class="section-subtitle">How we transformed a creative agency's digital presence and increased client inquiries by 250%</p>
+            
+            <div class="showcase-content">
+                <div class="showcase-image">
+                    <img src="https://via.placeholder.com/800x600/1a1a2e/ffffff?text=Portfolio+Redesign+Case+Study" alt="Portfolio Website Redesign Case Study">
+                </div>
+                <div class="showcase-details">
+                    <div class="showcase-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">250%</div>
+                            <div class="stat-label">Inquiry Increase</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">70%</div>
+                            <div class="stat-label">Bounce Rate Reduction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">4.9<span>/5</span></div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>The Challenge</h3>
+                        <p>A creative design agency approached us with an outdated portfolio website that wasn't effectively showcasing their work or generating new leads. They needed a modern, visually striking platform that would highlight their expertise and improve user engagement.</p>
+                        
+                        <h3>Our Solution</h3>
+                        <p>We developed a custom portfolio website with an immersive user experience, interactive project galleries, and strategic calls-to-action. The redesign focused on visual storytelling, performance optimization, and conversion-focused user journeys.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Dynamic project filtering system</li>
+                            <li><i class="fas fa-check-circle"></i> Case study storytelling format</li>
+                            <li><i class="fas fa-check-circle"></i> Integrated testimonial showcase</li>
+                            <li><i class="fas fa-check-circle"></i> Lead generation optimization</li>
+                        </ul>
+                        
+                        <a href="#" class="btn-primary">View Full Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Client Testimonial -->
     <section class="portfolio-testimonial">
         <div class="container">
             <div class="testimonial-card featured">
                 <div class="testimonial-header">
                     <div class="client-info">
-                        <div class="client-image">
-                            <img src="https://via.placeholder.com/100x100/1a1a2e/ffffff?text=Client" alt="Client">
-                        </div>
-                        <div>
-                            <div class="client-name">Sarah Johnson</div>
-                            <div class="client-position">CEO, Fashion Boutique</div>
-                        </div>
+                    <div class="client-image">
+                        <img src="https://via.placeholder.com/100x100/1a1a2e/ffffff?text=Client" alt="Client">
                     </div>
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div>
+                        <div class="client-name">Sarah Johnson</div>
+                        <div class="client-position">CEO, Fashion Boutique</div>
                     </div>
                 </div>
-                <div class="testimonial-content">
-                    <p>"Working with IFI Code transformed our business. Their team took the time to understand our unique challenges and created a solution that exceeded our expectations. The e-commerce platform they built not only looks beautiful but has significantly improved our conversion rates and customer satisfaction."</p>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
+            </div>
+            <div class="testimonial-content">
+                <p>"Working with iFiCode transformed our business. Their team took the time to understand our unique challenges and created a solution that exceeded our expectations. The e-commerce platform they built not only looks beautiful but has significantly improved our conversion rates and customer satisfaction."</p>
+            </div>
                 <div class="testimonial-metrics">
                     <div class="metric">
                         <span class="metric-value">300%</span>
@@ -317,75 +402,185 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="IFI Code Logo" class="header-logo-img">
-                        IFI<span>Code</span>
-                    </a>
-                    <p>Transforming ideas into exceptional digital experiences through innovative web development and design.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="index.html#about">About Us</a></li>
-                            <li><a href="index.html#services">Services</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="index.html#testimonials">Testimonials</a></li>
-                        </ul>
+    <!-- Modern Footer Section -->
+    <footer class="modern-footer">
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="footer-container">
+                <!-- Company Info Section -->
+                <div class="footer-section company-info">
+                    <div class="footer-logo">
+                        <img src="images/ificodewhitepurple.png" alt="iFiCode Inclusive Logo">
                     </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="index.html#services">Web Development</a></li>
-                            <li><a href="index.html#services">Mobile Apps</a></li>
-                            <li><a href="index.html#services">UI/UX Design</a></li>
-                            <li><a href="index.html#services">E-Commerce</a></li>
-                        </ul>
+                    <p class="company-description">
+                        Build Future-Ready Web Experiences. Premium IT company based in Kathmandu, Nepal, delivering cutting-edge digital solutions worldwide.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@ificode.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+977 98********</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>iFiCode Inclusive, Shree Sharan Marg, Nayabazar,Kathmandu, Nepal</span>
+                        </div>
                     </div>
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-                        </ul>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61577787015838" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="error.html" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/ificode-inclusive-a5670736a/?originalSubdomain=np" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/ifi.code/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="error.html" class="social-link"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 IFI Code. All rights reserved.</p>
-                <ul class="footer-legal">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
+                
+                <!-- Quick Links Section -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="error.html">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services Section -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#web-development">Web Development</a></li>
+                        <li><a href="#mobile-apps">Mobile App Development</a></li>
+                        <li><a href="#ui-ux">UI/UX Design</a></li>
+                        <li><a href="#ecommerce">E-Commerce Solutions</a></li>
+                        <li><a href="#cloud-devops">Cloud & DevOps</a></li>
+                        <li><a href="#ai-automation">AI & Automation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter Section -->
+                <div class="footer-section newsletter">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p class="newsletter-description">
+                        Subscribe to our newsletter for the latest insights, tips, and industry updates.
+                    </p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="newsletter-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Weekly tech insights</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Exclusive offers</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 <a href="/">iFiCode Inclusive</a>. All Rights Reserved. | Powered and Crafted by <a href="/">iFiCode Inclusive</a></p>
+        </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
     </footer>
 
-    <!-- Popup Ad -->
-    <div class="popup-ad" id="popupAd">
-        <div class="popup-content">
-            <div class="popup-close" id="closePopup">
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="popup-image">
-                <img src="images/popupad1.svg" alt="Special Offer">
-            </div>
-            <div class="popup-text">
-                <h3>Special Offer!</h3>
-                <p>Get 20% off on all web development packages this month.</p>
-                <a href="index.html#contact" class="popup-btn">Claim Offer</a>
-            </div>
-        </div>
-    </div>
 
     <script src="js/main.js"></script>
     <script src="js/portfolio.js"></script>
+    
+    <!-- Initialize Modern Header and Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll effect
+            const header = document.querySelector('.header');
+            const scrollThreshold = 50;
+            
+            function handleScroll() {
+                if (window.scrollY > scrollThreshold) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+            
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Initial check
+            
+            // Mobile menu functionality
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const body = document.body;
+            
+            // Create overlay element
+            const overlay = document.createElement('div');
+            overlay.classList.add('menu-overlay');
+            body.appendChild(overlay);
+            
+            function openMobileMenu() {
+                mobileMenu.classList.add('active');
+                overlay.classList.add('active');
+                body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+            
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                body.style.overflow = ''; // Re-enable scrolling
+            }
+            
+            menuToggle.addEventListener('click', openMobileMenu);
+            mobileMenuClose.addEventListener('click', closeMobileMenu);
+            overlay.addEventListener('click', closeMobileMenu);
+            
+            // Close mobile menu on window resize (if desktop view)
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 992 && mobileMenu.classList.contains('active')) {
+                    closeMobileMenu();
+                }
+            });
+            
+            // Popup Ad functionality
+            const popupAd = document.getElementById('popupAd');
+            const popupClose = document.getElementById('popupClose');
+            
+            if (popupAd && popupClose) {
+                // Show popup after a delay
+                setTimeout(function() {
+                    popupAd.classList.add('active');
+                }, 3000);
+                
+                // Close popup when clicking the close button
+                popupClose.addEventListener('click', function() {
+                    popupAd.classList.remove('active');
+                });
+                
+                // Close popup when clicking outside
+                popupAd.addEventListener('click', function(e) {
+                    if (e.target === popupAd) {
+                        popupAd.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

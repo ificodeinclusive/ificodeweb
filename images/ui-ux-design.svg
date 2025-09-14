@@ -21,10 +21,10 @@
   <rect x="110" y="120" width="30" height="190" rx="4" fill="#34495e" />
   
   <!-- Tool Icons -->
-  <rect x="115" y="130" width="20" height="20" rx="4" fill="#00C9FF" opacity="0.8" />
+  <rect x="115" y="130" width="20" height="20" rx="4" fill="#8b5cf6" opacity="0.8" />
   <rect x="115" y="160" width="20" height="20" rx="4" fill="#9A29FF" opacity="0.8" />
   <rect x="115" y="190" width="20" height="20" rx="4" fill="#ffffff" opacity="0.5" />
-  <rect x="115" y="220" width="20" height="20" rx="4" fill="#00C9FF" opacity="0.8" />
+  <rect x="115" y="220" width="20" height="20" rx="4" fill="#8b5cf6" opacity="0.8" />
   <rect x="115" y="250" width="20" height="20" rx="4" fill="#9A29FF" opacity="0.8" />
   <rect x="115" y="280" width="20" height="20" rx="4" fill="#ffffff" opacity="0.5" />
   
@@ -39,13 +39,13 @@
   <rect x="150" y="170" width="240" height="140" rx="4" fill="#ffffff" opacity="0.05" />
   
   <!-- UI Components -->
-  <rect x="170" y="190" width="80" height="80" rx="4" fill="#00C9FF" opacity="0.6" />
+  <rect x="170" y="190" width="80" height="80" rx="4" fill="#8b5cf6" opacity="0.6" />
   <rect x="260" y="190" width="80" height="80" rx="4" fill="#9A29FF" opacity="0.6" />
   <rect x="170" y="280" width="170" height="10" rx="2" fill="#ffffff" opacity="0.5" />
   <rect x="170" y="300" width="120" height="5" rx="2" fill="#ffffff" opacity="0.3" />
   
   <!-- Color Palette -->
-  <circle cx="400" cy="190" r="10" fill="#00C9FF" />
+  <circle cx="400" cy="190" r="10" fill="#8b5cf6" />
   <circle cx="400" cy="220" r="10" fill="#9A29FF" />
   <circle cx="400" cy="250" r="10" fill="#ffffff" opacity="0.8" />
   <circle cx="400" cy="280" r="10" fill="#2ecc71" opacity="0.8" />
@@ -60,7 +60,7 @@
   <!-- Gradients -->
   <defs>
     <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00C9FF" />
+      <stop offset="0%" stop-color="#8b5cf6" />
       <stop offset="100%" stop-color="#0078FF" />
     </linearGradient>
     <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">

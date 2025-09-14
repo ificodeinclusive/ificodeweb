@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modern-cta.css">
     <link rel="stylesheet" href="css/modern-cta-stats.css">
@@ -36,15 +37,16 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="iFiCode Logo" class="header-logo-img">
-                    iFiCode
+                    <img src="images/ificodesbrandicon.png" alt="iFiCode Logo" class="header-logo-img">
+                    <img src="images/ificodesbrandtext.png" alt="iFiCode" class="header-brand-text">
                 </a>
             </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#" class="active">HOME</a></li>
-                    <li><a href="#expertise">ABOUT</a></li>
-                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="error.html">SERVICES</a></li>
+                    <li><a href="error.html">SOLUTIONS</a></li>
                     <li><a href="error.html">PORTFOLIO</a></li>
                     <li><a href="error.html">BLOG</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -63,29 +65,24 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="tag-box">
-            <div class="icon-glow">iFi</div>
-            <div class="tag-box-row">
-                <div class="dot"></div>
-                <div>iFiCode</div>
-                <div class="dot dot-purple"></div>
-            </div>
+        <div class="hero-logo">
+            <img src="images/ificodewhitepurple.png" alt="iFiCode Logo" class="logo-image">
         </div>
 
         <h1>
-            Crafting Code into<br>
-            <span class="gradient-text">Digital Empires</span>
+            Where Innovation<br>
+            <span class="gradient-text">Meets Impact</span>
         </h1>
 
         <p class="subtext">
-            We transform visionary concepts into breathtaking digital realities that redefine what's possible in the modern world.
+            Your trusted digital partner and innovation hub. We deliver world-class IT solutions while exploring breakthrough ideas and publishing cutting-edge research.
         </p>
 
         <div class="cta-buttons">
-            <button class="btn primary"><a href="index.html#contact">LET'S BUILD YOURS →</a></button>
-            <button class="btn secondary"><a href="service.html">▶ EXPLORE OUR WORK</a></button>
+            <button class="btn primary"><a href="#portfolio">See Our Projects</a></button>
+            <button class="btn secondary"><a href="#services">Explore Solutions</a></button>
         </div>
-
+        
         <div class="scroll-indicator">
             <div class="scroll-dot"></div>
             SCROLL TO EXPLORE
@@ -95,164 +92,67 @@
     <!-- Impact Section -->
     <section id="impact">
         <div class="section-title">
-            <div>OUR IMPACT</div>
-            Trusted by <span class="gradient">Visionaries</span>
+            <div>PROVEN RESULTS</div>
+            <span>Delivering <span class="gradient">Excellence</span> Worldwide</span>
         </div>
-        <p>Join the elite circle of industry leaders who trust iFiCode to transform their digital presence</p>
+        <p>Empowering businesses across the globe with innovative digital solutions that drive real growth and measurable success</p>
         <div class="stats">
-            <div class="stat"><h2>12</h2><p>Projects Completed</p></div>
-            <div class="stat"><h2>98%</h2><p>Client Satisfaction</p></div>
-            <div class="stat"><h2>2</h2><p>Global Clients</p></div>
-            <div class="stat"><h2>2</h2><p>Years Experience</p></div>
-        </div>
-    </section>
-
-    <!-- Business Startup Package Section -->
-    <section id="startup-package" class="startup-package-section redesigned">
-        <div class="section-title">
-            <div>EXCLUSIVE OFFER</div>
-            <span><span style="color:#fff;">Premium</span> <span class="gradient">Solutions</span></span>
-        </div>
-        <p class="section-description">Tailored packages designed to launch and accelerate your digital presence</p>
-        <div class="startup-package-cards">
-            <!-- Creator Package Card -->
-            <div class="startup-card redesigned-card creator">
-                <div class="startup-card-header">
-                    <div class="startup-card-badge">Value Packeds</div>
-                    <div class="startup-card-price">
-                        <span class="currency">NPR</span>
-                        <span class="amount">7,499</span>
-                    </div>
-                </div>
-                <div class="startup-card-title">Personal Portfolio Pro</div>
-                <div class="startup-card-note">Perfect for freelancers, developers, designers & professionals</div>
-                <ul class="startup-card-features">
-                    <li><i class="fas fa-star"></i> Premium One-Page Portfolio</li>
-                    <li><i class="fas fa-globe"></i> Free Domain (.com/.com.np)</li>
-                    <li><i class="fas fa-server"></i> Cloud Hosting (1 Year)</li>
-                    <li><i class="fas fa-mobile-alt"></i> Mobile-First Responsive Design</li>
-                    <li><i class="fas fa-envelope"></i> Contact Form + Email Alerts</li>
-                    <li><i class="fas fa-search"></i> SEO Optimized Structure</li>
-                    <li><i class="fab fa-instagram"></i> Social Media Integration</li>
-                    <li><i class="fas fa-chart-line"></i> Animated Skill & Project Sections</li>
-                    <li><i class="fas fa-palette"></i> Custom Color & Font Styling</li>
-                    <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
-                </ul>
-                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">Bonus Features <i class="fas fa-chevron-down"></i></button>
-                <div class="startup-card-addons">
-                    <div class="addons-title">Included Extras</div>
-                    <ul>
-                        <li><i class="fas fa-file-download"></i> Resume Download Button</li>
-                        <li><i class="fab fa-linkedin"></i> LinkedIn, GitHub, Behance, etc. Integration</li>
-                        <li><i class="fas fa-copyright"></i> Logo or Name Branding</li>
-                    </ul>
-                    <div class="startup-card-smallprint">Free domain, hosting, and email valid for first year. Terms & conditions apply.</div>
-                </div>
-                <div class="startup-card-action">
-                    <a href="#contact" class="startup-card-action-link">Showcase Your Talent</a>
-                </div>
+            <div class="stat">
+                <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+                <h2>25+</h2>
+                <p>Projects Delivered</p>
+                <span class="stat-detail">Across multiple industries</span>
             </div>
-            <!-- Startup Package Card -->
-            <div class="startup-card redesigned-card">
-                <div class="startup-card-header">
-                    <div class="startup-card-badge">Best Value</div>
-                    <div class="startup-card-price">
-                        <span class="currency">NPR</span>
-                        <span class="amount">9,999</span>
-                    </div>
-                </div>
-                <div class="startup-card-title">Business Launchpad</div>
-                <div class="startup-card-note">Limited offer for first two clients</div>
-                <ul class="startup-card-features">
-                    <li><i class="fas fa-rocket"></i> Premium Static Website</li>
-                    <li><i class="fas fa-globe"></i> Free Domain Registration</li>
-                    <li><i class="fas fa-server"></i> Cloud Hosting (1 Year)</li>
-                    <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
-                    <li><i class="fab fa-google"></i> Google Business Profile</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Google Maps Integration</li>
-                    <li><i class="fas fa-headset"></i> Priority Support</li>
-                </ul>
-                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">Premium Add-ons <i class="fas fa-chevron-down"></i></button>
-                <div class="startup-card-addons">
-                    <div class="addons-title">Value-Added Services</div>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> Professional Email</li>
-                        <li><i class="fas fa-gavel"></i> Legal Consultation <span class="addon-note">(Legal Heart Nepal)</span></li>
-                        <li><i class="fas fa-university"></i> Business Registration <span class="addon-note">(Legal Heart Nepal)</span></li>
-                        <li><i class="fas fa-paint-brush"></i> Basic Brand Identity</li>
-                        <li><i class="fab fa-instagram"></i> Social Media Setup</li>
-                        <li><i class="fas fa-bullhorn"></i> Digital Marketing Starter</li>
-                    </ul>
-                    <div class="startup-card-smallprint">Free domain, hosting, and support valid for first year. Terms & conditions apply.</div>
-                </div>
-                <div class="startup-card-action">
-                    <a href="#contact" class="startup-card-action-link">Launch Your Business</a>
-                </div>
+            <div class="stat">
+                <div class="stat-icon"><i class="fas fa-heart"></i></div>
+                <h2>100%</h2>
+                <p>Client Satisfaction</p>
+                <span class="stat-detail">Zero unsatisfied clients</span>
             </div>
-            <!-- Booster Package Card -->
-            <div class="startup-card redesigned-card booster">
-                <div class="startup-card-header">
-                    <div class="startup-card-badge alt">Most Popular</div>
-                    <div class="startup-card-price">
-                        <span class="currency">NPR</span>
-                        <span class="amount">16,999</span>
-                    </div>
-                </div>
-                <div class="startup-card-title">Growth Accelerator</div>
-                <div class="startup-card-note">Complete digital presence solution for businesses</div>
-                <ul class="startup-card-features">
-                    <li><i class="fas fa-layer-group"></i> Multi-Page Dynamic Website</li>
-                    <li><i class="fas fa-globe"></i> Premium Domain Name</li>
-                    <li><i class="fas fa-server"></i> High-Performance Hosting</li>
-                    <li><i class="fas fa-mobile-alt"></i> Advanced Responsive Design</li>
-                    <li><i class="fab fa-google"></i> Complete Google Integration</li>
-                    <li><i class="fab fa-instagram"></i> Social Media Branding</li>
-                    <li><i class="fas fa-envelope"></i> Business Email Suite</li>
-                    <li><i class="fas fa-shield-alt"></i> SSL Security Certificate</li>
-
-                </ul>
-                <button class="startup-see-more-btn" onclick="this.parentElement.classList.toggle('show-addons')">Premium Add-ons <i class="fas fa-chevron-down"></i></button>
-                <div class="startup-card-addons">
-                    <div class="addons-title">Growth Boosters</div>
-                    <ul>
-                        <li><i class="fas fa-ad"></i> Digital Ad Campaign Setup</li>
-                        <li><i class="fas fa-palette"></i> Complete Brand Kit</li>
-                        <li><i class="fas fa-gavel"></i> Legal Business Support <span class="addon-note">(Legal Heart Nepal)</span></li>
-                    </ul>
-                    <div class="startup-card-smallprint">All premium features valid for first year. Terms & conditions apply.</div>
-                </div>
-                <div class="startup-card-action">
-                    <a href="#contact" class="startup-card-action-link">Accelerate Growth</a>
-                </div>
+            <div class="stat">
+                <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                <h2>5+</h2>
+                <p>Countries Served</p>
+                <span class="stat-detail">Global reach & impact</span>
+            </div>
+            <div class="stat">
+                <div class="stat-icon"><i class="fas fa-award"></i></div>
+                <h2>3+</h2>
+                <p>Years Excellence</p>
+                <span class="stat-detail">Continuous innovation</span>
             </div>
         </div>
     </section>
+
+
 
     <!-- Services Section -->
     <section id="services">
         <div class="section-title">
-            <div>OUR EXPERTISE</div>
-            Services We <span class="gradient">Provide</span>
+            <div>WHAT WE DO</div>
+            <span>Crafting Digital <span class="gradient">Experiences</span></span>
         </div>
-        <p>Comprehensive digital solutions tailored to transform your business and accelerate growth</p>
+        <p>From innovative web solutions to cutting-edge research, we transform ideas into impactful digital realities</p>
+        
         <div class="services">
             <div class="service-card">
                 <div class="service-card-header">
                     <div class="service-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <div class="service-badge">Popular</div>
+                    <div class="service-badge">Core Service</div>
                 </div>
                 <div class="service-content">
-                    <h3>Web Development</h3>
-                    <p>Pixel-perfect, SEO-optimized websites using modern stacks like React, Next.js, and Tailwind CSS.</p>
+                    <h3>Digital Solutions & Experiences</h3>
+                    <p class="service-tagline">Building with precision. Scaling with creativity.</p>
+                    <p>Websites, mobile apps, and software designed to be modern, scalable, and impactful.</p>
                     <div class="service-features">
-                        <span class="feature-tag">React</span>
-                        <span class="feature-tag">Next.js</span>
-                        <span class="feature-tag">Tailwind</span>
+                        <span class="feature-tag">Web Apps</span>
+                        <span class="feature-tag">Mobile</span>
+                        <span class="feature-tag">Software</span>
                     </div>
                     <div class="service-cta">
-                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="error.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -260,20 +160,21 @@
             <div class="service-card">
                 <div class="service-card-header">
                     <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-search"></i>
                     </div>
-                    <div class="service-badge">Trending</div>
+                    <div class="service-badge">Research</div>
                 </div>
                 <div class="service-content">
-                    <h3>Mobile App Development</h3>
-                    <p>Cross-platform mobile apps with smooth UI/UX for iOS and Android using React Native and Flutter.</p>
+                    <h3>Applied Research & Insights</h3>
+                    <p class="service-tagline">Turning questions into clarity.</p>
+                    <p>From emerging technologies to strategic comparisons, we deliver research that guides smarter decisions and future-ready solutions.</p>
                     <div class="service-features">
-                        <span class="feature-tag">React Native</span>
-                        <span class="feature-tag">Flutter</span>
-                        <span class="feature-tag">iOS/Android</span>
+                        <span class="feature-tag">Tech Analysis</span>
+                        <span class="feature-tag">Strategy</span>
+                        <span class="feature-tag">Insights</span>
                     </div>
                     <div class="service-cta">
-                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="error.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -281,139 +182,362 @@
             <div class="service-card">
                 <div class="service-card-header">
                     <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                        <i class="fas fa-lightbulb"></i>
                     </div>
+                    <div class="service-badge">Innovation</div>
                 </div>
                 <div class="service-content">
-                    <h3>UI/UX Design</h3>
-                    <p>Clean, intuitive, user-first interfaces for web and mobile with modern design principles.</p>
+                    <h3>Visionary Projects & Experiments</h3>
+                    <p class="service-tagline">Where bold ideas come to life.</p>
+                    <p>We design and test innovative platforms, creative concepts, and experimental solutions that explore what's next in digital technology.</p>
                     <div class="service-features">
-                        <span class="feature-tag">Figma</span>
-                        <span class="feature-tag">Adobe XD</span>
-                        <span class="feature-tag">Prototyping</span>
+                        <span class="feature-tag">Innovation</span>
+                        <span class="feature-tag">Experiments</span>
+                        <span class="feature-tag">Future Tech</span>
                     </div>
                     <div class="service-cta">
-                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-card-header">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <h3>Cloud & DevOps</h3>
-                    <p>Scalable infrastructure, CI/CD pipelines, and cloud-native deployments on AWS and Azure.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">AWS</span>
-                        <span class="feature-tag">Azure</span>
-                        <span class="feature-tag">Docker</span>
-                    </div>
-                    <div class="service-cta">
-                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-card-header">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="service-badge">AI-Powered</div>
-                </div>
-                <div class="service-content">
-                    <h3>AI & Automation</h3>
-                    <p>Leverage machine learning and intelligent automation for smart business systems and workflows.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Machine Learning</span>
-                        <span class="feature-tag">ChatGPT API</span>
-                        <span class="feature-tag">Automation</span>
-                    </div>
-                    <div class="service-cta">
-                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-card-header">
-                    <div class="service-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <div class="service-badge">Future</div>
-                </div>
-                <div class="service-content">
-                    <h3>Blockchain & Web3</h3>
-                    <p>Secure blockchain apps, NFT platforms, and smart contract development for the decentralized web.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Ethereum</span>
-                        <span class="feature-tag">Smart Contracts</span>
-                        <span class="feature-tag">NFTs</span>
-                    </div>
-                    <div class="service-cta">
-                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="error.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Showcase Section -->
+    <section id="portfolio" class="portfolio-showcase-section">
+        <div class="section-title">
+            <div>OUR PORTFOLIO</div>
+            Websites We've <span class="gradient">Created</span>
+        </div>
+        <p class="section-description">Discover some of the amazing websites and digital solutions we've built for our clients across various industries.</p>
+        
+        <div class="portfolio-showcase-container">
+            <div class="portfolio-showcase-scroll">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/Explorifi.png" alt="iFiCode - Travel and Explore Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Explorifi</h3>
+                                <p>Travel and Explore Website</p>
+                                <div class="portfolio-tags">
+                                    <span class="portfolio-tag">React</span>
+                                    <span class="portfolio-tag">Node.js</span>
+                                    <span class="portfolio-tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/Consultifi.png" alt="iFi Gym - Fitness Management System">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Consultifi</h3>
+                                <p>Consultancy and Business Solutions</p>
+                                <div class="portfolio-tags">
+                                    <span class="portfolio-tag">Vue.js</span>
+                                    <span class="portfolio-tag">PHP</span>
+                                    <span class="portfolio-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/tradifi.png" alt="Legal Heart - Legal Services Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Tradifi</h3>
+                                <p>Trading Company Platform</p>
+                                <div class="portfolio-tags">
+                                    <span class="portfolio-tag">Angular</span>
+                                    <span class="portfolio-tag">Express</span>
+                                    <span class="portfolio-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/pizifi.png" alt="LH Website - Corporate Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Pizifi</h3>
+                                <p>Resturant Website</p>
+                                <div class="portfolio-tags">
+                                    <span class="portfolio-tag">HTML5</span>
+                                    <span class="portfolio-tag">CSS3</span>
+                                    <span class="portfolio-tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-cta">
+            <a href="error.html" class="btn-primary">View More Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-title">
+            <div>IFICODE PRICING PLANS</div>
+            Choose Your <span class="gradient">Perfect Plan</span>
+        </div>
+        <p class="section-description">Transparent pricing with no hidden costs. Get premium quality at unbeatable value.</p>
+        
+        <!-- Country Flag Selector -->
+        <div class="country-selector">
+            <h4>Select Your Country:</h4>
+            <div class="flag-buttons">
+                <button class="flag-btn active" data-country="nepal" data-currency="NPR" title="Nepal">
+                    <img src="images/flags/Nepal.png" alt="Nepal Flag" class="flag-image">
+                    <span class="country-name">Nepal</span>
+                </button>
+                <button class="flag-btn" data-country="usa" data-currency="$" title="USA">
+                    <img src="images/flags/USA.png" alt="USA Flag" class="flag-image">
+                    <span class="country-name">USA</span>
+                </button>
+                <button class="flag-btn" data-country="australia" data-currency="AUD" title="Australia">
+                    <img src="images/flags/Australia.png" alt="Australia Flag" class="flag-image">
+                    <span class="country-name">Australia</span>
+                </button>
+                <button class="flag-btn" data-country="india" data-currency="₹" title="India">
+                    <img src="images/flags/India.png" alt="India Flag" class="flag-image">
+                    <span class="country-name">India</span>
+                </button>
+                <button class="flag-btn" data-country="newzealand" data-currency="NZD" title="New Zealand">
+                    <img src="images/flags/NewZealand.png" alt="New Zealand Flag" class="flag-image">
+                    <span class="country-name">New Zealand</span>
+                </button>
+                <button class="flag-btn" data-country="canada" data-currency="CAD" title="Canada">
+                    <img src="images/flags/Canada.png" alt="Canada Flag" class="flag-image">
+                    <span class="country-name">Canada</span>
+                </button>
+                <button class="flag-btn" data-country="england" data-currency="£" title="England">
+                    <img src="images/flags/England.png" alt="England Flag" class="flag-image">
+                    <span class="country-name">England</span>
+                </button>
+                <button class="flag-btn" data-country="croatia" data-currency="€" title="Croatia">
+                    <img src="images/flags/Croatia.png" alt="Croatia Flag" class="flag-image">
+                    <span class="country-name">Croatia</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="pricing-grid">
+            <!-- Personal Portfolio Pro -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-badge">Value Packed</div>
+                    <h3>Personal Portfolio Pro</h3>
+                    <div class="pricing-price">
+                        <span class="currency" id="currency-1">NPR</span>
+                        <span class="amount" id="amount-1">14,999</span>
+                    </div>
+                    <p class="pricing-subtitle">Perfect for freelancers, developers & designers.</p>
+                </div>
+                <div class="pricing-features">
+                    <h4>Includes:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Premium One-Page Portfolio Website</li>
+                        <li><i class="fas fa-check"></i> Free Domain + Hosting (1 Year)</li>
+                        <li><i class="fas fa-check"></i> Mobile-Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Contact Form + Email Alerts</li>
+                        <li><i class="fas fa-check"></i> Social Media Integration</li>
+                        <li><i class="fas fa-check"></i> Custom Branding (Colors, Fonts, Logo/Name)</li>
+                    </ul>
+                    <p class="pricing-note">Free domain & hosting for the first year.</p>
+                </div>
+                <div class="pricing-action">
+                    <a href="#contact" class="btn-primary">
+                        <span class="shimmer"></span>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Business Launchpad -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-badge">Best Value</div>
+                    <h3>Business Launchpad</h3>
+                    <div class="pricing-price">
+                        <span class="currency" id="currency-2">NPR</span>
+                        <span class="amount" id="amount-2">14,999</span>
+                    </div>
+                    <p class="pricing-subtitle">Limited offer for first two clients.</p>
+                </div>
+                <div class="pricing-features">
+                    <h4>Includes:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Professional Business Website (1 Page)</li>
+                        <li><i class="fas fa-check"></i> Free Domain + Hosting (1 Year)</li>
+                        <li><i class="fas fa-check"></i> Google Business Profile & Maps Integration</li>
+                        <li><i class="fas fa-check"></i> Contact Form + Email Alerts</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    <p class="pricing-note">Free domain & hosting for the first year.</p>
+                </div>
+                <div class="pricing-action">
+                    <a href="#contact" class="btn-primary">
+                        <span class="shimmer"></span>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Growth Accelerator -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3>Growth Accelerator</h3>
+                    <div class="pricing-price">
+                        <span class="currency" id="currency-3">NPR</span>
+                        <span class="amount" id="amount-3">29,999</span>
+                    </div>
+                    <p class="pricing-subtitle">Complete digital presence for growing businesses.</p>
+                </div>
+                <div class="pricing-features">
+                    <h4>Includes:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Multi-Page Website (4 Pages)</li>
+                        <li><i class="fas fa-check"></i> Premium Domain + Hosting</li>
+                        <li><i class="fas fa-check"></i> Advanced Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Google Integration (Analytics, Maps, Search Console)</li>
+                        <li><i class="fas fa-check"></i> SSL Security & Business Email Suite</li>
+                        <li><i class="fas fa-check"></i> Social Media Branding</li>
+                    </ul>
+                    <p class="pricing-note">All features valid for the first year.</p>
+                </div>
+                <div class="pricing-action">
+                    <a href="#contact" class="btn-primary">
+                        <span class="shimmer"></span>
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing JavaScript -->
+    <script>
+        // Pricing data based on the Excel screenshot
+        const pricingData = {
+            nepal: {
+                currency: 'NPR',
+                prices: ['14,999', '14,999', '29,999']
+            },
+            usa: {
+                currency: '$',
+                prices: ['149', '149', '299']
+            },
+            australia: {
+                currency: 'AUD',
+                prices: ['225', '225', '449']
+            },
+            india: {
+                currency: '₹',
+                prices: ['14,999', '14,999', '29,999']
+            },
+            newzealand: {
+                currency: 'NZD',
+                prices: ['249', '249', '499']
+            },
+            canada: {
+                currency: 'CAD',
+                prices: ['209', '209', '419']
+            },
+            england: {
+                currency: '£',
+                prices: ['111', '111', '222']
+            },
+            croatia: {
+                currency: '€',
+                prices: ['127', '127', '255']
+            }
+        };
+
+        // Function to update pricing
+        function updatePricing(country) {
+            const data = pricingData[country];
+            if (!data) return;
+
+            // Update currency symbols
+            document.getElementById('currency-1').textContent = data.currency;
+            document.getElementById('currency-2').textContent = data.currency;
+            document.getElementById('currency-3').textContent = data.currency;
+
+            // Update amounts
+            document.getElementById('amount-1').textContent = data.prices[0];
+            document.getElementById('amount-2').textContent = data.prices[1];
+            document.getElementById('amount-3').textContent = data.prices[2];
+        }
+
+        // Add event listeners to flag buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const flagButtons = document.querySelectorAll('.flag-btn');
+            
+            flagButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    flagButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Update pricing
+                    const country = this.getAttribute('data-country');
+                    updatePricing(country);
+                });
+            });
+        });
+    </script>
+
     <!-- Why Choose Us Section -->
     <section id="expertise">
         <div class="section-title">
-            <div>WHY CHOOSE IFIGODE</div>
-            Excellence <span class="gradient">Redefined</span>
+            <div>WHY CHOOSE IFICODE</div>
+            Innovation Meets <span class="gradient">Trust</span>
         </div>
-        <p class="section-description">Experience the difference of working with Nepal's premier digital agency, where innovation meets artistry</p>
+        <p class="section-description">Your trusted innovation partner with research-backed approach and global excellence standards</p>
         
-        <!-- Key Statistics -->
-        <div class="expertise-stats">
-            <div class="stat-item">
-                <div class="stat-number">2</div>
-                <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">12+</div>
-                <div class="stat-label">Projects Delivered</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">Client Satisfaction</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Support Available</div>
-            </div>
-        </div>
+
 
         <!-- Feature Cards -->
         <div class="expertise-features">
             <div class="expertise-card">
                 <div class="expertise-card-header">
                     <div class="expertise-icon">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <div class="expertise-badge">Performance</div>
+                    <div class="expertise-badge">Innovation</div>
                 </div>
                 <div class="expertise-content">
-                    <h3>Lightning Fast Performance</h3>
-                    <p>Sub-second load times powered by advanced optimization techniques and next-generation web technologies.</p>
+                    <h3>Innovation-Driven Solutions</h3>
+                    <p>We don't just follow trends—we create them. Our experimental mindset drives breakthrough solutions for complex challenges.</p>
                     <div class="expertise-benefits">
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>99.9% Uptime Guarantee</span>
+                            <span>Experimental Projects</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>CDN Optimization</span>
+                            <span>Future-Focused Approach</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Mobile-First Design</span>
+                            <span>Creative Problem Solving</span>
                         </div>
                     </div>
                 </div>
@@ -422,13 +546,40 @@
             <div class="expertise-card">
                 <div class="expertise-card-header">
                     <div class="expertise-icon">
-                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-microscope"></i>
                     </div>
-                    <div class="expertise-badge">Global</div>
+                    <div class="expertise-badge">Research</div>
                 </div>
                 <div class="expertise-content">
-                    <h3>Global Excellence</h3>
-                    <p>Trusted by companies worldwide, delivering world-class solutions from our technology center in Nepal.</p>
+                    <h3>Research-Backed Approach</h3>
+                    <p>Data-driven solutions with thorough analysis for maximum impact.</p>
+                    <div class="expertise-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Market Research</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Technology Analysis</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Evidence-Based Decisions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="expertise-badge">Future-Ready</div>
+                </div>
+                <div class="expertise-content">
+                    <h3>Global Excellence Standards</h3>
+                    <p>Combining local innovation with international quality standards to deliver world-class solutions that scale globally.</p>
                     <div class="expertise-benefits">
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
@@ -436,38 +587,11 @@
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Multi-timezone Support</span>
+                            <span>Scalable Architecture</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check"></i>
-                            <span>Cultural Understanding</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="expertise-card">
-                <div class="expertise-card-header">
-                    <div class="expertise-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="expertise-badge">Awarded</div>
-                </div>
-                <div class="expertise-content">
-                    <h3>Top-Tier SSL Security</h3>
-                    <p>Grade A+ SSL Certified for advanced encryption, trusted data security, and global cybersecurity compliance.</p>
-                    <div class="expertise-benefits">
-                        <div class="benefit-item">
-                            <i class="fas fa-check"></i>
-                            <span>Military-Grade Encryption</span>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check"></i>
-                            <span>Certified SSL A+ Grade</span>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-check"></i>
-                            <span>Secure Data Transmission</span>
+                            <span>Future-Proof Technology</span>
                         </div>
                     </div>
                 </div>
@@ -490,6 +614,165 @@
             </div>
         </div>
     </section>
+
+    <!-- Our Working Process Section -->
+    <section id="working-process" class="working-process-section">
+        <div class="section-title">
+            <div>OUR WORKING PROCESS</div>
+            From Concept to <span class="gradient">Delivery</span>
+        </div>
+        <p class="section-description">Our systematic approach ensures quality delivery at every stage of development</p>
+        
+        <div class="process-container">
+            <div class="process-card" data-step="01">
+                <div class="process-card-inner">
+                    <div class="process-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="process-number">01</div>
+                    <h3 class="process-title">Discovery & Analysis</h3>
+                    <p class="process-description">Understanding your needs, challenges, and objectives through comprehensive analysis and market research</p>
+                    <div class="process-features">
+                        <span class="feature-tag">Requirements Gathering</span>
+                        <span class="feature-tag">Market Analysis</span>
+                        <span class="feature-tag">User Research</span>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+            </div>
+            
+            <div class="process-card" data-step="02">
+                <div class="process-card-inner">
+                    <div class="process-icon">
+                        <i class="fas fa-chess-knight"></i>
+                    </div>
+                    <div class="process-number">02</div>
+                    <h3 class="process-title">Strategy & Planning</h3>
+                    <p class="process-description">Developing a tailored solution strategy with clear milestones, deliverables, and project roadmap</p>
+                    <div class="process-features">
+                        <span class="feature-tag">Project Roadmap</span>
+                        <span class="feature-tag">Architecture Design</span>
+                        <span class="feature-tag">Timeline Planning</span>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+            </div>
+            
+            <div class="process-card" data-step="03">
+                <div class="process-card-inner">
+                    <div class="process-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="process-number">03</div>
+                    <h3 class="process-title">Design & Development</h3>
+                    <p class="process-description">Creating innovative solutions using cutting-edge technologies, modern frameworks, and best practices</p>
+                    <div class="process-features">
+                        <span class="feature-tag">UI/UX Design</span>
+                        <span class="feature-tag">Frontend Development</span>
+                        <span class="feature-tag">Backend Development</span>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+            </div>
+            
+            <div class="process-card" data-step="04">
+                <div class="process-card-inner">
+                    <div class="process-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="process-number">04</div>
+                    <h3 class="process-title">Testing & Optimization</h3>
+                    <p class="process-description">Rigorous testing and performance optimization to ensure quality, reliability, and optimal user experience</p>
+                    <div class="process-features">
+                        <span class="feature-tag">Quality Assurance</span>
+                        <span class="feature-tag">Performance Testing</span>
+                        <span class="feature-tag">Security Audit</span>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+            </div>
+            
+            <div class="process-card" data-step="05">
+                <div class="process-card-inner">
+                    <div class="process-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="process-number">05</div>
+                    <h3 class="process-title">Deployment & Support</h3>
+                    <p class="process-description">Seamless deployment with ongoing support, maintenance, and continuous improvement for long-term success</p>
+                    <div class="process-features">
+                        <span class="feature-tag">Live Deployment</span>
+                        <span class="feature-tag">24/7 Support</span>
+                        <span class="feature-tag">Maintenance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applied Research and Blogs Section -->
+    <section id="research-blogs" class="research-blogs-section">
+        <div class="section-title">
+            <div>APPLIED RESEARCH AND BLOGS</div>
+            Insights & <span class="gradient">Innovation</span>
+        </div>
+        <p class="section-description">Explore our latest research findings, technical insights, and thought leadership in emerging technologies</p>
+        
+        <div class="blogs-grid">
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/ai-automation.svg" alt="AI Research">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-category">AI Research</div>
+                    <h3>The Future of AI in Web Development</h3>
+                    <p>Exploring how artificial intelligence is revolutionizing the way we build and interact with web applications, from automated code generation to intelligent user experiences.</p>
+                    <div class="blog-meta">
+                        <span class="blog-date">Dec 15, 2024</span>
+                        <span class="blog-read-time">5 min read</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/blockchain-web3.svg" alt="Blockchain Research">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-category">Blockchain</div>
+                    <h3>Web3 Integration Strategies</h3>
+                    <p>A comprehensive guide to implementing blockchain technologies in modern web applications, covering smart contracts, decentralized storage, and user authentication.</p>
+                    <div class="blog-meta">
+                        <span class="blog-date">Dec 10, 2024</span>
+                        <span class="blog-read-time">8 min read</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/cloud-devops.svg" alt="DevOps Research">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-category">DevOps</div>
+                    <h3>Cloud-Native Development Patterns</h3>
+                    <p>Best practices for building scalable, resilient applications in the cloud era, including microservices architecture, containerization, and automated deployment strategies.</p>
+                    <div class="blog-meta">
+                        <span class="blog-date">Dec 5, 2024</span>
+                        <span class="blog-read-time">6 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
 
     <!-- Testimonials Section -->
     <section class="testimonials">
@@ -613,58 +896,7 @@
             </div>
         </div>
         
-        <!-- Client Logos -->
-        <div class="client-logos">
 
-            <div class="logo-section">
-                <h4>Trusted by Industry Innovators</h4>
-                <p class="logo-section-subtitle">Join the elite network of forward-thinking businesses transforming their digital presence with iFiCode</p>
-                <div class="logo-grid">
-                    <div class="logo-item">
-                        <i class="fas fa-building-columns"></i>
-                        <span>Enterprise Solutions</span>
-                    </div>
-                    <div class="logo-item">
-                        <i class="fas fa-rocket-launch"></i>
-                        <span>StartupHub</span>
-                    </div>
-                    <div class="logo-item">
-                        <i class="fas fa-briefcase-clock"></i>
-                        <span>BusinessPro</span>
-                    </div>
-                    <div class="logo-item">
-                        <i class="fas fa-bullseye-arrow"></i>
-                        <span>TargetTech</span>
-                    </div>
-                    <div class="logo-item">
-                        <i class="fas fa-stars"></i>
-                        <span>StarSolutions</span>
-                    </div>
-                    <div class="logo-item">
-                        <i class="fas fa-bolt-lightning"></i>
-                        <span>PowerTech</span>
-                    </div>
-                </div>
-                <div class="trust-badges">
-                    <div class="trust-badge">
-                        <i class="fas fa-badge-check"></i>
-                        <span>Verified Excellence</span>
-                    </div>
-                    <div class="trust-badge">
-                        <i class="fas fa-shield-check"></i>
-                        <span>Secure Development</span>
-                    </div>
-                    <div class="trust-badge">
-                        <i class="fas fa-award"></i>
-                        <span>Award-Winning Design</span>
-                    </div>
-                    <div class="trust-badge">
-                        <i class="fas fa-clock-rotate-left"></i>
-                        <span>On-Time Delivery</span>
-                    </div>
-                </div>
-            </div>
-        </div>
         
 
     </section>
@@ -718,14 +950,11 @@
         
         <div class="modern-contact-container">
             <!-- Header -->
-            <div class="modern-contact-header">
-                <div class="modern-contact-tag">
-                    <div class="modern-contact-tag-dot"></div>
-                    <div class="modern-contact-tag-text">GET IN TOUCH</div>
-                </div>
-                <h2 class="modern-contact-title">Let's Build Something Amazing Together</h2>
-                <p class="modern-contact-subtitle">Have a project in mind or just want to explore possibilities? We're here to turn your vision into reality.</p>
+            <div class="section-title">
+                <div>GET IN TOUCH</div>
+                <span>Let's Build Something <span class="gradient">Amazing</span> Together</span>
             </div>
+            <p class="section-description">Have a project in mind or just want to explore possibilities? We're here to turn your vision into reality.</p>
             
             <!-- Contact Card -->
             <div class="modern-contact-card">
@@ -843,8 +1072,7 @@
                 <!-- Company Info Section -->
                 <div class="footer-section company-info">
                     <div class="footer-logo">
-                        <div class="logo-icon">iF</div>
-                        <span class="logo-text">iFiCode</span>
+                        <img src="images/ificodewhitepurple.png" alt="iFiCode Inclusive Logo">
                     </div>
                     <p class="company-description">
                         Build Future-Ready Web Experiences. Premium IT company based in Kathmandu, Nepal, delivering cutting-edge digital solutions worldwide.
@@ -864,11 +1092,11 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61577787015838" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="error.html" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/ificode-inclusive-a5670736a/?originalSubdomain=np" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/ifi.code/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="error.html" class="social-link"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
@@ -876,11 +1104,11 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="error.html">About Us</a></li>
+                        <li><a href="error.html">Services</a></li>
+                        <li><a href="error.html">Portfolio</a></li>
+                        <li><a href="error.html">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -926,19 +1154,8 @@
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
-            <div class="footer-container">
-                <div class="footer-bottom-content">
-
-                    <div class="copyright">
-                        <p>&copy; 2024 iFiCode. All rights reserved. | Powered and Crafted by <span class="highlight-text">iFiCode Inclusive</span></p>
-                    </div>
-                    <div class="footer-legal">
-                        <a href="#privacy">Privacy Policy</a>
-                        <a href="#terms">Terms of Service</a>
-                        <a href="#cookies">Cookie Policy</a>
-                    </div>
-                </div>
-            </div>
+            <p>&copy; 2024 <a href="/">iFiCode Inclusive</a>. All Rights Reserved. | Powered and Crafted by <a href="/">iFiCode Inclusive</a></p>
+        </div>
         </div>
 
         <!-- Back to Top Button -->
@@ -947,6 +1164,7 @@
         </button>
     </footer>
 
+    <script src="js/stats-animation.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

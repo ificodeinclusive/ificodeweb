@@ -25,7 +25,7 @@
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, #2ecbff, #6c72cb);
+    background: linear-gradient(90deg, #8b5cf6, #6c72cb);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -40,7 +40,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, #2ecbff, #6c72cb);
+    background: linear-gradient(90deg, #8b5cf6, #6c72cb);
     opacity: 0.7;
 }
 
@@ -71,17 +71,17 @@
 }
 
 .filter-btn:hover {
-    background: rgba(46, 203, 255, 0.1);
-    border-color: rgba(46, 203, 255, 0.3);
-    color: #2ecbff;
+    background: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.3);
+    color: #8b5cf6;
     transform: translateY(-2px);
 }
 
 .filter-btn.active {
-    background: linear-gradient(90deg, rgba(46, 203, 255, 0.2), rgba(108, 114, 203, 0.2));
-    border: 1px solid #2ecbff;
-    color: #2ecbff;
-    box-shadow: 0 0 15px rgba(46, 203, 255, 0.3);
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.2), rgba(108, 114, 203, 0.2));
+    border: 1px solid #8b5cf6;
+    color: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
 }
 
 /* Portfolio Grid */
@@ -101,8 +101,8 @@
 
 .portfolio-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(46, 203, 255, 0.2);
-    border-color: rgba(46, 203, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.3);
 }
 
 .portfolio-image {
@@ -142,7 +142,7 @@
 }
 
 .portfolio-category {
-    background: rgba(46, 203, 255, 0.8);
+    background: rgba(139, 92, 246, 0.8);
     color: #fff;
     padding: 5px 12px;
     border-radius: 20px;
@@ -169,7 +169,7 @@
 }
 
 .portfolio-link:hover {
-    background: #2ecbff;
+    background: #8b5cf6;
     transform: rotate(15deg);
 }
 
@@ -199,12 +199,12 @@
 
 .portfolio-tech span {
     background: rgba(255, 255, 255, 0.05);
-    color: rgba(46, 203, 255, 0.9);
+    color: rgba(139, 92, 246, 0.9);
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(46, 203, 255, 0.2);
+    border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
 /* Project Showcase */
@@ -219,7 +219,7 @@
 }
 
 .section-title div {
-    color: #2ecbff;
+    color: #8b5cf6;
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 2px;
@@ -233,7 +233,7 @@
 }
 
 .section-title h2 .gradient {
-    background: linear-gradient(90deg, #2ecbff, #6c72cb);
+    background: linear-gradient(90deg, #8b5cf6, #6c72cb);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -267,7 +267,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(46, 203, 255, 0.2), transparent);
+    background: linear-gradient(45deg, rgba(139, 92, 246, 0.2), transparent);
     pointer-events: none;
 }
 
@@ -290,9 +290,9 @@
 .stat-value {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #2ecbff;
+    color: #8b5cf6;
     margin-bottom: 5px;
-    text-shadow: 0 0 10px rgba(46, 203, 255, 0.3);
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
 }
 
 .stat-value span {
@@ -336,7 +336,7 @@
 }
 
 .feature-list li i {
-    color: #2ecbff;
+    color: #8b5cf6;
     margin-right: 10px;
     font-size: 1.1rem;
 }
@@ -348,8 +348,8 @@
 }
 
 .testimonial-card.featured {
-    background: linear-gradient(135deg, rgba(46, 203, 255, 0.05) 0%, rgba(108, 114, 203, 0.05) 100%);
-    border: 1px solid rgba(46, 203, 255, 0.2);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(108, 114, 203, 0.05) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.2);
     border-radius: 16px;
     padding: 40px;
     max-width: 900px;
@@ -364,7 +364,7 @@
     top: 20px;
     left: 20px;
     font-size: 120px;
-    color: rgba(46, 203, 255, 0.1);
+    color: rgba(139, 92, 246, 0.1);
     font-family: serif;
     line-height: 1;
 }
@@ -387,7 +387,7 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 15px;
-    border: 2px solid #2ecbff;
+    border: 2px solid #8b5cf6;
 }
 
 .client-image img {
@@ -408,7 +408,7 @@
 }
 
 .testimonial-rating {
-    color: #2ecbff;
+    color: #8b5cf6;
 }
 
 .testimonial-content p {
@@ -432,7 +432,7 @@
 .metric-value {
     font-size: 1.8rem;
     font-weight: 800;
-    color: #2ecbff;
+    color: #8b5cf6;
     margin-bottom: 5px;
 }
 
@@ -456,7 +456,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at top right, rgba(46, 203, 255, 0.1), transparent 60%);
+    background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.1), transparent 60%);
     pointer-events: none;
 }
 

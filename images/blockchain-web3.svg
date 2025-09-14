@@ -13,7 +13,7 @@
   <!-- Blockchain Structure -->
   <!-- Block 1 -->
   <rect x="120" y="100" width="80" height="60" rx="4" fill="#2c3e50" />
-  <rect x="130" y="110" width="60" height="10" rx="2" fill="#00C9FF" opacity="0.8" />
+  <rect x="130" y="110" width="60" height="10" rx="2" fill="#8b5cf6" opacity="0.8" />
   <rect x="130" y="130" width="40" height="5" rx="1" fill="#ffffff" opacity="0.5" />
   <rect x="130" y="145" width="50" height="5" rx="1" fill="#ffffff" opacity="0.5" />
   
@@ -25,12 +25,12 @@
   
   <!-- Block 3 -->
   <rect x="300" y="100" width="80" height="60" rx="4" fill="#2c3e50" />
-  <rect x="310" y="110" width="60" height="10" rx="2" fill="#00C9FF" opacity="0.8" />
+  <rect x="310" y="110" width="60" height="10" rx="2" fill="#8b5cf6" opacity="0.8" />
   <rect x="310" y="130" width="40" height="5" rx="1" fill="#ffffff" opacity="0.5" />
   <rect x="310" y="145" width="50" height="5" rx="1" fill="#ffffff" opacity="0.5" />
   
   <!-- Blockchain Connections -->
-  <path d="M200 130 L210 130" stroke="#00C9FF" stroke-width="2" />
+  <path d="M200 130 L210 130" stroke="#8b5cf6" stroke-width="2" />
   <path d="M290 130 L300 130" stroke="#9A29FF" stroke-width="2" />
   
   <!-- Distributed Network -->
@@ -50,46 +50,46 @@
   <rect x="325" y="305" width="30" height="30" rx="4" fill="#2c3e50" />
   
   <!-- Node Connections -->
-  <path d="M160 270 L160 290" stroke="#00C9FF" stroke-width="1" />
-  <path d="M250 270 L250 290" stroke="#00C9FF" stroke-width="1" />
-  <path d="M340 270 L340 290" stroke="#00C9FF" stroke-width="1" />
+  <path d="M160 270 L160 290" stroke="#8b5cf6" stroke-width="1" />
+    <path d="M250 270 L250 290" stroke="#8b5cf6" stroke-width="1" />
+    <path d="M340 270 L340 290" stroke="#8b5cf6" stroke-width="1" />
   
   <path d="M190 240 L220 240" stroke="#9A29FF" stroke-width="1" />
   <path d="M280 240 L310 240" stroke="#9A29FF" stroke-width="1" />
   <path d="M190 320 L220 320" stroke="#9A29FF" stroke-width="1" />
   <path d="M280 320 L310 320" stroke="#9A29FF" stroke-width="1" />
   
-  <path d="M180 260 L230 300" stroke="#00C9FF" stroke-width="1" />
-  <path d="M270 260 L320 300" stroke="#00C9FF" stroke-width="1" />
+  <path d="M180 260 L230 300" stroke="#8b5cf6" stroke-width="1" />
+    <path d="M270 260 L320 300" stroke="#8b5cf6" stroke-width="1" />
   <path d="M180 300 L230 260" stroke="#9A29FF" stroke-width="1" />
   <path d="M270 300 L320 260" stroke="#9A29FF" stroke-width="1" />
   
   <!-- Web3 Elements -->
-  <path d="M50 130 L100 130" stroke="#00C9FF" stroke-width="2" />
+  <path d="M50 130 L100 130" stroke="#8b5cf6" stroke-width="2" />
   <path d="M50 150 L90 150" stroke="#9A29FF" stroke-width="2" />
   <path d="M50 170 L80 170" stroke="#ffffff" stroke-width="2" opacity="0.5" />
   
-  <rect x="50" y="200" width="60" height="10" rx="2" fill="#00C9FF" opacity="0.8" />
+  <rect x="50" y="200" width="60" height="10" rx="2" fill="#8b5cf6" opacity="0.8" />
   <rect x="50" y="220" width="40" height="10" rx="2" fill="#9A29FF" opacity="0.8" />
   <rect x="50" y="240" width="50" height="10" rx="2" fill="#ffffff" opacity="0.5" />
   
   <!-- Smart Contract Elements -->
   <rect x="400" y="180" width="80" height="100" rx="4" fill="#34495e" />
-  <rect x="410" y="190" width="60" height="10" rx="2" fill="#00C9FF" opacity="0.8" />
+  <rect x="410" y="190" width="60" height="10" rx="2" fill="#8b5cf6" opacity="0.8" />
   <rect x="410" y="210" width="40" height="5" rx="1" fill="#ffffff" opacity="0.5" />
   <rect x="410" y="225" width="50" height="5" rx="1" fill="#ffffff" opacity="0.5" />
   <rect x="410" y="240" width="45" height="5" rx="1" fill="#9A29FF" opacity="0.8" />
   <rect x="410" y="255" width="55" height="5" rx="1" fill="#ffffff" opacity="0.5" />
-  <rect x="410" y="270" width="35" height="5" rx="1" fill="#00C9FF" opacity="0.8" />
+  <rect x="410" y="270" width="35" height="5" rx="1" fill="#8b5cf6" opacity="0.8" />
   
   <!-- Ethereum Symbol -->
-  <path d="M440 320 L440 350 L420 335 Z" fill="#00C9FF" opacity="0.8" />
+  <path d="M440 320 L440 350 L420 335 Z" fill="#8b5cf6" opacity="0.8" />
   <path d="M440 320 L440 350 L460 335 Z" fill="#9A29FF" opacity="0.8" />
   
   <!-- Gradients -->
   <defs>
     <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00C9FF" />
+      <stop offset="0%" stop-color="#8b5cf6" />
       <stop offset="100%" stop-color="#0078FF" />
     </linearGradient>
     <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">

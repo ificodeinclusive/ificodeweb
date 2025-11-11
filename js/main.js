@@ -1,13 +1,82 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Header functionality
+    const header = document.querySelector('.header');
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile menu toggle
+    if (mobileMenuToggle && mainNav) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+    }
+
+    // Mobile dropdown functionality
+    dropdowns.forEach(dropdown => {
+        const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+        
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', (e) => {
+                // Only prevent default on mobile
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        }
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!header.contains(e.target)) {
+            mobileMenuToggle.classList.remove('active');
+            mainNav.classList.remove('active');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            mobileMenuToggle.classList.remove('active');
+            mainNav.classList.remove('active');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+
     // Popup Ad Functionality
     const popupAd = document.getElementById('popupAd');
     const popupClose = document.getElementById('popupClose');
     const popupButton = document.getElementById('popupButton');
     
-    // Show popup after a short delay when page loads
-    setTimeout(() => {
-        popupAd.classList.add('active');
-    }, 1500);
+    // Show popup after a short delay when page loads (guard if popup exists)
+    if (popupAd) {
+        setTimeout(() => {
+            popupAd.classList.add('active');
+        }, 1500);
+    }
     
     // Close popup when close button is clicked
     if (popupClose) {
@@ -26,11 +95,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Close popup when clicking outside the popup container
-    popupAd.addEventListener('click', (e) => {
-        if (e.target === popupAd) {
-            popupAd.classList.remove('active');
-        }
-    });
+    if (popupAd) {
+        popupAd.addEventListener('click', (e) => {
+            if (e.target === popupAd) {
+                popupAd.classList.remove('active');
+            }
+        });
+    }
 
     // Add interactive effects to modern CTA buttons
     const modernCtaButtons = document.querySelectorAll('.modern-cta-btn');

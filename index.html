@@ -18,19 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body> 
-    <!-- Popup Ad Section -->
-    <div class="popup-overlay" id="popupAd">
-        <div class="popup-container">
-            <div class="popup-close" id="popupClose"></div>
-            <img src="images/popupad1.svg" alt="Special Offer" class="popup-image">
-            <div class="popup-content">
-                <h3 class="popup-title">Limited Time Offer!</h3>
-                <p class="popup-description">Launch Your Digital Presence at Just NPR 10,000 <br>
-                    Get a secure, mobile-friendly website with free domain & hosting, Google Business setup, IT support & more!</p>
-                <button class="popup-button" id="popupButton"><a href="index.html#contact">GET NOW</a></button>
-            </div>
-        </div>
-    </div>
+    <!-- Ghost Game modal will be injected near the end of body -->
 
     <!-- Header Section -->
     <header class="header">
@@ -44,12 +32,74 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#" class="active">HOME</a></li>
-                    <li><a href="index.html">ABOUT</a></li>
-                    <li><a href="error.html">SERVICES</a></li>
-                    <li><a href="error.html">SOLUTIONS</a></li>
-                    <li><a href="error.html">PORTFOLIO</a></li>
-                    <li><a href="error.html">BLOG</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li class="dropdown">
+                        <a href="service.html" class="dropdown-toggle">SERVICES <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu modern-solutions-dropdown" style="background: #1a1a1a !important;">
+                            <!-- Featured Solution -->
+                            <div class="featured-solution">
+                                <div class="modern-solution-item featured">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="webdev.html" style="color: #ffffff !important;">Web Development</a>
+                                        <p>Core web solutions & applications</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Grid Solutions -->
+                            <div class="solutions-container">
+                                
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="digibusiness.html">Digital Infrastructure</a>
+                                        <p>End-to-end IT setup</p>
+                                    </div>
+                                </div>
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="digitalmarketting.html">Digital Marketing</a>
+                                        <p>SEO, social media, paid ads</p>
+                                    </div>
+                                </div>
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="graphic.html">Graphic Design</a>
+                                        <p>Creative visuals, social media kits</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="visualidentity.html">Visual Identity & Brand Design</a>
+                                        <p>Logos, brand guidelines, typography</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="dropdown-footer">
+                                <a href="solution.html" class="view-all-solutions">View All Solutions <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="pricing.html">PRICING</a></li>
+                    <li><a href="ourwork.html">OUR WORK</a></li>
+                    <li><a href="insights.html">INSIGHTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="header-right">
@@ -79,8 +129,9 @@
         </p>
 
         <div class="cta-buttons">
-            <button class="btn primary"><a href="#portfolio">See Our Projects</a></button>
+            <button class="btn primary"><a href="#projects">See Our Projects</a></button>
             <button class="btn secondary"><a href="#services">Explore Solutions</a></button>
+            <button class="btn secondary" onclick="startGhostGame()">Catch the Ghosts!</button>
         </div>
         
         <div class="scroll-indicator">
@@ -152,7 +203,7 @@
                         <span class="feature-tag">Software</span>
                     </div>
                     <div class="service-cta">
-                        <a href="error.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -174,7 +225,7 @@
                         <span class="feature-tag">Insights</span>
                     </div>
                     <div class="service-cta">
-                        <a href="error.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -196,7 +247,7 @@
                         <span class="feature-tag">Future Tech</span>
                     </div>
                     <div class="service-cta">
-                        <a href="error.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a href="service.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -204,7 +255,7 @@
     </section>
 
     <!-- Portfolio Showcase Section -->
-    <section id="portfolio" class="portfolio-showcase-section">
+    <section class="portfolio-showcase-section">
         <div class="section-title">
             <div>OUR PORTFOLIO</div>
             Websites We've <span class="gradient">Created</span>
@@ -284,7 +335,7 @@
         </div>
         
         <div class="portfolio-cta">
-            <a href="error.html" class="btn-primary">View More Projects <i class="fas fa-arrow-right"></i></a>
+            <a href="ourwork.html" class="btn-primary">View More Projects <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 
@@ -1105,11 +1156,11 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="error.html">About Us</a></li>
-                        <li><a href="error.html">Services</a></li>
-                        <li><a href="error.html">Portfolio</a></li>
-                        <li><a href="error.html">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ourwork.html">Our Work</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
@@ -1166,5 +1217,188 @@
 
     <script src="js/stats-animation.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Ghost Game Styles -->
+    <style id="ghost-game-styles">
+      .ghost-game-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: none; align-items: center; justify-content: center; z-index: 10000; }
+      .ghost-game-overlay.active { display: flex; }
+      .ghost-game-modal { width: min(600px, 92vw); background: #0f0f14; color: #fff; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); overflow: hidden; }
+      .ghost-game-header { padding: 16px 20px; background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; display: flex; align-items: center; justify-content: space-between; }
+      .ghost-game-body { padding: 20px; }
+      .ghost-field { position: relative; height: 320px; border-radius: 12px; background: radial-gradient(120% 120% at 0% 0%, #0b0b12 0%, #1a1a2e 60%, #111827 100%); overflow: hidden; margin-top: 12px; }
+      .ghost { position: absolute; font-size: 42px; line-height: 1; background: transparent; border: none; cursor: pointer; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.4)); animation: float 2.6s ease-in-out infinite; }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      .ghost-game-stats { display: flex; gap: 12px; align-items: center; justify-content: flex-start; font-size: 14px; color: #cbd5e1; }
+      .ghost-game-stats .stat { background: #1f2937; padding: 8px 12px; border-radius: 8px; }
+      .ghost-actions { display: flex; gap: 12px; margin-top: 16px; }
+      .ghost-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 10px; border: none; cursor: pointer; font-weight: 600; }
+      .ghost-btn.primary { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; }
+      .ghost-btn.secondary { background: #374151; color: #fff; }
+      .ghost-game-result { text-align: center; padding: 18px; display: none; }
+      .ghost-game-result.show { display: block; }
+      .discount-code { display: flex; gap: 8px; justify-content: center; align-items: center; margin-top: 12px; }
+      .discount-code input { background: #111827; color: #fff; border: 1px solid #374151; border-radius: 8px; padding: 10px 12px; min-width: 200px; text-align: center; }
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+    </style>
+
+    <!-- Ghost Game Modal -->
+    <div id="ghostGameOverlay" class="ghost-game-overlay" aria-modal="true" role="dialog">
+      <div class="ghost-game-modal">
+        <div class="ghost-game-header">
+          <div>👻 Catch the Ghosts!</div>
+          <button class="ghost-btn secondary" onclick="closeGhostGame()" aria-label="Close">✖</button>
+        </div>
+        <div class="ghost-game-body">
+          <p>Ghosts appear randomly — click them. 20 rounds total. Each catch adds +1 score. Final score = discount %.</p>
+          <div class="ghost-game-stats">
+            <div class="stat">Round: <span id="ghostRound">0</span>/20</div>
+            <div class="stat">Score: <span id="ghostScore">0</span></div>
+          </div>
+          <div class="ghost-field" id="ghostField"></div>
+          <div class="ghost-actions">
+            <button class="ghost-btn primary" id="ghostStartBtn" onclick="startGhostGame()">Start Game</button>
+            <button class="ghost-btn secondary" onclick="endGhostGame()">End</button>
+          </div>
+          <div class="ghost-game-result" id="ghostGameResult">
+            <h3 id="ghostResultText"></h3>
+            <div class="discount-code">
+              <input id="discountCode" readonly value=""/>
+              <button class="ghost-btn secondary" onclick="copyDiscountCode()">Copy Code</button>
+              <button class="ghost-btn secondary" onclick="takeGhostScreenshot()">Take Screenshot</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screenshot Helper -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <!-- Ghost Game Script -->
+    <script>
+      (function(){
+        const overlay = document.getElementById('ghostGameOverlay');
+        const field = document.getElementById('ghostField');
+        const roundEl = document.getElementById('ghostRound');
+        const scoreEl = document.getElementById('ghostScore');
+        const result = document.getElementById('ghostGameResult');
+        const resultText = document.getElementById('ghostResultText');
+        const discountInput = document.getElementById('discountCode');
+        const startBtn = document.getElementById('ghostStartBtn');
+
+        const state = { round: 0, total: 20, score: 0, ghostEl: null, spawnTimer: null, nextTimer: null };
+
+        function updateStats(){ roundEl.textContent = state.round; scoreEl.textContent = state.score; }
+
+        window.openGhostGame = function(){
+          overlay.classList.add('active');
+          result.classList.remove('show');
+        };
+
+        window.closeGhostGame = function(){
+          overlay.classList.remove('active');
+          cleanup();
+        };
+
+        function cleanup(){
+          clearTimeout(state.spawnTimer); clearTimeout(state.nextTimer);
+          if (state.ghostEl && state.ghostEl.parentNode) state.ghostEl.parentNode.removeChild(state.ghostEl);
+          state.ghostEl = null;
+        }
+
+        window.startGhostGame = function(){
+          window.openGhostGame();
+          cleanup();
+          state.round = 0;
+          state.score = 0;
+          updateStats();
+          startBtn.disabled = true;
+          nextRound();
+        };
+
+        function nextRound(){
+          if (state.round >= state.total){
+            return window.endGhostGame();
+          }
+          state.round += 1;
+          updateStats();
+          spawnGhost();
+        }
+
+        function spawnGhost(){
+          cleanup();
+          const rect = field.getBoundingClientRect();
+          const pad = 40;
+          const x = Math.random() * (rect.width - pad*2) + pad;
+          const y = Math.random() * (rect.height - pad*2) + pad;
+          const ghost = document.createElement('button');
+          ghost.className = 'ghost';
+          ghost.setAttribute('aria-label','Ghost');
+          ghost.textContent = '👻';
+          ghost.style.left = x + 'px';
+          ghost.style.top = y + 'px';
+
+          ghost.addEventListener('click', function(){
+            state.score += 1;
+            updateStats();
+            ghost.remove();
+            flashScore();
+            state.nextTimer = setTimeout(nextRound, 400);
+          }, { once: true });
+
+          field.appendChild(ghost);
+          state.ghostEl = ghost;
+
+          state.spawnTimer = setTimeout(function(){
+            if (ghost.parentNode) ghost.parentNode.removeChild(ghost);
+            state.nextTimer = setTimeout(nextRound, 300);
+          }, 1200);
+        }
+
+        function flashScore(){
+          scoreEl.style.transform = 'scale(1.2)';
+          scoreEl.style.transition = 'transform 200ms ease';
+          setTimeout(() => { scoreEl.style.transform='scale(1)'; }, 200);
+        }
+
+        window.endGhostGame = function(){
+          cleanup();
+          startBtn.disabled = false;
+          const pct = Math.min(state.score, 100);
+          const msg = `You caught ${state.score} ghosts! You’ve earned ${pct}% off 🎃`;
+          resultText.textContent = msg;
+          const code = `GHOST-${pct}`;
+          discountInput.value = code;
+          result.classList.add('show');
+        };
+
+        window.copyDiscountCode = function(){
+          const code = discountInput.value;
+          if (!code) return;
+          navigator.clipboard?.writeText(code).then(() => {
+            discountInput.classList.add('copied');
+            setTimeout(() => discountInput.classList.remove('copied'), 600);
+          });
+        };
+
+        window.takeGhostScreenshot = function(){
+          const target = document.querySelector('.ghost-game-modal');
+          if (!window.html2canvas) {
+            alert('Screenshot module not loaded. Please try again.');
+            return;
+          }
+          html2canvas(target).then((canvas) => {
+            const link = document.createElement('a');
+            link.download = 'ghost-discount.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+          });
+        };
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && overlay.classList.contains('active')) window.closeGhostGame();
+        });
+      })();
+    </script>
 </body>
 </html>

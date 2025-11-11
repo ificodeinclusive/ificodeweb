@@ -1264,10 +1264,6 @@
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 25px;
     }
-    
-    .cycle-card {
-        animation-duration: 0.6s;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1281,15 +1277,6 @@
         margin-top: 40px;
     }
     
-    .cycle-card {
-        animation-duration: 0.5s;
-        transform: translateY(30px) scale(0.95);
-    }
-    
-    .cycle-card:hover {
-        transform: translateY(-8px) scale(1.01);
-    }
-    
     .cycle-card-inner {
         padding: 30px 25px;
     }
@@ -1299,12 +1286,6 @@
         height: 70px;
         font-size: 24px;
         margin-bottom: 20px;
-        animation-duration: 2s;
-    }
-    
-    .cycle-card:hover .cycle-icon {
-        transform: scale(1.1) rotate(5deg);
-        animation: iconFloatHover 0.8s ease-in-out infinite;
     }
     
     .cycle-number {
@@ -1328,22 +1309,12 @@
     .cycle-features .feature-tag {
         font-size: 11px;
         padding: 5px 10px;
-        animation-duration: 2s;
     }
 }
 
 @media (max-width: 480px) {
     .working-cycle-section {
         padding: 60px 0;
-    }
-    
-    .cycle-card {
-        animation-duration: 0.4s;
-        transform: translateY(20px) scale(0.98);
-    }
-    
-    .cycle-card:hover {
-        transform: translateY(-5px) scale(1.005);
     }
     
     .cycle-card-inner {
@@ -1354,11 +1325,6 @@
         width: 60px;
         height: 60px;
         font-size: 20px;
-        animation-duration: 1.5s;
-    }
-    
-    .cycle-card:hover .cycle-icon {
-        transform: scale(1.05) rotate(3deg);
     }
     
     .cycle-title {
@@ -1367,47 +1333,6 @@
     
     .cycle-description {
         font-size: 14px;
-    }
-    
-    .cycle-features .feature-tag {
-        animation-duration: 1.5s;
-    }
-}
-
-/* Touch device optimizations */
-@media (hover: none) and (pointer: coarse) {
-    .cycle-card {
-        transition-duration: 0.2s;
-    }
-    
-    .cycle-card:active {
-        transform: translateY(-3px) scale(0.99);
-    }
-    
-    .cycle-icon {
-        animation-duration: 2s;
-    }
-    
-    .cycle-features .feature-tag {
-        animation-duration: 2s;
-    }
-}
-
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-    .cycle-card,
-    .cycle-icon,
-    .cycle-features .feature-tag,
-    .progress-bar::before,
-    .progress-bar::after,
-    .working-cycle-section::before,
-    .working-cycle-section::after {
-        animation: none;
-    }
-    
-    .cycle-card {
-        opacity: 1;
-        transform: none;
     }
 }
 

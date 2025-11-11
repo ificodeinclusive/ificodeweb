@@ -498,11 +498,17 @@
         flex-direction: column;
         gap: 12px;
     }
+    
+    .copyright {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 480px) {
-    .footer-bottom p {
+    .copyright {
+        white-space: normal;
+        word-wrap: break-word;
         font-size: 11px;
-        padding: 0 10px;
+        line-height: 1.4;
     }
 }

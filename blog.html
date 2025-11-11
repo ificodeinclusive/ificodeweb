@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - iFiCode Inclusive | Latest Tech Insights & Industry Updates</title>
+    <meta name="description" content="Stay updated with the latest technology trends, web development insights, and industry news from iFiCode Inclusive.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ificodesbrandicon.png" alt="iFiCode Logo" class="header-logo-img">
+                    <img src="images/ificodesbrandtext.png" alt="iFiCode" class="header-brand-text">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li class="dropdown">
+                        <a href="solution.html" class="dropdown-toggle">SOLUTIONS <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu modern-solutions-dropdown">
+                            <div class="solutions-container">
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="webdev.html">Web Development</a>
+                                        <p>Core web solutions & applications</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="digitalmarketting.html">Digital Marketing</a>
+                                        <p>SEO, social media, paid ads</p>
+                                    </div>
+                                </div>
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="digibusiness.html">Digital Infrastructure</a>
+                                        <p>End-to-end IT setup</p>
+                                    </div>
+                                </div>
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="graphic.html">Graphic Design</a>
+                                        <p>Creative visuals, social media kits</p>
+                                    </div>
+                                </div>
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="visualidentity.html">Visual Identity & Brand Design</a>
+                                        <p>Logos, brand guidelines, typography</p>
+                                    </div>
+                                </div>
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="research-innovation.html#insights">Research & Insights</a>
+                                        <p>Market analysis, data reports</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="dropdown-footer">
+                                <a href="solution.html" class="view-all-btn">
+                                    View All Solutions <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="ourwork.html">OUR WORK</a></li>
+                    <li><a href="insights.html">INSIGHTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <!-- Sign-in option removed as requested -->
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <h1 class="blog-hero-title">
+                    Tech Insights & 
+                    <span class="gradient-text">Innovation</span>
+                </h1>
+                <p class="blog-hero-subtitle">
+                    Discover the latest trends in web development, digital transformation, and cutting-edge technologies that shape the future of business.
+                </p>
+                <div class="blog-stats">
+                    <div class="blog-stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="blog-stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Readers</span>
+                    </div>
+                    <div class="blog-stat">
+                        <span class="stat-number">Weekly</span>
+                        <span class="stat-label">Updates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-filter">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="web-dev">Web Development</button>
+                <button class="category-btn" data-category="ai-tech">AI & Technology</button>
+                <button class="category-btn" data-category="design">UI/UX Design</button>
+                <button class="category-btn" data-category="business">Digital Business</button>
+                <button class="category-btn" data-category="trends">Tech Trends</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="images/whybusinesscan'tsurvive.png" alt="Featured Article">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-text">
+                    <div class="article-meta">
+                        <span class="category">Web Development</span>
+                        <span class="date">December 15, 2024</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                    <h2 class="featured-title">The Future of Web Development: Trends Shaping 2025</h2>
+                    <p class="featured-excerpt">
+                        Explore the revolutionary technologies and methodologies that will define web development in 2025. From AI-powered development tools to advanced frameworks, discover what's next in the digital landscape.
+                    </p>
+                    <div class="author-info">
+                        <div class="author-avatar">
+                            <img src="images/ificodesbrandicon.png" alt="iFiCode Team">
+                        </div>
+                        <div class="author-details">
+                            <span class="author-name">iFiCode Team</span>
+                            <span class="author-role">Tech Experts</span>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more-btn">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-subtitle">Stay updated with our latest insights and industry expertise</p>
+            </div>
+            
+            <div class="blog-posts-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-post" data-category="ai-tech">
+                    <div class="post-image">
+                        <img src="images/ai-automation.svg" alt="AI in Web Development">
+                        <div class="post-category">AI & Technology</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 12, 2024</span>
+                            <span class="post-read-time">5 min read</span>
+                        </div>
+                        <h3 class="post-title">How AI is Revolutionizing Web Development Workflows</h3>
+                        <p class="post-excerpt">
+                            Discover how artificial intelligence is transforming the way developers build, test, and deploy web applications.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="images/ificodesbrandicon.png" alt="Author">
+                                <span>iFiCode Team</span>
+                            </div>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post" data-category="design">
+                    <div class="post-image">
+                        <img src="images/ui-ux-design.svg" alt="UI/UX Design Trends">
+                        <div class="post-category">UI/UX Design</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 10, 2024</span>
+                            <span class="post-read-time">7 min read</span>
+                        </div>
+                        <h3 class="post-title">Modern UI/UX Design Principles for Better User Experience</h3>
+                        <p class="post-excerpt">
+                            Learn the essential design principles that create engaging and intuitive user experiences in modern web applications.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="images/ificodesbrandicon.png" alt="Author">
+                                <span>Design Team</span>
+                            </div>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post" data-category="web-dev">
+                    <div class="post-image">
+                        <img src="images/web-development.svg" alt="Web Development">
+                        <div class="post-category">Web Development</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 8, 2024</span>
+                            <span class="post-read-time">6 min read</span>
+                        </div>
+                        <h3 class="post-title">Building Scalable Web Applications with Modern Frameworks</h3>
+                        <p class="post-excerpt">
+                            A comprehensive guide to choosing and implementing the right framework for your next web development project.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="images/ificodesbrandicon.png" alt="Author">
+                                <span>Dev Team</span>
+                            </div>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-post" data-category="business">
+                    <div class="post-image">
+                        <img src="images/cloud-devops.svg" alt="Digital Transformation">
+                        <div class="post-category">Digital Business</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 5, 2024</span>
+                            <span class="post-read-time">9 min read</span>
+                        </div>
+                        <h3 class="post-title">Digital Transformation: A Complete Guide for Businesses</h3>
+                        <p class="post-excerpt">
+                            Everything you need to know about digital transformation and how it can revolutionize your business operations.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="images/ificodesbrandicon.png" alt="Author">
+                                <span>Business Team</span>
+                            </div>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-post" data-category="trends">
+                    <div class="post-image">
+                        <img src="images/mobile-development.svg" alt="Mobile Development">
+                        <div class="post-category">Tech Trends</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 3, 2024</span>
+                            <span class="post-read-time">4 min read</span>
+                        </div>
+                        <h3 class="post-title">The Rise of Progressive Web Apps in 2024</h3>
+                        <p class="post-excerpt">
+                            Explore how Progressive Web Apps are bridging the gap between web and mobile applications.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="images/ificodesbrandicon.png" alt="Author">
+                                <span>Mobile Team</span>
+                            </div>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-post" data-category="web-dev">
+                    <div class="post-image">
+                        <img src="images/blockchain-web3.svg" alt="Blockchain Technology">
+                        <div class="post-category">Web Development</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 1, 2024</span>
+                            <span class="post-read-time">8 min read</span>
+                        </div>
+                        <h3 class="post-title">Integrating Blockchain Technology in Web Applications</h3>
+                        <p class="post-excerpt">
+                            Learn how to implement blockchain features in your web applications for enhanced security and transparency.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="images/ificodesbrandicon.png" alt="Author">
+                                <span>Blockchain Team</span>
+                            </div>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="load-more-btn">
+                    Load More Articles
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="blog-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Stay Updated with Our Latest Insights</h2>
+                    <p class="newsletter-description">
+                        Get weekly updates on the latest technology trends, development tips, and industry insights delivered straight to your inbox.
+                    </p>
+                </div>
+                <div class="newsletter-form-wrapper">
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-submit">
+                            Subscribe Now
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p class="newsletter-privacy">
+                        <i class="fas fa-shield-alt"></i>
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="footer-container">
+                <!-- Company Info Section -->
+                <div class="footer-section company-info">
+                    <div class="footer-logo">
+                        <img src="images/ificodewhitepurple.png" alt="iFiCode Inclusive Logo">
+                    </div>
+                    <p class="company-description">
+                        Build Future-Ready Web Experiences. Premium IT company based in Kathmandu, Nepal, delivering cutting-edge digital solutions worldwide.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@ificode.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+977 98********</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>iFiCode Inclusive, Shree Sharan Marg, Nayabazar,Kathmandu, Nepal</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61577787015838" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="error.html" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/ificode-inclusive-a5670736a/?originalSubdomain=np" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/ifi.code/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="error.html" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ourwork.html">Our Work</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Section -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#web-development">Web Development</a></li>
+                        <li><a href="#mobile-apps">Mobile App Development</a></li>
+                        <li><a href="#ui-ux">UI/UX Design</a></li>
+                        <li><a href="#ecommerce">E-Commerce Solutions</a></li>
+                        <li><a href="#cloud-devops">Cloud & DevOps</a></li>
+                        <li><a href="#ai-automation">AI & Automation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="footer-section newsletter">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p class="newsletter-description">
+                        Subscribe to our newsletter for the latest insights, tips, and industry updates.
+                    </p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="newsletter-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Weekly tech insights</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Exclusive offers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 <a href="/">iFiCode Inclusive</a>. All Rights Reserved. | Powered and Crafted by <a href="/">iFiCode Inclusive</a></p>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

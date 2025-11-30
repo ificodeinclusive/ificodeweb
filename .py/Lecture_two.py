@@ -1,0 +1,1 @@
+str1= "This is a string. \nwe are creting it in python."

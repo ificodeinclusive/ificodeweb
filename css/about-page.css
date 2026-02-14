@@ -489,10 +489,7 @@
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #8b5cf6, #a855f7, #c084fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #6D28D9;
 }
 
 .hero-description {
@@ -519,7 +516,7 @@
 .stat-number {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #a855f7;
+    color: #6D28D9;
     margin-bottom: 8px;
     text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
 }
@@ -541,11 +538,11 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(139, 92, 246, 0.1);
-    border: 1px solid rgba(139, 92, 246, 0.3);
+    background: rgba(109, 40, 217, 0.08);
+    border: 1px solid rgba(109, 40, 217, 0.3);
     padding: 8px 16px;
     border-radius: 50px;
-    color: #8b5cf6;
+    color: #6D28D9;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 16px;
@@ -572,9 +569,7 @@
 }
 
 .section-title .gradient {
-    background: -webkit-linear-gradient(135deg, #8b5cf6, #a855f7, #c084fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #6D28D9;
 }
 
 .section-description {

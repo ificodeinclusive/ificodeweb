@@ -1,0 +1,118 @@
+/* =========================================
+   FONT LOCK — BRAND TYPOGRAPHY AUTHORITY
+   Do NOT edit unless rebranding typography
+========================================= */
+
+/* -------- FONT DEFINITIONS -------- */
+:root {
+  /* Brand / Editorial */
+  --font-heading-primary: 'Playfair Display', serif;
+
+  /* UI / System */
+  --font-ui: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Reading / Body */
+  --font-body: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Accent (limited use only) */
+  --font-accent: 'Poppins', sans-serif;
+
+  /* Card / Service Headings */
+  --font-card-heading: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* -------- GLOBAL BODY LOCK -------- */
+body {
+  font-family: var(--font-body) !important;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* -------- HERO & PRIMARY HEADINGS -------- */
+h1,
+.hero h1,
+.hero-title,
+.hero-heading,
+.section-title span,
+.section-title h1,
+.section-title h2,
+.big-heading,
+.display-text {
+  font-family: var(--font-heading-primary) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
+}
+
+/* -------- SECONDARY HEADINGS -------- */
+h2 {
+  font-family: var(--font-heading-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* -------- CARD / FEATURE HEADINGS -------- */
+h3,
+h4,
+.card-title,
+.service-title,
+.pricing-title,
+.plan-title,
+.feature-title,
+.process-title,
+.blog-title {
+  font-family: var(--font-card-heading) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
+}
+
+/* -------- BODY TEXT / PARAGRAPHS -------- */
+p,
+span,
+li,
+blockquote,
+.testimonial-content,
+.section-description,
+.hero-subtitle,
+.blog-content p {
+  font-family: var(--font-body) !important;
+  font-weight: 400;
+}
+
+/* -------- UI ELEMENTS -------- */
+a,
+button,
+input,
+textarea,
+label,
+nav,
+.nav-link,
+.btn,
+.badge,
+.tag,
+.feature-tag {
+  font-family: var(--font-ui) !important;
+  font-weight: 500;
+}
+
+/* -------- METRICS / STATS -------- */
+.stat-number,
+.metric-value,
+.pricing-price,
+.amount,
+.counter {
+  font-family: var(--font-card-heading) !important;
+  font-weight: 700 !important;
+}
+
+/* -------- OPTIONAL ACCENT (RARE USE) -------- */
+.accent-font {
+  font-family: var(--font-accent) !important;
+  font-weight: 600;
+}
+
+/* -------- HARD OVERRIDES (ANTI-SABOTAGE) -------- */
+[class*="inter"],
+[class*="jakarta"],
+[class*="sf"],
+[class*="sora"] {
+  font-family: inherit !important;
+}

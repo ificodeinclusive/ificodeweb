@@ -243,7 +243,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
+    background: rgba(109, 40, 217, 0.1);
     pointer-events: none;
 }
 
@@ -257,7 +257,7 @@
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #b0b0b0;
+    color: #e5e7eb;
     text-align: center;
 }
 
@@ -293,7 +293,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+    background: rgba(109, 40, 217, 0.1);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -311,7 +311,7 @@
 .matter-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #8a2be2 0%, #9932cc 100%);
+    background: #6D28D9;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -336,7 +336,7 @@
 }
 
 .matter-card p {
-    color: #b0b0b0;
+    color: #e5e7eb;
     line-height: 1.6;
     position: relative;
     z-index: 2;
@@ -373,7 +373,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+    background: rgba(109, 40, 217, 0.1);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -391,7 +391,7 @@
 .expertise-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #8a2be2 0%, #9932cc 100%);
+    background: #6D28D9;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -416,7 +416,7 @@
 }
 
 .expertise-card p {
-    color: #b0b0b0;
+    color: #e5e7eb;
     line-height: 1.6;
     position: relative;
     z-index: 2;
@@ -467,7 +467,7 @@
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: linear-gradient(135deg, #8a2be2 0%, #9932cc 100%);
+    background: #6D28D9;
     border-radius: 2px;
 }
 
@@ -496,7 +496,7 @@
 
 .tech-item i {
     font-size: 2rem;
-    color: #8a2be2;
+    color: #6D28D9;
     margin-bottom: 10px;
 }
 
@@ -578,7 +578,7 @@
 }
 
 .step-content p {
-    color: #b0b0b0;
+    color: #e5e7eb;
     line-height: 1.6;
 }
 
@@ -657,7 +657,7 @@
 }
 
 .benefit-card p {
-    color: #b0b0b0;
+    color: #e5e7eb;
     line-height: 1.6;
     position: relative;
     z-index: 2;
@@ -699,7 +699,7 @@
 
 .ready-content p {
     font-size: 1.2rem;
-    color: #b0b0b0;
+    color: #e5e7eb;
     margin-bottom: 50px;
     line-height: 1.6;
 }

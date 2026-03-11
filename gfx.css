@@ -377,7 +377,7 @@
 }
 
 .matter-card p {
-    color: #b0b0b0;
+    color: #e5e7eb;
     line-height: 1.6;
     position: relative;
     z-index: 2;
@@ -470,7 +470,7 @@
 }
 
 .services-section .service-card p {
-    color: #b0b0b0;
+    color: #e5e7eb;
     line-height: 1.6;
     position: relative;
     z-index: 2;
@@ -911,7 +911,7 @@
 
 .ready-content p {
     font-size: 1.3rem;
-    color: #b0b0b0;
+    color: #e5e7eb;
     margin-bottom: 40px;
     line-height: 1.6;
 }

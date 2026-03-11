@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - iFiCode</title>
+    <title>Digital Services in Nepal | Web Development, Marketing & Branding – iFiCode Inclusive</title>
+    <meta name="description" content="iFiCode Inclusive offers web development, digital marketing, IT infrastructure, graphic design, and brand identity services in Nepal. Explore our expert solutions.">
+    <meta name="keywords" content="Digital services in Nepal, Web development company in Nepal, Digital marketing services Nepal, Branding & design services Nepal">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -34,12 +36,11 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="service.html" class="active">SERVICES</a></li>
                     <li class="dropdown">
-                        <a href="solution.html" class="dropdown-toggle">SOLUTIONS <i class="fas fa-chevron-down"></i></a>
+                        <a href="service.html" class="dropdown-toggle active">SERVICES <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu modern-solutions-dropdown">
-                            <div class="solutions-container">
-                                <div class="modern-solution-item">
+                            <div class="featured-solution">
+                                <div class="modern-solution-item featured">
                                     <div class="solution-icon">
                                         <i class="fas fa-code"></i>
                                     </div>
@@ -48,7 +49,17 @@
                                         <p>Core web solutions & applications</p>
                                     </div>
                                 </div>
-                                
+                            </div>
+                            <div class="solutions-container">
+                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="digibusiness.html">Digital Infrastructure</a>
+                                        <p>End-to-end IT setup</p>
+                                    </div>
+                                </div>
                                 <div class="modern-solution-item">
                                     <div class="solution-icon">
                                         <i class="fas fa-chart-line"></i>
@@ -56,15 +67,6 @@
                                     <div class="solution-content">
                                         <a href="digitalmarketting.html">Digital Marketing</a>
                                         <p>SEO, social media, paid ads</p>
-                                    </div>
-                                </div>
-                                <div class="modern-solution-item">
-                                    <div class="solution-icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <div class="solution-content">
-                                        <a href="digibusiness.html">Digital Infrastructure</a>
-                                        <p>End-to-end IT setup</p>
                                     </div>
                                 </div>
                                 <div class="modern-solution-item">
@@ -85,26 +87,15 @@
                                         <p>Logos, brand guidelines, typography</p>
                                     </div>
                                 </div>
-                                <div class="modern-solution-item">
-                                    <div class="solution-icon">
-                                        <i class="fas fa-search"></i>
-                                    </div>
-                                    <div class="solution-content">
-                                        <a href="research-innovation.html#insights">Research & Insights</a>
-                                        <p>Market analysis, data reports</p>
-                                    </div>
-                                </div>
-
                             </div>
                             <div class="dropdown-footer">
-                                <a href="solution.html" class="view-all-btn">
-                                    View All Solutions <i class="fas fa-arrow-right"></i>
-                                </a>
+                                <a href="solution.html" class="view-all-solutions">View All Solutions <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </li>
+                    <li><a href="pricing.html">PRICING</a></li>
                     <li><a href="ourwork.html">OUR WORK</a></li>
-                    <li><a href="insights.html">INSIGHTS</a></li>
+                    <li><a href="/insight.html">INSIGHTS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -119,436 +110,268 @@
         </div>
     </header>
 
-    <style>
-        #services-overview,
-        .detailed-service-section,
-        .modern-cta,
-        .ultra-cta { display: none !important; }
-        .services-quicklinks { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-        .services-quicklinks .service-card { text-decoration: none; }
-    </style>
-
-    <section class="hero" style="padding: 80px 0 20px;">
-        <div class="hero-logo">
-            <img src="images/ificodewhitepurple.png" alt="iFiCode Logo" class="logo-image">
+    <section class="hero">
+        <div class="container hero-layout">
+            <div class="hero-copy">
+                <div class="hero-badge">End-to-End Digital Solutions</div>
+                <h1>Professional Digital Services in Nepal for Scalable Business Growth</h1>
+                <p class="hero-subtitle">
+                    At iFiCode Inclusive, we provide end-to-end digital solutions — from website development and IT infrastructure to digital marketing, graphic design, and brand identity — all built to perform, scale, and rank.
+                </p>
+                <div class="hero-actions">
+                    <a href="#services-overview" class="btn-primary hero-primary-cta">View Our Services</a>
+                    <a href="contact.html" class="btn-secondary hero-secondary-cta">Get a Free Consultation</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-visual-card">
+                    <img src="images/webdevelopment.png" alt="iFiCode Services" class="hero-illustration">
+                </div>
+            </div>
         </div>
-        <h1>
-            Explore Our<br>
-            <span class="gradient-text">Core Services</span>
-        </h1>
-        <p class="subtext">Clean, focused service links following the homepage theme.</p>
     </section>
 
-    <section id="services" class="services">
+    <section id="services-overview" class="core-services-section">
         <div class="section-title">
-            <div>SERVICES</div>
-            <span>What We <span class="gradient">Offer</span></span>
+            <div>SERVICES OVERVIEW</div>
+            <h2 class="section-title-main">Explore Our <span class="gradient">Digital Services</span></h2>
         </div>
-        <div class="services-quicklinks">
-            <a class="service-card" href="webdev.html" aria-label="Web Development">
-                <div class="service-card-header">
-                    <div class="service-icon"><i class="fas fa-code"></i></div>
+        <p class="section-description">
+            We build fast, secure, and scalable solutions across web development, IT infrastructure, digital marketing, graphic design, and brand identity.
+        </p>
+        <div class="expertise-features core-services-features">
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="expertise-badge">Web</div>
                 </div>
-                <div class="service-content">
-                    <h3>Web Development</h3>
-                    <div class="service-cta"><span class="learn-more">View Details <i class="fas fa-arrow-right"></i></span></div>
+                <div class="expertise-content">
+                    <h3 class="service-title">Web Development</h3>
+                    <p>We build fast, secure, and SEO-optimized websites and web applications designed for performance and growth.</p>
+                    <ul class="service-includes">
+                        <li>Business websites</li>
+                        <li>Custom web applications</li>
+                        <li>WordPress development</li>
+                        <li>E-commerce solutions</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="webdev.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="expertise-badge">IT</div>
+                </div>
+                <div class="expertise-content">
+                    <h3 class="service-title">Digital Infrastructure</h3>
+                    <p>Secure, reliable, and scalable IT systems — from hosting to cloud and internal tools.</p>
+                    <ul class="service-includes">
+                        <li>Hosting & server setup</li>
+                        <li>Cloud infrastructure</li>
+                        <li>Email & domain configuration</li>
+                        <li>IT system optimization</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="digibusiness.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-bullhorn"></i></div>
+                    <div class="expertise-badge">Marketing</div>
+                </div>
+                <div class="expertise-content">
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p>SEO, social media, paid ads, and performance-driven strategies tailored for Nepal.</p>
+                    <ul class="service-includes">
+                        <li>Search Engine Optimization (SEO)</li>
+                        <li>Social media marketing</li>
+                        <li>Google & Meta ads</li>
+                        <li>Content marketing</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="digitalmarketting.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-palette"></i></div>
+                    <div class="expertise-badge">Creative</div>
+                </div>
+                <div class="expertise-content">
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p>High-quality visuals that enhance brand identity and engagement.</p>
+                    <ul class="service-includes">
+                        <li>Social media creatives</li>
+                        <li>Marketing visuals</li>
+                        <li>Banners & posters</li>
+                        <li>Brand assets</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="graphic.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-paint-brush"></i></div>
+                    <div class="expertise-badge">Brand</div>
+                </div>
+                <div class="expertise-content">
+                    <h3 class="service-title">Visual Identity & Brand Design</h3>
+                    <p>Consistent, memorable, and scalable brand systems that build trust.</p>
+                    <ul class="service-includes">
+                        <li>Logo design</li>
+                        <li>Brand guidelines</li>
+                        <li>Typography systems</li>
+                        <li>Visual identity kits</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="visualidentity.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Removed 'How We Work' section to match the requested Services page structure -->
+
+    <section id="trust-authority">
+        <div class="section-title">
+            <div>WHY CHOOSE IFICODE</div>
+            <span class="section-title-main">Innovation Meets <span class="gradient">Trust</span></span>
+        </div>
+        <p class="section-description">
+            Choosing the right digital partner matters. iFiCode combines innovation, performance, and global standards to deliver reliable digital solutions businesses can trust.
+        </p>
+        <div class="expertise-features">
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-users"></i></div>
+                    <div class="expertise-badge">Experienced</div>
+                </div>
+                <div class="expertise-content">
+                    <h3>Experienced Digital Team</h3>
+                    <p>Hands-on expertise across web, marketing, infrastructure, and design.</p>
+                    <div class="expertise-benefits">
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Cross‑functional skills</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Proven delivery</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Partner mindset</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="expertise-badge">Performance</div>
+                </div>
+                <div class="expertise-content">
+                    <h3>SEO‑First & Performance‑Driven</h3>
+                    <p>Built to rank fast, perform well, and scale with your business.</p>
+                    <div class="expertise-benefits">
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Core Web Vitals</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Semantic SEO</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Scalable architecture</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-receipt"></i></div>
+                    <div class="expertise-badge">Transparent</div>
+                </div>
+                <div class="expertise-content">
+                    <h3>Transparent Pricing</h3>
+                    <p>Clear packages with no hidden fees. <a href="pricing.html">View pricing</a>.</p>
+                    <div class="expertise-benefits">
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>No hidden costs</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Clear scope</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Flexible plans</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-card-header">
+                    <div class="expertise-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="expertise-badge">Future‑Ready</div>
+                </div>
+                <div class="expertise-content">
+                    <h3>Future‑Ready Solutions</h3>
+                    <p>Scalable systems with long‑term support for continuous growth.</p>
+                    <div class="expertise-benefits">
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Best‑practice security</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Cloud‑ready</span></div>
+                        <div class="benefit-item"><i class="fas fa-check"></i><span>Continuous improvement</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="local-seo" class="local-presence">
+        <div class="section-title">
+            <div>LOCAL PRESENCE</div>
+            <span class="section-title-main">Serving Businesses Across <span class="gradient">Nepal</span></span>
+        </div>
+        <p class="section-description">We work with clients across the valley and nationwide.</p>
+        <div class="location-grid">
+            <a class="location-card" href="contact.html?loc=Kathmandu">
+                <div class="location-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="location-name">Kathmandu</div>
             </a>
-            <a class="service-card" href="digibusiness.html" aria-label="Digital Infrastructure">
-                <div class="service-card-header">
-                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Digital Infrastructure</h3>
-                    <div class="service-cta"><span class="learn-more">View Details <i class="fas fa-arrow-right"></i></span></div>
-                </div>
+            <a class="location-card" href="contact.html?loc=Lalitpur">
+                <div class="location-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="location-name">Lalitpur</div>
             </a>
-            <a class="service-card" href="digitalmarketting.html" aria-label="Digital Marketing">
-                <div class="service-card-header">
-                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Digital Marketing</h3>
-                    <div class="service-cta"><span class="learn-more">View Details <i class="fas fa-arrow-right"></i></span></div>
-                </div>
+            <a class="location-card" href="contact.html?loc=Bhaktapur">
+                <div class="location-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="location-name">Bhaktapur</div>
             </a>
-            <a class="service-card" href="graphic.html" aria-label="Graphic Design">
-                <div class="service-card-header">
-                    <div class="service-icon"><i class="fas fa-palette"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Graphic Design</h3>
-                    <div class="service-cta"><span class="learn-more">View Details <i class="fas fa-arrow-right"></i></span></div>
-                </div>
+            <a class="location-card" href="contact.html?loc=Nepal">
+                <div class="location-icon"><i class="fas fa-globe-asia"></i></div>
+                <div class="location-name">All Nepal & International</div>
             </a>
-            <a class="service-card" href="visualidentity.html" aria-label="Visual Identity & Brand Design">
-                <div class="service-card-header">
-                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-                </div>
-                <div class="service-content">
-                    <h3>Visual Identity & Brand Design</h3>
-                    <div class="service-cta"><span class="learn-more">View Details <i class="fas fa-arrow-right"></i></span></div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Detailed Service Sections -->
-    <!-- Web Development Section -->
-    <section id="web-development" class="detailed-service-section">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-info">
-                    <div class="service-tag">WEB DEVELOPMENT</div>
-                    <h2 class="service-heading">Custom <span class="highlight">Web Solutions</span> for Your Business</h2>
-                    <p class="service-paragraph">We create responsive, high-performance websites and web applications tailored to your specific business requirements. Our development team combines technical expertise with creative problem-solving to deliver solutions that drive results.</p>
-                    
-                    <div class="service-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Responsive Design</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Performance Optimization</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>SEO-Friendly Structure</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Custom CMS Integration</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>E-commerce Solutions</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>API Development & Integration</span>
-                        </div>
-                    </div>
-                    
-                    <div class="service-technologies">
-                        <h4>Technologies We Use:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">WordPress</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-image">
-                    <img src="images/web-development.svg" alt="Web Development">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mobile App Development Section -->
-    <section id="mobile-development" class="detailed-service-section">
-        <div class="container">
-            <div class="service-content reverse">
-                <div class="service-image">
-                    <img src="images/mobile-development.svg" alt="Mobile App Development">
-                </div>
-                <div class="service-info">
-                    <div class="service-tag">MOBILE APP DEVELOPMENT</div>
-                    <h2 class="service-heading">Powerful <span class="highlight">Mobile Applications</span> for Every Platform</h2>
-                    <p class="service-paragraph">We develop intuitive, feature-rich mobile applications for iOS and Android platforms that engage users and drive business growth. Our mobile solutions combine cutting-edge technology with exceptional user experience design.</p>
-                    
-                    <div class="service-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Native iOS Development</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Native Android Development</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Cross-Platform Solutions</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Progressive Web Apps</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>App Store Optimization</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Maintenance & Support</span>
-                        </div>
-                    </div>
-                    
-                    <div class="service-technologies">
-                        <h4>Technologies We Use:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Swift</span>
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Xamarin</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">AWS Amplify</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UI/UX Design Section -->
-    <section id="ui-ux-design" class="detailed-service-section">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-info">
-                    <div class="service-tag">UI/UX DESIGN</div>
-                    <h2 class="service-heading">Intuitive <span class="highlight">User Experiences</span> & Beautiful Interfaces</h2>
-                    <p class="service-paragraph">We create user-centered designs that enhance usability, accessibility, and visual appeal of digital products. Our design process focuses on understanding user needs and business goals to deliver exceptional experiences.</p>
-                    
-                    <div class="service-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>User Research</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Wireframing & Prototyping</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Visual Design</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Interaction Design</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Usability Testing</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Design Systems</span>
-                        </div>
-                    </div>
-                    
-                    <div class="service-technologies">
-                        <h4>Tools We Use:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">Adobe XD</span>
-                            <span class="tech-tag">Sketch</span>
-                            <span class="tech-tag">InVision</span>
-                            <span class="tech-tag">Zeplin</span>
-                            <span class="tech-tag">Principle</span>
-                            <span class="tech-tag">Framer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-image">
-                    <img src="images/ui-ux-design.svg" alt="UI/UX Design">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cloud & DevOps Section -->
-    <section id="cloud-devops" class="detailed-service-section">
-        <div class="container">
-            <div class="service-content reverse">
-                <div class="service-image">
-                    <img src="images/cloud-devops.svg" alt="Cloud & DevOps">
-                </div>
-                <div class="service-info">
-                    <div class="service-tag">CLOUD & DEVOPS</div>
-                    <h2 class="service-heading">Scalable <span class="highlight">Cloud Infrastructure</span> & Efficient Deployment</h2>
-                    <p class="service-paragraph">We provide comprehensive cloud solutions and DevOps practices to optimize your infrastructure, streamline development workflows, and ensure reliable application deployment and management.</p>
-                    
-                    <div class="service-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Cloud Migration</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Infrastructure as Code</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>CI/CD Pipeline Setup</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Containerization</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Monitoring & Logging</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Security Implementation</span>
-                        </div>
-                    </div>
-                    
-                    <div class="service-technologies">
-                        <h4>Technologies We Use:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Google Cloud</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">Jenkins</span>
-                            <span class="tech-tag">GitHub Actions</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI & Automation Section -->
-    <section id="ai-automation" class="detailed-service-section">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-info">
-                    <div class="service-tag">AI & AUTOMATION</div>
-                    <h2 class="service-heading">Intelligent <span class="highlight">AI Solutions</span> for Business Growth</h2>
-                    <p class="service-paragraph">We develop custom AI and automation solutions that help businesses streamline operations, gain valuable insights from data, and enhance decision-making processes for improved efficiency and growth.</p>
-                    
-                    <div class="service-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Machine Learning Models</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Natural Language Processing</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Computer Vision</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Predictive Analytics</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Process Automation</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Chatbots & Virtual Assistants</span>
-                        </div>
-                    </div>
-                    
-                    <div class="service-technologies">
-                        <h4>Technologies We Use:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">NLTK</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Azure AI</span>
-                            <span class="tech-tag">Google AI</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-image">
-                    <img src="images/ai-automation.svg" alt="AI & Automation">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blockchain & Web3 Section -->
-    <section id="blockchain-web3" class="detailed-service-section">
-        <div class="container">
-            <div class="service-content reverse">
-                <div class="service-image">
-                    <img src="images/blockchain-web3.svg" alt="Blockchain & Web3">
-                </div>
-                <div class="service-info">
-                    <div class="service-tag">BLOCKCHAIN & WEB3</div>
-                    <h2 class="service-heading">Decentralized <span class="highlight">Blockchain Solutions</span> for the Future</h2>
-                    <p class="service-paragraph">We develop innovative blockchain and Web3 solutions that enable secure, transparent, and efficient digital transactions. Our expertise spans across various blockchain platforms and decentralized technologies.</p>
-                    
-                    <div class="service-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Smart Contract Development</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>DApp Development</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>NFT Marketplaces</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Tokenization</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Blockchain Integration</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Security Audits</span>
-                        </div>
-                    </div>
-                    
-                    <div class="service-technologies">
-                        <h4>Technologies We Use:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Ethereum</span>
-                            <span class="tech-tag">Solidity</span>
-                            <span class="tech-tag">Binance Smart Chain</span>
-                            <span class="tech-tag">Polygon</span>
-                            <span class="tech-tag">IPFS</span>
-                            <span class="tech-tag">Web3.js</span>
-                            <span class="tech-tag">Truffle</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="modern-cta">
-        <div class="cta-bg">
-            <div class="cta-circles">
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
-                <div class="circle circle-3"></div>
+    <section class="digital-transformation-section">
+        <div class="dt-bg-shape"></div>
+        <div class="dt-container">
+            <div class="dt-content">
+                <div class="dt-badge">DIGITAL TRANSFORMATION</div>
+                <h2 class="dt-headline">
+                    Empower Your Business<br>
+                    <span class="dt-gradient">Digitally</span>
+                </h2>
+                <p class="dt-description">
+                    Unlock new growth with future-ready web, mobile, and cloud solutions. We blend innovation, design, and technology to accelerate your digital journey.
+                </p>
+                <div class="dt-cta-buttons">
+                    <a href="contact.html" class="dt-btn dt-btn-primary">Start Your Project</a>
+                    <a href="pricing.html" class="dt-btn dt-btn-secondary">View Pricing</a>
+                </div>
+                <div class="dt-stats">
+                    <div class="dt-stat">
+                        <span class="dt-stat-value">98%</span>
+                        <span class="dt-stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="dt-stat">
+                        <span class="dt-stat-value">24/7</span>
+                        <span class="dt-stat-label">Support</span>
+                    </div>
+                    <div class="dt-stat">
+                        <span class="dt-stat-value">100%</span>
+                        <span class="dt-stat-label">Dedication</span>
+                    </div>
+                </div>
             </div>
-            <div class="cta-grid"></div>
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-tag">START YOUR PROJECT</div>
-                <h2 class="cta-headline">Ready to Transform Your <span class="highlight">Digital Presence?</span></h2>
-                <p class="cta-description">Let's discuss how our services can help you achieve your business goals. Our team is ready to create a tailored solution for your specific needs.</p>
-                <a href="contact.html" class="btn-primary cta-button">Get in Touch <i class="fas fa-arrow-right"></i></a>
+            <div class="dt-visual">
+                <img src="images/preloadad.svg" alt="Digital Transformation" class="dt-illustration">
             </div>
         </div>
     </section>
@@ -597,7 +420,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="service.html">Services</a></li>
                         <li><a href="ourwork.html">Our Work</a></li>
-                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="/insight.html">Insights</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>

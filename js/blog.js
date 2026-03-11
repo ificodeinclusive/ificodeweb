@@ -11,10 +11,23 @@ document.addEventListener('DOMContentLoaded', function() {
     initSearchFunctionality();
 });
 
+// Global state for blog grid
+const blogState = {
+    allPosts: [],
+    currentCategory: 'all',
+    initialCount: 9,
+    step: 6,
+    visibleCount: 9,
+    loadMoreBtn: null
+};
+
 // Blog Post Filtering Functionality
 function initBlogFiltering() {
     const categoryButtons = document.querySelectorAll('.category-btn');
-    const blogPosts = document.querySelectorAll('.blog-post');
+    blogState.allPosts = Array.from(document.querySelectorAll('.blog-post'));
+    blogState.loadMoreBtn = document.querySelector('.load-more-btn');
+    blogState.visibleCount = blogState.initialCount;
+    renderPosts();
 
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -24,39 +37,47 @@ function initBlogFiltering() {
             categoryButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             
-            // Filter posts with animation
-            filterPosts(blogPosts, category);
+            // Update state and render
+            blogState.currentCategory = category;
+            blogState.visibleCount = blogState.initialCount;
+            renderPosts();
         });
     });
 }
 
-function filterPosts(posts, category) {
-    posts.forEach((post, index) => {
+function getFilteredPosts() {
+    return blogState.allPosts.filter(post => {
         const postCategory = post.getAttribute('data-category');
-        
-        if (category === 'all' || postCategory === category) {
-            // Show post with animation
-            post.style.display = 'block';
-            post.classList.remove('hidden');
-            post.classList.add('show');
-            
-            // Stagger animation
-            setTimeout(() => {
-                post.style.opacity = '1';
-                post.style.transform = 'translateY(0)';
-            }, index * 100);
-        } else {
-            // Hide post
-            post.style.opacity = '0';
-            post.style.transform = 'translateY(30px)';
-            
-            setTimeout(() => {
-                post.style.display = 'none';
-                post.classList.add('hidden');
-                post.classList.remove('show');
-            }, 300);
-        }
+        return blogState.currentCategory === 'all' || postCategory === blogState.currentCategory;
     });
+}
+
+function renderPosts() {
+    const filtered = getFilteredPosts();
+    // Hide all first
+    blogState.allPosts.forEach(post => {
+        post.style.display = 'none';
+        post.classList.add('hidden');
+        post.classList.remove('show');
+        post.style.opacity = '0';
+        post.style.transform = 'translateY(30px)';
+    });
+
+    // Show up to visibleCount
+    filtered.slice(0, blogState.visibleCount).forEach((post, index) => {
+        post.style.display = 'block';
+        post.classList.remove('hidden');
+        post.classList.add('show');
+        setTimeout(() => {
+            post.style.opacity = '1';
+            post.style.transform = 'translateY(0)';
+        }, index * 80);
+    });
+
+    // Toggle Load More visibility
+    if (blogState.loadMoreBtn) {
+        blogState.loadMoreBtn.style.display = filtered.length > blogState.visibleCount ? 'inline-block' : 'none';
+    }
 }
 
 // Newsletter Form Functionality
@@ -114,99 +135,22 @@ function handleNewsletterSubscription(emailInput, submitButton, email) {
 
 // Load More Functionality
 function initLoadMoreFunctionality() {
-    const loadMoreBtn = document.querySelector('.load-more-btn');
-    const blogGrid = document.querySelector('.blog-posts-grid');
-    
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', function() {
-            loadMorePosts(blogGrid, this);
-        });
-    }
-}
+    blogState.loadMoreBtn = document.querySelector('.load-more-btn');
+    blogState.allPosts = Array.from(document.querySelectorAll('.blog-post'));
+    if (!blogState.loadMoreBtn) return;
 
-function loadMorePosts(grid, button) {
-    const originalText = button.innerHTML;
-    
-    // Show loading state
-    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
-    button.disabled = true;
-    
-    // Simulate loading more posts
-    setTimeout(() => {
-        const newPosts = generateMorePosts();
-        
-        newPosts.forEach((postHTML, index) => {
-            const postElement = document.createElement('article');
-            postElement.innerHTML = postHTML;
-            postElement.className = 'blog-post';
-            postElement.style.opacity = '0';
-            postElement.style.transform = 'translateY(30px)';
-            
-            grid.appendChild(postElement);
-            
-            // Animate in
-            setTimeout(() => {
-                postElement.style.opacity = '1';
-                postElement.style.transform = 'translateY(0)';
-            }, index * 100);
-        });
-        
-        // Reset button
-        button.innerHTML = originalText;
-        button.disabled = false;
-        
+    // Initial render (enforce 9-post cap on first load)
+    blogState.visibleCount = blogState.initialCount;
+    renderPosts();
+
+    blogState.loadMoreBtn.addEventListener('click', function() {
+        blogState.visibleCount += blogState.step;
+        renderPosts();
         showNotification('More articles loaded!', 'success');
-    }, 1500);
+    });
 }
 
-function generateMorePosts() {
-    // Sample additional posts
-    return [
-        `<div class="post-image">
-            <img src="images/web-development.svg" alt="Advanced JavaScript">
-            <div class="post-category">Web Development</div>
-        </div>
-        <div class="post-content">
-            <div class="post-meta">
-                <span class="post-date">November 28, 2024</span>
-                <span class="post-read-time">6 min read</span>
-            </div>
-            <h3 class="post-title">Advanced JavaScript Patterns for Modern Web Apps</h3>
-            <p class="post-excerpt">
-                Explore advanced JavaScript patterns and techniques that will elevate your web development skills.
-            </p>
-            <div class="post-footer">
-                <div class="post-author">
-                    <img src="images/ificodesbrandicon.png" alt="Author">
-                    <span>JavaScript Team</span>
-                </div>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>`,
-        
-        `<div class="post-image">
-            <img src="images/ui-ux-design.svg" alt="Design Systems">
-            <div class="post-category">UI/UX Design</div>
-        </div>
-        <div class="post-content">
-            <div class="post-meta">
-                <span class="post-date">November 25, 2024</span>
-                <span class="post-read-time">7 min read</span>
-            </div>
-            <h3 class="post-title">Building Scalable Design Systems</h3>
-            <p class="post-excerpt">
-                Learn how to create and maintain design systems that scale with your growing product needs.
-            </p>
-            <div class="post-footer">
-                <div class="post-author">
-                    <img src="images/ificodesbrandicon.png" alt="Author">
-                    <span>Design Team</span>
-                </div>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>`
-    ];
-}
+// Deprecated generators removed; load-more now reveals existing posts based on filters
 
 // Scroll Animations
 function initScrollAnimations() {

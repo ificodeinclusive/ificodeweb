@@ -75,10 +75,7 @@
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #6D28D9;
     margin-bottom: 8px;
 }
 
@@ -114,7 +111,7 @@
 .category-icon {
     width: 60px;
     height: 60px;
-    background: var(--gradient-primary);
+    background: #6D28D9;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -163,7 +160,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(154, 41, 255, 0.05) 0%, rgba(41, 98, 255, 0.05) 100%);
+    background: rgba(109, 40, 217, 0.06);
     opacity: 0;
     transition: opacity 0.3s ease;
 }

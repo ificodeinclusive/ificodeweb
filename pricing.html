@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,34 +93,44 @@
         .pricing-section-head { max-width: 760px; margin: 0 auto 42px; text-align: center; }
         .pricing-section-head h2 { margin: 16px 0; color: #111827; font-family: var(--font-display); font-size: clamp(2rem, 3.4vw, 3.4rem); font-weight: 900; line-height: 1.08; }
         .pricing-section-head p { color: #4B5563; line-height: 1.75; }
-        .pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
-        .pricing-card { position: relative; display: flex; flex-direction: column; min-height: 100%; padding: 0; overflow: hidden; border: 1px solid #E5E7EB; border-radius: 24px; background: #FFFFFF; box-shadow: 0 16px 38px rgba(15, 23, 42, 0.07); transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease; }
-        .pricing-card:hover { transform: translateY(-6px); border-color: #DDD6FE; box-shadow: 0 26px 58px rgba(109, 40, 217, 0.14); }
-        .pricing-card.featured { border-color: #C4B5FD; box-shadow: 0 28px 64px rgba(109, 40, 217, 0.16); }
-        .pricing-card.featured::before { content: 'Most requested'; position: absolute; right: 18px; top: 18px; z-index: 2; padding: 7px 11px; border-radius: 999px; background: #6D28D9; color: #FFFFFF; font-size: 0.72rem; font-weight: 900; letter-spacing: 0.05em; }
-        .pricing-card-top { padding: 28px 28px 22px; background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFF 100%); border-bottom: 1px solid #EEF2F7; }
-        .pricing-icon { display: inline-flex; align-items: center; justify-content: center; width: 54px; height: 54px; margin-bottom: 18px; border-radius: 17px; background: linear-gradient(135deg, #6D28D9, #8B5CF6); color: #FFFFFF; box-shadow: 0 14px 28px rgba(109, 40, 217, 0.22); }
-        .pricing-card h3 { color: #111827; font-size: 1.45rem; font-weight: 900; line-height: 1.2; }
-        .pricing-card-subtitle { margin-top: 8px; color: #6B7280; line-height: 1.55; }
-        .pricing-card-body { display: flex; flex: 1; flex-direction: column; padding: 24px 28px 28px; }
-        .pricing-price { min-height: 86px; padding: 18px; border: 1px solid #EDE9FE; border-radius: 18px; background: linear-gradient(135deg, #F8F7FF, #FFFFFF); color: #111827; font-size: 1.7rem; font-weight: 900; line-height: 1.15; }
-        .pricing-price small { display: block; margin-top: 6px; color: #6B7280; font-size: 0.88rem; font-weight: 700; }
-        .pricing-features { display: grid; gap: 11px; margin: 22px 0 26px; padding: 0; list-style: none; color: #4B5563; }
-        .pricing-features li { display: flex; gap: 10px; align-items: flex-start; }
-        .pricing-features li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: #6D28D9; font-size: 0.82rem; margin-top: 3px; }
-        .pricing-card-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+        .pricing-service-section .pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: 1120px; margin: 0 auto; align-items: stretch; }
+        .pricing-service-section .pricing-card { position: relative; display: flex; flex-direction: column; min-height: 100%; padding: 0; overflow: hidden; border: 1px solid #E5E7EB; border-radius: 20px; background: #FFFFFF; box-shadow: var(--box-shadow); transition: all 0.3s ease; }
+        .pricing-service-section .pricing-card::before { content: ''; position: absolute; inset: 0; background: rgba(109, 40, 217, 0.08); opacity: 0; transition: opacity 0.3s ease; pointer-events: none; }
+        .pricing-service-section .pricing-card:hover::before { opacity: 1; }
+        .pricing-service-section .pricing-card:hover { transform: translateY(-4px); border-color: #C4B5FD; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.10); }
+        .pricing-service-section .pricing-card.featured { border-color: #C4B5FD; box-shadow: 0 18px 36px rgba(109, 40, 217, 0.14); }
+        .pricing-service-section .pricing-header { position: relative; z-index: 2; display: grid; grid-template-rows: 32px 54px 54px 64px; align-items: center; min-height: 224px; padding: 26px 28px 22px; text-align: center; border-bottom: 1px solid #EEF2F7; background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFF 100%); }
+        .pricing-service-section .pricing-badge { display: inline-flex; align-items: center; justify-content: center; justify-self: center; margin: 0; padding: 6px 12px; border-radius: 999px; border: 1px solid #DDD6FE; background: #F5F3FF; color: #6D28D9; font-size: 0.68rem; font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase; box-shadow: none; white-space: nowrap; }
+        .pricing-service-section .pricing-header h3 { margin: 0; color: #111827; font-size: 1.34rem; font-weight: 800; line-height: 1.18; }
+        .pricing-service-section .pricing-price { display: flex; align-items: baseline; justify-content: center; gap: 6px; margin: 0 auto; color: #111827; line-height: 1; min-width: 0; max-width: 100%; }
+        .pricing-service-section .pricing-price .currency { color: #6D28D9; font-size: 0.82rem; font-weight: 900; letter-spacing: 0.08em; }
+        .pricing-service-section .pricing-price .amount { font-size: clamp(1.9rem, 2.6vw, 2.75rem); font-weight: 900; letter-spacing: 0; white-space: nowrap; }
+        .pricing-service-section .pricing-price .period { color: #6B7280; font-size: 0.9rem; font-weight: 800; }
+        .pricing-service-section .pricing-subtitle { max-width: 280px; margin: 0 auto; color: #6B7280; line-height: 1.45; font-size: 0.92rem; }
+        .pricing-service-section .pricing-features { position: relative; z-index: 2; flex: 1; padding: 24px 28px 16px; }
+        .pricing-service-section .pricing-features h4 { margin: 0 0 14px; color: #111827; font-size: 0.98rem; font-weight: 900; }
+        .pricing-service-section .pricing-features ul { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+        .pricing-service-section .pricing-features li { display: flex; align-items: flex-start; gap: 10px; color: #4B5563; line-height: 1.5; }
+        .pricing-service-section .pricing-features li i { margin-top: 3px; color: #6D28D9; font-size: 0.82rem; }
+        .pricing-service-section .pricing-note { margin: 16px 0 0; padding: 10px 12px; border-radius: 14px; background: #F8F7FF; color: #6D28D9; font-size: 0.82rem; font-weight: 800; line-height: 1.4; }
+        .pricing-service-section .pricing-action { position: relative; z-index: 2; display: grid; gap: 10px; padding: 16px 28px 28px; margin-top: auto; }
+        .pricing-service-section .pricing-action a { width: 100%; justify-content: center; text-align: center; }
+        .pricing-service-section .pricing-action .btn-secondary { background: #FFFFFF; }
         .pricing-mini-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
         .pricing-mini-card { position: relative; padding: 26px; border: 1px solid #E5E7EB; border-radius: 22px; background: #FFFFFF; box-shadow: 0 14px 32px rgba(15, 23, 42, 0.06); transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease; }
         .pricing-mini-card:hover { transform: translateY(-4px); border-color: #DDD6FE; box-shadow: 0 22px 46px rgba(109, 40, 217, 0.11); }
         .pricing-mini-card i { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 14px; background: #F5F3FF; color: #6D28D9; font-size: 1.25rem; }
         .pricing-mini-card h3 { margin-top: 14px; color: #111827; font-weight: 900; }
         .pricing-mini-card p { margin-top: 8px; color: #4B5563; line-height: 1.65; }
-        .pricing-process { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
-        .pricing-process::before { content: ''; position: absolute; left: 4%; right: 4%; top: 31px; height: 2px; background: linear-gradient(90deg, #DDD6FE, #6D28D9, #DDD6FE); opacity: 0.35; }
-        .pricing-step { position: relative; padding: 20px; border: 1px solid #E5E7EB; border-radius: 20px; background: rgba(255, 255, 255, 0.94); box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05); }
-        .pricing-step span { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 999px; background: #6D28D9; color: #FFFFFF; font-weight: 900; font-size: 0.78rem; letter-spacing: 0; box-shadow: 0 10px 22px rgba(109, 40, 217, 0.22); }
-        .pricing-step h3 { margin-top: 14px; color: #111827; font-weight: 900; }
-        .pricing-step p { margin-top: 8px; color: #6B7280; font-size: 0.9rem; line-height: 1.55; }
+        .pricing-process-section .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-top: 50px; }
+        .pricing-process-section .process-step { position: relative; padding: 40px 30px; background: #FFFFFF; border-radius: 20px; border: 1px solid #E5E7EB; box-shadow: var(--box-shadow); transition: all 0.3s ease; overflow: hidden; }
+        .pricing-process-section .process-step::before { content: ''; position: absolute; inset: 0; background: rgba(109, 40, 217, 0.1); opacity: 0; transition: opacity 0.3s ease; }
+        .pricing-process-section .process-step:hover::before { opacity: 1; }
+        .pricing-process-section .process-step:hover { transform: translateY(-4px); border-color: #C4B5FD; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.10); }
+        .pricing-process-section .step-number { font-size: 3rem; font-weight: 800; color: #6D28D9; margin-bottom: 20px; position: relative; z-index: 2; line-height: 1; }
+        .pricing-process-section .step-content { position: relative; z-index: 2; }
+        .pricing-process-section .step-content h3 { font-size: 1.4rem; font-weight: 700; color: #111827; margin-bottom: 15px; }
+        .pricing-process-section .step-content p { color: #4B5563; line-height: 1.6; }
         .pricing-faq { max-width: 920px; margin: 0 auto; display: grid; gap: 14px; }
         .pricing-faq details { border: 1px solid #E5E7EB; border-radius: 20px; background: #FFFFFF; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05); overflow: hidden; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
         .pricing-faq details[open] { border-color: #C4B5FD; box-shadow: 0 18px 40px rgba(109, 40, 217, 0.10); }
@@ -136,8 +146,9 @@
         .pricing-cta p { max-width: 660px; margin: 18px auto 28px; color: rgba(255,255,255,0.86); line-height: 1.7; }
         .pricing-cta-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
         .pricing-cta .btn-secondary { background: rgba(255,255,255,0.12); color: #FFFFFF; border-color: rgba(255,255,255,0.35); }
-        @media (max-width: 1024px) { .pricing-hero-grid, .pricing-grid { grid-template-columns: 1fr; } .pricing-mini-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pricing-process { grid-template-columns: repeat(3, minmax(0, 1fr)); } .pricing-process::before { display: none; } }
-        @media (max-width: 640px) { .pricing-hero { padding: 96px 0 54px; } .pricing-section { padding: 58px 0; } .pricing-mini-grid, .pricing-process { grid-template-columns: 1fr; } .pricing-card, .pricing-visual { padding: 22px; } .pricing-cta { padding: 34px 22px; } .pricing-actions a, .pricing-card-actions a { width: 100%; justify-content: center; } }
+        @media (max-width: 1100px) { .pricing-hero-grid { grid-template-columns: 1fr; } .pricing-service-section .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pricing-mini-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        @media (max-width: 720px) { .pricing-service-section .pricing-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 640px) { .pricing-hero { padding: 96px 0 54px; } .pricing-section { padding: 58px 0; } .pricing-mini-grid { grid-template-columns: 1fr; } .pricing-service-section .pricing-header { grid-template-rows: auto; min-height: 0; gap: 12px; } .pricing-card, .pricing-visual { padding: 0; } .pricing-card-top, .pricing-card-body { padding: 24px; } .pricing-visual { padding: 22px; } .pricing-cta { padding: 34px 22px; } .pricing-actions a, .pricing-card-actions a { width: 100%; justify-content: center; } }
     </style>
 </head>
 <body>
@@ -162,7 +173,7 @@
                                         <i class="fas fa-code"></i>
                                     </div>
                                     <div class="solution-content">
-                                        <a href="webdev.html">Web Development</a>
+                                        <a href="web-development.html">Web Development</a>
                                         <p>Core web solutions & applications</p>
                                     </div>
                                 </div>
@@ -191,7 +202,7 @@
                                         <i class="fas fa-search"></i>
                                     </div>
                                     <div class="solution-content">
-                                        <a href="seo.html">SEO Optimization</a>
+                                        <a href="seo-optimization.html">SEO Optimization</a>
                                         <p>Rankings, traffic, technical SEO</p>
                                     </div>
                                 </div>
@@ -280,7 +291,7 @@
             </div>
         </section>
 
-        <section class="pricing-section alt" id="packages">
+        <section class="pricing-section alt pricing-service-section" id="packages">
             <div class="container">
                 <div class="pricing-section-head">
                     <span class="pricing-badge">Service Pricing</span>
@@ -288,54 +299,174 @@
                     <p>Every package can be expanded into a custom plan for serious business growth.</p>
                 </div>
                 <div class="pricing-grid">
-                    <article class="pricing-card featured">
-                        <div class="pricing-icon"><i class="fas fa-code"></i></div>
-                        <h3>Web Development</h3>
-                        <p class="pricing-card-subtitle">Core web solutions & applications</p>
-                        <div class="pricing-price">Rs. 10,000+ <small>Professional Business Website from Rs. 25,000 | Advanced Custom Solutions by quote</small></div>
-                        <ul class="pricing-features"><li>Responsive Design</li><li>SEO Optimized Structure</li><li>Fast Loading</li><li>Modern UI/UX</li><li>Secure Architecture</li><li>CMS Integration</li></ul>
-                        <div class="pricing-card-actions"><a href="contact.html" class="btn-primary">Contact Us</a><a href="webdev.html" class="btn-secondary">View Web Development Page</a></div>
-                    </article>
-                    <article class="pricing-card">
-                        <div class="pricing-icon"><i class="fas fa-cloud"></i></div>
-                        <h3>Digital Infrastructure</h3>
-                        <p class="pricing-card-subtitle">End-to-end IT setup</p>
-                        <div class="pricing-price">Custom Pricing</div>
-                        <ul class="pricing-features"><li>Business IT Setup</li><li>Cloud Infrastructure</li><li>Networking Solutions</li><li>System Integration</li><li>Security Configuration</li><li>Technical Consultation</li></ul>
-                        <div class="pricing-card-actions"><a href="contact.html" class="btn-primary">Contact Us</a><a href="digibusiness.html" class="btn-secondary">View Infrastructure Page</a></div>
-                    </article>
-                    <article class="pricing-card">
-                        <div class="pricing-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Digital Marketing</h3>
-                        <p class="pricing-card-subtitle">Social media, paid ads, campaigns</p>
-                        <div class="pricing-price">Rs. 15,000/month <small>Starting package</small></div>
-                        <ul class="pricing-features"><li>Social Media Marketing</li><li>Meta Ads</li><li>Google Ads</li><li>Campaign Management</li><li>Audience Targeting</li><li>Analytics & Reporting</li></ul>
-                        <div class="pricing-card-actions"><a href="contact.html" class="btn-primary">Contact Us</a><a href="digitalmarketting.html" class="btn-secondary">View Marketing Page</a></div>
-                    </article>
-                    <article class="pricing-card">
-                        <div class="pricing-icon"><i class="fas fa-search"></i></div>
-                        <h3>SEO Optimization</h3>
-                        <p class="pricing-card-subtitle">Rankings, traffic, technical SEO</p>
-                        <div class="pricing-price">Rs. 12,000/month <small>Starting package</small></div>
-                        <ul class="pricing-features"><li>Technical SEO</li><li>Keyword Research</li><li>On-Page SEO</li><li>Speed Optimization</li><li>Local SEO</li><li>Monthly Reports</li></ul>
-                        <div class="pricing-card-actions"><a href="contact.html" class="btn-primary">Contact Us</a><a href="seo.html" class="btn-secondary">View SEO Page</a></div>
-                    </article>
-                    <article class="pricing-card">
-                        <div class="pricing-icon"><i class="fas fa-palette"></i></div>
-                        <h3>Graphic Design</h3>
-                        <p class="pricing-card-subtitle">Creative visuals, social media kits</p>
-                        <div class="pricing-price">Rs. 5,000 <small>Starting package</small></div>
-                        <ul class="pricing-features"><li>Social Media Designs</li><li>Posters & Banners</li><li>Marketing Creatives</li><li>Presentation Design</li><li>Content Graphics</li><li>Professional Visual Assets</li></ul>
-                        <div class="pricing-card-actions"><a href="contact.html" class="btn-primary">Contact Us</a><a href="graphic.html" class="btn-secondary">View Design Page</a></div>
-                    </article>
-                    <article class="pricing-card">
-                        <div class="pricing-icon"><i class="fas fa-paint-brush"></i></div>
-                        <h3>Visual Identity & Brand Design</h3>
-                        <p class="pricing-card-subtitle">Logos, brand guidelines, typography</p>
-                        <div class="pricing-price">Rs. 8,000 <small>Starting package</small></div>
-                        <ul class="pricing-features"><li>Logo Design</li><li>Brand Identity</li><li>Typography System</li><li>Brand Guidelines</li><li>Color Palette</li><li>Visual Consistency</li></ul>
-                        <div class="pricing-card-actions"><a href="contact.html" class="btn-primary">Contact Us</a><a href="visualidentity.html" class="btn-secondary">View Branding Page</a></div>
-                    </article>
+                    <div class="pricing-card featured">
+                        <div class="pricing-header">
+                            <div class="pricing-badge">Best Starting Point</div>
+                            <h3>Web Development</h3>
+                            <div class="pricing-price">
+                                <span class="currency">NPR</span>
+                                <span class="amount">10,000+</span>
+                            </div>
+                            <p class="pricing-subtitle">Basic websites from Rs. 10,000. Professional business websites from Rs. 25,000.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Responsive Design</li>
+                                <li><i class="fas fa-check"></i> SEO Optimized Structure</li>
+                                <li><i class="fas fa-check"></i> Fast Loading</li>
+                                <li><i class="fas fa-check"></i> Modern UI/UX</li>
+                                <li><i class="fas fa-check"></i> Secure Architecture</li>
+                                <li><i class="fas fa-check"></i> CMS Integration</li>
+                            </ul>
+                            <p class="pricing-note">Advanced custom solutions are quoted based on scope.</p>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn-primary"><span class="shimmer"></span>Contact Us</a>
+                            <a href="web-development.html" class="btn-secondary">View Web Development Page</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-badge">Custom Scope</div>
+                            <h3>Digital Infrastructure</h3>
+                            <div class="pricing-price">
+                                <span class="amount">Custom</span>
+                            </div>
+                            <p class="pricing-subtitle">End-to-end IT setup for businesses that need reliable technical systems.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Business IT Setup</li>
+                                <li><i class="fas fa-check"></i> Cloud Infrastructure</li>
+                                <li><i class="fas fa-check"></i> Networking Solutions</li>
+                                <li><i class="fas fa-check"></i> System Integration</li>
+                                <li><i class="fas fa-check"></i> Security Configuration</li>
+                                <li><i class="fas fa-check"></i> Technical Consultation</li>
+                            </ul>
+                            <p class="pricing-note">Pricing depends on setup complexity and ongoing support needs.</p>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn-primary"><span class="shimmer"></span>Contact Us</a>
+                            <a href="digibusiness.html" class="btn-secondary">View Infrastructure Page</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-badge">Monthly Growth</div>
+                            <h3>Digital Marketing</h3>
+                            <div class="pricing-price">
+                                <span class="currency">NPR</span>
+                                <span class="amount">15,000</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p class="pricing-subtitle">Social media, paid ads, and campaign execution for measurable growth.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                                <li><i class="fas fa-check"></i> Meta Ads</li>
+                                <li><i class="fas fa-check"></i> Google Ads</li>
+                                <li><i class="fas fa-check"></i> Campaign Management</li>
+                                <li><i class="fas fa-check"></i> Audience Targeting</li>
+                                <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                            </ul>
+                            <p class="pricing-note">Best for consistent visibility and campaign testing.</p>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn-primary"><span class="shimmer"></span>Contact Us</a>
+                            <a href="digitalmarketting.html" class="btn-secondary">View Marketing Page</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-badge">Search Growth</div>
+                            <h3>SEO Optimization</h3>
+                            <div class="pricing-price">
+                                <span class="currency">NPR</span>
+                                <span class="amount">12,000</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <p class="pricing-subtitle">Rankings, traffic, and technical SEO improvements for long-term visibility.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Technical SEO</li>
+                                <li><i class="fas fa-check"></i> Keyword Research</li>
+                                <li><i class="fas fa-check"></i> On-Page SEO</li>
+                                <li><i class="fas fa-check"></i> Speed Optimization</li>
+                                <li><i class="fas fa-check"></i> Local SEO</li>
+                                <li><i class="fas fa-check"></i> Monthly Reports</li>
+                            </ul>
+                            <p class="pricing-note">Built for steady organic growth and stronger search presence.</p>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn-primary"><span class="shimmer"></span>Contact Us</a>
+                            <a href="seo-optimization.html" class="btn-secondary">View SEO Page</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-badge">Creative Assets</div>
+                            <h3>Graphic Design</h3>
+                            <div class="pricing-price">
+                                <span class="currency">NPR</span>
+                                <span class="amount">5,000+</span>
+                            </div>
+                            <p class="pricing-subtitle">Creative visuals and social media kits for campaigns and brand communication.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Social Media Designs</li>
+                                <li><i class="fas fa-check"></i> Posters & Banners</li>
+                                <li><i class="fas fa-check"></i> Marketing Creatives</li>
+                                <li><i class="fas fa-check"></i> Presentation Design</li>
+                                <li><i class="fas fa-check"></i> Content Graphics</li>
+                                <li><i class="fas fa-check"></i> Professional Visual Assets</li>
+                            </ul>
+                            <p class="pricing-note">Great for businesses that need consistent branded content.</p>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn-primary"><span class="shimmer"></span>Contact Us</a>
+                            <a href="graphic.html" class="btn-secondary">View Design Page</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-badge">Brand Foundation</div>
+                            <h3>Visual Identity & Brand Design</h3>
+                            <div class="pricing-price">
+                                <span class="currency">NPR</span>
+                                <span class="amount">8,000+</span>
+                            </div>
+                            <p class="pricing-subtitle">Logos, brand guidelines, typography, and visual systems for consistent identity.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Logo Design</li>
+                                <li><i class="fas fa-check"></i> Brand Identity</li>
+                                <li><i class="fas fa-check"></i> Typography System</li>
+                                <li><i class="fas fa-check"></i> Brand Guidelines</li>
+                                <li><i class="fas fa-check"></i> Color Palette</li>
+                                <li><i class="fas fa-check"></i> Visual Consistency</li>
+                            </ul>
+                            <p class="pricing-note">Ideal when your business needs a polished, trustworthy visual identity.</p>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="contact.html" class="btn-primary"><span class="shimmer"></span>Contact Us</a>
+                            <a href="visualidentity.html" class="btn-secondary">View Branding Page</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -354,16 +485,52 @@
             </div>
         </section>
 
-        <section class="pricing-section alt">
+        <section class="pricing-section alt pricing-process-section">
             <div class="container">
                 <div class="pricing-section-head"><span class="pricing-badge">Process</span><h2>A clean workflow from first call to launch.</h2></div>
-                <ol class="pricing-process">
-                    <li class="pricing-step"><span>01</span><h3>Discovery</h3><p>Goals, audience, competitors, and requirements.</p></li>
-                    <li class="pricing-step"><span>02</span><h3>Planning</h3><p>Scope, pages, SEO, timeline, and feature map.</p></li>
-                    <li class="pricing-step"><span>03</span><h3>Design</h3><p>Layout, user experience, and visual direction.</p></li>
-                    <li class="pricing-step"><span>04</span><h3>Development</h3><p>Responsive, secure, and scalable implementation.</p></li>
-                    <li class="pricing-step"><span>05</span><h3>Optimization</h3><p>Speed, SEO, QA, forms, tracking, and polish.</p></li>
-                    <li class="pricing-step"><span>06</span><h3>Launch & Support</h3><p>Deployment, monitoring, updates, and guidance.</p></li>
+                <ol class="process-steps">
+                    <li class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Discovery</h3>
+                            <p>Goals, audience, competitors, and requirements are reviewed so pricing starts from real business needs.</p>
+                        </div>
+                    </li>
+                    <li class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Planning</h3>
+                            <p>Scope, pages, SEO, timeline, features, and technical requirements are mapped before work begins.</p>
+                        </div>
+                    </li>
+                    <li class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Design</h3>
+                            <p>Clean layouts, user flows, and visual direction are prepared with a modern iFiCode brand feel.</p>
+                        </div>
+                    </li>
+                    <li class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Development</h3>
+                            <p>Responsive, secure, scalable implementation is handled with SEO structure and performance in mind.</p>
+                        </div>
+                    </li>
+                    <li class="process-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3>Optimization</h3>
+                            <p>Speed, SEO, QA, forms, tracking, and conversion details are refined before launch.</p>
+                        </div>
+                    </li>
+                    <li class="process-step">
+                        <div class="step-number">06</div>
+                        <div class="step-content">
+                            <h3>Launch & Support</h3>
+                            <p>Deployment is followed by support, monitoring, updates, and practical growth guidance.</p>
+                        </div>
+                    </li>
                 </ol>
             </div>
         </section>
@@ -444,8 +611,8 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Our Services</h4>
                     <ul class="footer-links">
-                        <li><a href="webdev.html">Web Development</a></li>
-                        <li><a href="seo.html">SEO Optimization</a></li>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="seo-optimization.html">SEO Optimization</a></li>
                         <li><a href="digitalmarketting.html">Digital Marketing</a></li>
                         <li><a href="appdevelopment.html">Mobile App Development</a></li>
                         <li><a href="digibusiness.html">Digital Infrastructure</a></li>
@@ -504,3 +671,4 @@
     </script>
 </body>
 </html>
+

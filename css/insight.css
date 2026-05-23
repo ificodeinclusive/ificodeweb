@@ -1,5 +1,169 @@
-/* 
- * This file is deprecated. 
- * insight.html now uses css/blog.css for layout and styling to match the blog design.
- * Specific overrides can be added here if needed in the future.
- */
+/* Insights page refinements */
+
+.blog-hero {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F7FF 58%, #FFFFFF 100%);
+    padding: 104px 0 72px;
+}
+
+.blog-hero::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: min(1120px, calc(100% - 40px));
+    height: 1px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, transparent, #E5E7EB, transparent);
+}
+
+.blog-hero-content::before {
+    content: 'IFICODE INSIGHTS';
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 16px;
+    padding: 7px 13px;
+    border: 1px solid #E5E7EB;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.88);
+    color: var(--primary-color);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.blog-hero-title {
+    font-size: clamp(2.55rem, 4.4vw, 4.35rem);
+    font-weight: 900;
+    line-height: 1.04;
+    letter-spacing: 0;
+}
+
+.blog-hero-image img {
+    max-height: 360px;
+    object-fit: contain;
+    filter: drop-shadow(0 22px 42px rgba(15, 23, 42, 0.10));
+}
+
+.blog-categories {
+    position: sticky;
+    top: 76px;
+    z-index: 20;
+    padding: 18px 0;
+    background: rgba(255, 255, 255, 0.90);
+    border-top: 1px solid #E5E7EB;
+    backdrop-filter: blur(16px);
+}
+
+.category-btn,
+.load-more-btn {
+    border-color: #DDD6FE;
+    background: #FFFFFF;
+    color: #4B5563;
+    font-weight: 800;
+}
+
+.featured-content,
+.blog-post {
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 16px 38px rgba(15, 23, 42, 0.07);
+}
+
+.featured-content {
+    padding: 28px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.featured-image {
+    box-shadow: none;
+    border: 1px solid #E5E7EB;
+}
+
+.post-image,
+.featured-image {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F5F3FF 100%);
+}
+
+.post-image img {
+    object-fit: contain;
+    padding: 16px;
+}
+
+.blog-newsletter {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F7FF 100%);
+    color: #111827;
+}
+
+.blog-newsletter::before {
+    display: none;
+}
+
+.newsletter-content {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 16px 38px rgba(15, 23, 42, 0.07);
+}
+
+.newsletter-title {
+    color: #111827;
+}
+
+.newsletter-description,
+.newsletter-privacy {
+    color: #4B5563;
+}
+
+.newsletter-form-wrapper {
+    background: #F9FAFB;
+    border-color: #E5E7EB;
+}
+
+.newsletter-input {
+    background: #FFFFFF;
+    border-color: #E5E7EB;
+    color: #111827;
+}
+
+.newsletter-input::placeholder {
+    color: #9CA3AF;
+}
+
+.newsletter-submit {
+    background: var(--primary-color);
+    color: #FFFFFF;
+}
+
+.newsletter-submit:hover {
+    background: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .blog-hero {
+        padding: 78px 0 44px;
+    }
+
+    .blog-categories {
+        position: static;
+    }
+
+    .categories-filter {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .category-btn {
+        white-space: nowrap;
+    }
+
+    .featured-content,
+    .newsletter-content {
+        padding: 22px;
+    }
+}

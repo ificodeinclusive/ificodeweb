@@ -155,6 +155,159 @@ document.addEventListener('DOMContentLoaded', function() {
             image: 'images/iFiCodeFood.png',
             challenges: 'Implementing real-time tracking, optimizing delivery routes, and managing multiple restaurant integrations simultaneously.',
             results: 'Served 10,000+ orders, achieved 4.8/5 customer rating, and reduced average delivery time by 25%.'
+        },
+        localify: {
+            title: 'Localify - Mobile Platform for Explorers',
+            category: 'Mobile Platform',
+            description: 'Localify is a mobile platform made by explorers for explorers, helping people discover local places, routes, hidden spots, and nearby experiences through a clean mobile-first interface.',
+            features: [
+                'Explorer-focused mobile discovery experience',
+                'Location-aware place and route browsing',
+                'Saved places and personalized exploration lists',
+                'Firebase-backed data and authentication',
+                'Fast React Native mobile interface',
+                'Designed for community-driven local discovery'
+            ],
+            technologies: ['React Native', 'Firebase', 'Mobile UX', 'Location Features'],
+            image: 'images/projects/localify.webp',
+            challenges: 'Designing a mobile experience that feels simple for casual users while still supporting useful discovery features for active explorers.',
+            results: 'Created a clear mobile platform direction with a scalable Firebase foundation and a focused explorer-first user experience.'
+        },
+        legalheart: {
+            title: 'Legal Heart - Law Firm Website',
+            category: 'Law Firm Website',
+            description: 'A professional website for a law firm, structured to present legal services clearly, build trust quickly, and guide visitors toward consultation enquiries.',
+            features: [
+                'Clear legal service presentation',
+                'Trust-focused homepage structure',
+                'Attorney and firm credibility sections',
+                'Consultation-ready contact flow',
+                'SEO-friendly service page direction',
+                'Responsive design for mobile and desktop'
+            ],
+            technologies: ['Responsive Web Design', 'SEO Structure', 'Legal UX', 'Lead Forms'],
+            image: 'images/lhwebsite.webp',
+            challenges: 'Balancing professional legal credibility with an approachable experience that helps potential clients find the right service quickly.',
+            results: 'Produced a polished law firm website direction focused on trust, clarity, and enquiry conversion.'
+        },
+        insuranceone: {
+            title: 'Insurance Company Website Sample 1',
+            category: 'Insurance Website',
+            description: 'A sample insurance company website built around clear product discovery, quick quote prompts, and a trustworthy service presentation.',
+            features: [
+                'Insurance plan discovery sections',
+                'Quote-focused call-to-action flow',
+                'Trust and credibility areas',
+                'Clean service hierarchy',
+                'Responsive landing page structure',
+                'Conversion-focused content layout'
+            ],
+            technologies: ['Web Design', 'Insurance UX', 'Quote Flow', 'Responsive Layout'],
+            image: 'images/projects/insurancecompany1.webp',
+            challenges: 'Making insurance information feel easy to scan without overwhelming users with too much policy detail at once.',
+            results: 'Created a clean insurance website sample that supports plan browsing, trust-building, and lead generation.'
+        },
+        insurancethree: {
+            title: 'Insurance Company Website Sample 3',
+            category: 'Insurance Website',
+            description: 'A second insurance website concept with stronger visual storytelling, simplified plan navigation, and customer-first page hierarchy.',
+            features: [
+                'Visual insurance landing page concept',
+                'Service cards for policy categories',
+                'Customer-first content hierarchy',
+                'Lead generation CTA placement',
+                'Trust-building visual sections',
+                'Mobile-responsive structure'
+            ],
+            technologies: ['Website Concept', 'Service UX', 'Responsive Design', 'Lead Strategy'],
+            image: 'images/projects/insurancecompany3.webp',
+            challenges: 'Creating a distinct insurance website direction that looks modern while still feeling reliable and professional.',
+            results: 'Delivered a polished sample direction for an insurance brand with improved visual appeal and service clarity.'
+        },
+        gymsample: {
+            title: 'Gym Website Sample',
+            category: 'Gym Website',
+            description: 'A fitness website sample designed to promote memberships, classes, trainers, facilities, and gym enquiries through an energetic digital presence.',
+            features: [
+                'Membership-focused landing page flow',
+                'Trainer and class showcase sections',
+                'Facility and gym highlights',
+                'Strong visual fitness presentation',
+                'Contact and enquiry call-to-actions',
+                'Responsive website experience'
+            ],
+            technologies: ['Fitness Website', 'Landing Page UX', 'Responsive Design', 'Conversion Strategy'],
+            image: 'images/projects/gym1.webp',
+            challenges: 'Creating a gym website that feels energetic and visually strong while still making memberships and enquiries easy to act on.',
+            results: 'Built a clean fitness website sample that supports brand energy, service discovery, and membership conversion.'
+        },
+        pforpeace: {
+            title: 'PforPeace - Anonymous Counselling Platform',
+            category: 'Counselling Platform',
+            description: 'PforPeace is an anonymous counselling platform designed to help people seek emotional support with privacy, clarity, and a calm digital experience.',
+            features: [
+                'Anonymous counselling-focused user journey',
+                'Private and approachable support experience',
+                'Clear entry points for people seeking help',
+                'Trust-focused content and interface direction',
+                'Support platform structure for sensitive conversations',
+                'Responsive design for discreet access across devices'
+            ],
+            technologies: ['Platform Design', 'Counselling UX', 'Privacy-First Flow', 'Responsive Web'],
+            image: 'images/projects/pforpeace.webp',
+            challenges: 'Designing a support platform that feels calm, private, and trustworthy while keeping the path to counselling simple and low-pressure.',
+            results: 'Created a thoughtful anonymous counselling platform concept focused on privacy, emotional safety, and accessible support.'
+        },
+        wordpressecommerce: {
+            title: 'WordPress Ecommerce Setup',
+            category: 'Ecommerce Setup',
+            description: 'A WordPress ecommerce setup built to help a business present products clearly, manage store content, and move customers through a simple online shopping flow.',
+            features: [
+                'WordPress store setup and structure',
+                'Product presentation layout',
+                'Cart and checkout-focused user flow',
+                'Store management-ready page structure',
+                'Responsive ecommerce browsing experience',
+                'Conversion-focused product discovery'
+            ],
+            technologies: ['WordPress', 'Ecommerce', 'Store Setup', 'Responsive Web'],
+            image: 'images/projects/wordpressecommerce.webp',
+            challenges: 'Creating an ecommerce setup that looks professional while keeping product browsing, store management, and customer checkout easy to understand.',
+            results: 'Built a clean WordPress ecommerce direction ready for product listings, sales flow, and business growth online.'
+        },
+        wireframe: {
+            title: 'Wireframe Design',
+            category: 'Wireframe Design',
+            description: 'A wireframe design focused on early-stage planning, layout clarity, user flow, and content hierarchy before moving into polished visual UI.',
+            features: [
+                'Clear page structure planning',
+                'User journey and flow mapping',
+                'Content hierarchy definition',
+                'Low-distraction layout exploration',
+                'UX decision-making before final design',
+                'Foundation for faster UI development'
+            ],
+            technologies: ['Wireframing', 'UX Planning', 'Layout Design', 'Product Strategy'],
+            image: 'images/projects/wireframe1.webp',
+            challenges: 'Translating broad product ideas into a simple structural plan that makes navigation, content, and user actions easy to evaluate.',
+            results: 'Created a practical wireframe foundation that supports faster design decisions and cleaner final interface development.'
+        },
+        schoolwebsite: {
+            title: 'School Website',
+            category: 'School Website',
+            description: 'A school website concept designed to present admissions, academics, school updates, programs, and contact information through a clean education-focused layout.',
+            features: [
+                'Admissions-focused page structure',
+                'Academic programs and school information sections',
+                'News and updates-ready content flow',
+                'Parent and student-friendly navigation',
+                'Responsive layout for mobile access',
+                'Trust-focused education website presentation'
+            ],
+            technologies: ['Education Website', 'Responsive Design', 'Admissions UX', 'Content Structure'],
+            image: 'images/projects/school.webp',
+            challenges: 'Organizing school information so parents, students, and visitors can quickly find admissions, programs, notices, and contact details.',
+            results: 'Created a polished school website concept with clear navigation, education-focused presentation, and a practical structure for future content updates.'
         }
     };
     
@@ -175,54 +328,56 @@ document.addEventListener('DOMContentLoaded', function() {
     function showProjectModal(project) {
         const modalContent = `
             <div class="modal-project-header">
-                <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;">
-                <div class="modal-project-category" style="color: var(--primary-color); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">${project.category}</div>
-                <h2 style="color: var(--text-color); font-size: 2rem; font-weight: 700; margin-bottom: 20px;">${project.title}</h2>
-                <p style="color: var(--light-text); line-height: 1.6; margin-bottom: 30px; font-size: 1.1rem;">${project.description}</p>
+                <img src="${project.image}" alt="${project.title}" class="modal-project-image">
+                <div class="modal-project-category">${project.category}</div>
+                <h2>${project.title}</h2>
+                <p>${project.description}</p>
             </div>
             
             <div class="modal-project-details">
-                <div class="modal-section" style="margin-bottom: 30px;">
-                    <h3 style="color: var(--text-color); font-size: 1.3rem; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; display: inline-block;">Key Features</h3>
-                    <ul style="list-style: none; padding: 0;">
+                <div class="modal-section">
+                    <h3>Key Features</h3>
+                    <ul>
                         ${project.features.map(feature => `
-                            <li style="color: var(--light-text); margin-bottom: 8px; padding-left: 20px; position: relative;">
-                                <i class="fas fa-check" style="color: var(--primary-color); position: absolute; left: 0; top: 2px;"></i>
+                            <li>
+                                <i class="fas fa-check"></i>
                                 ${feature}
                             </li>
                         `).join('')}
                     </ul>
                 </div>
                 
-                <div class="modal-section" style="margin-bottom: 30px;">
-                    <h3 style="color: var(--text-color); font-size: 1.3rem; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; display: inline-block;">Technologies Used</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <div class="modal-section">
+                    <h3>Technologies Used</h3>
+                    <div class="modal-tags">
                         ${project.technologies.map(tech => `
-                            <span style="background: rgba(139, 92, 246, 0.2); color: var(--primary-color); padding: 6px 15px; border-radius: 20px; font-size: 14px; font-weight: 500; border: 1px solid rgba(139, 92, 246, 0.3);">${tech}</span>
+                            <span>${tech}</span>
                         `).join('')}
                     </div>
                 </div>
                 
-                <div class="modal-section" style="margin-bottom: 30px;">
-                    <h3 style="color: var(--text-color); font-size: 1.3rem; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; display: inline-block;">Challenges & Solutions</h3>
-                    <p style="color: var(--light-text); line-height: 1.6;">${project.challenges}</p>
+                <div class="modal-section">
+                    <h3>Challenges & Solutions</h3>
+                    <p>${project.challenges}</p>
                 </div>
                 
                 <div class="modal-section">
-                    <h3 style="color: var(--text-color); font-size: 1.3rem; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; display: inline-block;">Results & Impact</h3>
-                    <p style="color: var(--light-text); line-height: 1.6;">${project.results}</p>
+                    <h3>Results & Impact</h3>
+                    <p>${project.results}</p>
                 </div>
             </div>
         `;
         
         modalBody.innerHTML = modalContent;
         projectModal.classList.add('active');
+        projectModal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
     }
     
     // Close modal functionality
     function closeModal() {
         projectModal.classList.remove('active');
+        projectModal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = 'auto';
     }
     
@@ -322,17 +477,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Observe project cards for animation
     projectCards.forEach(card => {
         observer.observe(card);
-    });
-    
-    // Add hover effects to project cards
-    projectCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-10px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0) scale(1)';
-        });
     });
     
     // Newsletter form functionality (if exists)

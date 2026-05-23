@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="digibusiness.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="images/ificodelogo.webp" sizes="32x32">
     <link rel="shortcut icon" type="image/png" href="images/ificodelogo.webp">
@@ -32,9 +31,8 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li class="dropdown">
-                        <a href="service.html" class="dropdown-toggle">SERVICES <i class="fas fa-chevron-down"></i></a>
+                        <a href="service.html" class="dropdown-toggle active">SERVICES <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu modern-solutions-dropdown">
-                            <!-- Featured Solution -->
                             <div class="featured-solution">
                                 <div class="modern-solution-item featured">
                                     <div class="solution-icon">
@@ -46,10 +44,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <!-- Grid Solutions -->
                             <div class="solutions-container">
-                                
                                 <div class="modern-solution-item">
                                     <div class="solution-icon">
                                         <i class="fas fa-cloud"></i>
@@ -65,7 +60,16 @@
                                     </div>
                                     <div class="solution-content">
                                         <a href="digitalmarketting.html">Digital Marketing</a>
-                                        <p>SEO, social media, paid ads</p>
+                                        <p>Social media, paid ads, campaigns</p>
+                                    </div>
+                                </div>
+                                                                <div class="modern-solution-item">
+                                    <div class="solution-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="solution-content">
+                                        <a href="seo.html">SEO Optimization</a>
+                                        <p>Rankings, traffic, technical SEO</p>
                                     </div>
                                 </div>
                                 <div class="modern-solution-item">
@@ -87,9 +91,8 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="dropdown-footer">
-                                <a href="solution.html" class="view-all-solutions">View All Solutions <i class="fas fa-arrow-right"></i></a>
+                                <a href="service.html" class="view-all-solutions">View All Services <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </li>
@@ -100,7 +103,10 @@
                 </ul>
             </nav>
             <div class="header-right">
-                <!-- Sign-in option removed as requested -->
+                <a href="#contact" class="nav-cta-button">
+                    Contact Us
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
             <div class="mobile-menu-toggle">
                 <span></span>
@@ -121,6 +127,11 @@
                     </p>
                     <div class="banner-cta">
                         <a href="contact.html" class="btn-primary hero-primary-cta">Get Started</a>
+                    </div>
+                    <div class="banner-meta">
+                        <span><i class="fas fa-shield-alt"></i> Secure setup</span>
+                        <span><i class="fas fa-cloud"></i> Cloud-ready</span>
+                        <span><i class="fas fa-server"></i> Scalable systems</span>
                     </div>
                 </div>
                 <div class="banner-image">
@@ -656,7 +667,8 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="modern-footer">
+        <!-- Main Footer Content -->
         <div class="footer-main">
             <div class="footer-container">
                 <!-- Company Info Section -->
@@ -683,7 +695,6 @@
                     </div>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61577787015838" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="error.html" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.linkedin.com/in/ificode-inclusive-a5670736a/?originalSubdomain=np" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://www.instagram.com/ifi.code/" class="social-link"><i class="fab fa-instagram"></i></a>
                         <a href="error.html" class="social-link"><i class="fab fa-github"></i></a>
@@ -707,12 +718,12 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Our Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#web-development">Web Development</a></li>
-                        <li><a href="#mobile-apps">Mobile App Development</a></li>
-                        <li><a href="#ui-ux">UI/UX Design</a></li>
-                        <li><a href="#ecommerce">E-Commerce Solutions</a></li>
-                        <li><a href="#cloud-devops">Cloud & DevOps</a></li>
-                        <li><a href="#ai-automation">AI & Automation</a></li>
+                        <li><a href="webdev.html">Web Development</a></li>
+                        <li><a href="seo.html">SEO Optimization</a></li>
+                        <li><a href="digitalmarketting.html">Digital Marketing</a></li>
+                        <li><a href="appdevelopment.html">Mobile App Development</a></li>
+                        <li><a href="digibusiness.html">Digital Infrastructure</a></li>
+                        <li><a href="graphic.html">Graphic Design</a></li>
                     </ul>
                 </div>
 
@@ -745,6 +756,7 @@
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <p>&copy; 2024 <a href="/">iFiCode Inclusive</a>. All Rights Reserved. | Powered and Crafted by <a href="/">iFiCode Inclusive</a></p>
+        </div>
         </div>
 
         <!-- Back to Top Button -->

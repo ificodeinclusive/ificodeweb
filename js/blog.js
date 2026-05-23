@@ -178,21 +178,18 @@ function initReadMoreButtons() {
     
     readMoreButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
+            const href = this.getAttribute('href');
             
             // Add click animation
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = '';
             }, 150);
-            
-            // Simulate navigation to full article
-            showNotification('Article loading...', 'info');
-            
-            // In a real implementation, you would navigate to the full article
-            setTimeout(() => {
-                showNotification('Feature coming soon!', 'info');
-            }, 1000);
+
+            if (!href || href === '#') {
+                e.preventDefault();
+                showNotification('Article coming soon.', 'info');
+            }
         });
     });
 }

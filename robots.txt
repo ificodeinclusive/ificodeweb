@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /error.html
+Disallow: /thankyou.html
+Disallow: /zoho-domain-verification.html
+
+Sitemap: https://ificode.com/sitemap.xml

@@ -6470,6 +6470,76 @@ img {
     border: none;
 }
 
+.modern-map-link {
+    position: relative;
+    display: flex;
+    min-height: 280px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background:
+        linear-gradient(135deg, rgba(76, 29, 149, 0.92), rgba(109, 40, 217, 0.86)),
+        url('/images/hero-bg.svg') center/cover no-repeat;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.modern-map-link:hover {
+    transform: scale(1.01);
+    filter: saturate(1.05);
+}
+
+.modern-map-link-content {
+    display: grid;
+    gap: 14px;
+    max-width: 440px;
+    text-align: center;
+}
+
+.modern-map-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.16);
+    color: #FFFFFF;
+    font-size: 1.35rem;
+}
+
+.modern-map-link-text strong {
+    display: block;
+    font-size: 1.35rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.modern-map-link-text small {
+    display: block;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.modern-map-link-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 6px auto 0;
+    padding: 11px 18px;
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: #6D28D9;
+    font-weight: 800;
+}
+
 @media (max-width: 992px) {
 .modern-contact-card {
         grid-template-columns: 1fr;

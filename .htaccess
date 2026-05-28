@@ -1,0 +1,47 @@
+Options -MultiViews
+RewriteEngine On
+
+# Canonicalize clean routes by removing trailing slash on pages.
+# This prevents relative asset paths from resolving under nested route folders.
+RewriteRule ^(about|services|our-work|insights|graphic-design|digital-business-solutions|digital-marketing|seo-services|app-development|visual-identity|web-development|pricing|contact|thank-you|404)/$ /$1 [R=301,L]
+RewriteRule ^insights/([A-Za-z0-9-]+)/$ /insights/$1 [R=301,L]
+
+# 301 redirects from old file URLs to clean SEO URLs
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^about\.html$ /about [R=301,L]
+RewriteRule ^service\.html$ /services [R=301,L]
+RewriteRule ^ourwork\.html$ /our-work [R=301,L]
+RewriteRule ^portfolio\.html$ /our-work [R=301,L]
+RewriteRule ^insight\.html$ /insights [R=301,L]
+RewriteRule ^blog\.html$ /insights [R=301,L]
+RewriteRule ^graphic\.html$ /graphic-design [R=301,L]
+RewriteRule ^gfx\.html$ /graphic-design [R=301,L]
+RewriteRule ^digibusiness\.html$ /digital-business-solutions [R=301,L]
+RewriteRule ^digitalmarketting\.html$ /digital-marketing [R=301,L]
+RewriteRule ^seo-optimization\.html$ /seo-services [R=301,L]
+RewriteRule ^appdevelopment\.html$ /app-development [R=301,L]
+RewriteRule ^visualidentity\.html$ /visual-identity [R=301,L]
+RewriteRule ^web-development\.html$ /web-development [R=301,L]
+RewriteRule ^pricing\.html$ /pricing [R=301,L]
+RewriteRule ^contact\.html$ /contact [R=301,L]
+RewriteRule ^thankyou\.html$ /thank-you [R=301,L]
+RewriteRule ^error\.html$ /404 [R=301,L]
+RewriteRule ^insights/(.+)\.html$ /insights/$1 [R=301,L]
+
+# Serve clean URLs from existing static HTML files
+RewriteRule ^about/?$ about.html [L]
+RewriteRule ^services/?$ service.html [L]
+RewriteRule ^our-work/?$ ourwork.html [L]
+RewriteRule ^insights/?$ insight.html [L]
+RewriteRule ^graphic-design/?$ graphic.html [L]
+RewriteRule ^digital-business-solutions/?$ digibusiness.html [L]
+RewriteRule ^digital-marketing/?$ digitalmarketting.html [L]
+RewriteRule ^seo-services/?$ seo-optimization.html [L]
+RewriteRule ^app-development/?$ appdevelopment.html [L]
+RewriteRule ^visual-identity/?$ visualidentity.html [L]
+RewriteRule ^web-development/?$ web-development.html [L]
+RewriteRule ^pricing/?$ pricing.html [L]
+RewriteRule ^contact/?$ contact.html [L]
+RewriteRule ^thank-you/?$ thankyou.html [L]
+RewriteRule ^404/?$ error.html [L]
+RewriteRule ^insights/([A-Za-z0-9-]+)/?$ insights/$1.html [L]

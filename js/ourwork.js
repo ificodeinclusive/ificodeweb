@@ -453,8 +453,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const href = link.getAttribute('href');
             if (href === '#contact') {
                 e.preventDefault();
-                // Redirect to index.html with contact section
-                window.location.href = 'index.html#contact';
+                // Redirect to / with contact section
+                window.location.href = '/contact';
             }
         });
     });

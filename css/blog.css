@@ -1,5 +1,5 @@
 /* Blog Page Styles - iFiCode Inclusive */
-/* Light Theme to match index.html */
+/* Light Theme to match homepage */
 
 /* Blog Hero Section */
 .blog-hero {
@@ -20,7 +20,7 @@
     z-index: 2;
 }
 
-/* Layout for Hero with Image (used in insight.html) */
+/* Layout for Hero with Image (used in insights page) */
 .blog-hero-layout {
     display: flex;
     align-items: center;

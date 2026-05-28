@@ -5,7 +5,7 @@ This is a static website for iFiCode, a digital agency that specializes in web d
 ## Project Structure
 
 ```
-├── index.html          # Main HTML file
+├── /          # Main HTML file
 ├── css/
 │   └── styles.css     # CSS styles
 ├── js/
@@ -31,7 +31,7 @@ This is a static website for iFiCode, a digital agency that specializes in web d
 
 ## How to Run
 
-Since this is a static website, you can simply open the `index.html` file in any modern web browser to view the site.
+Since this is a static website, you can simply open the `/` file in any modern web browser to view the site.
 
 Alternatively, you can use a local development server:
 
@@ -62,7 +62,7 @@ And navigate to the URL shown in the terminal (usually `http://localhost:8080`)
 ## Customization
 
 - Colors: Edit the CSS variables in the `:root` selector in `styles.css`
-- Content: Modify the text in `index.html`
+- Content: Modify the text in `/`
 - Images: Replace the SVG files in the `images` folder with your own images
 - Functionality: Extend or modify the JavaScript in `main.js`
 

@@ -4,3 +4,4 @@ Disallow: /404
 Disallow: /thank-you
 
 Sitemap: https://ificode.com/sitemap.xml
+Sitemap: https://ificode.com/sitemap-images.xml

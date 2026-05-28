@@ -361,7 +361,9 @@ img {
 }
 
 .section-title h2.section-title-main {
-    font-size: inherit;
+    font: inherit;
+    line-height: inherit;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -4577,9 +4579,11 @@ img {
 /* Digital Transformation Section Redesign */
 .digital-transformation-section {
   position: relative;
-  background: #F5F6FA;
+  background:
+    radial-gradient(circle at 86% 22%, rgba(124, 58, 237, 0.10), transparent 28%),
+    linear-gradient(180deg, #FFFFFF 0%, #F8F7FF 62%, #FFFFFF 100%);
   color: #111827;
-  padding: 96px 0;
+  padding: 104px 0;
   overflow: hidden;
   border-top: 1px solid #E5E7EB;
   border-bottom: 1px solid #E5E7EB;
@@ -4606,7 +4610,11 @@ img {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 44px 32px;
+  border: 1px solid rgba(221, 214, 254, 0.72);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 22px 54px rgba(15, 23, 42, 0.06);
 }
 
 .dt-content {
@@ -4623,11 +4631,12 @@ img {
   display: inline-block;
   background: #EEF2FF;
   color: #6D28D9;
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  border: 1px solid #DDD6FE;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
   border-radius: 999px;
-  padding: 6px 16px;
+  padding: 7px 15px;
   margin-bottom: 18px;
 }
 
@@ -4652,7 +4661,8 @@ img {
   font-size: 1.05rem;
   color: #4B5563;
   margin-bottom: 32px;
-  max-width: 480px;
+  max-width: 520px;
+  line-height: 1.72;
 }
 
 .dt-cta-buttons {
@@ -4712,6 +4722,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 126px;
+  padding: 13px 15px;
+  border: 1px solid #EDE9FE;
+  border-radius: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.045);
 }
 .dt-stat-value {
   font-size: 1.4rem;
@@ -4740,14 +4756,14 @@ img {
   background: #FFFFFF;
   padding: 18px;
   border: 1px solid #E5E7EB;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 22px 48px rgba(109, 40, 217, 0.10);
 }
 
 @media (max-width: 900px) {
   .dt-container {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 16px;
+    padding: 34px 22px;
   }
   .dt-visual {
     margin-top: 32px;
@@ -4757,7 +4773,7 @@ img {
 
 @media (max-width: 600px) {
   .digital-transformation-section {
-    padding: 72px 0 64px 0;
+    padding: 72px 16px 64px 16px;
   }
   .dt-headline {
     font-size: 2.1rem;
@@ -4777,6 +4793,119 @@ img {
   }
 }
 
+/* Homepage SEO Link Hub */
+.homepage-link-hub {
+  padding: 18px 16px 8px;
+  background: #FFFFFF;
+}
+
+.homepage-link-hub-inner {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.homepage-link-hub a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid #EDE9FE;
+  border-radius: 14px;
+  background: #FFFFFF;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.88rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.homepage-link-hub a i {
+  color: #6D28D9;
+}
+
+.homepage-link-hub a:hover {
+  transform: translateY(-2px);
+  border-color: #C4B5FD;
+  color: #6D28D9;
+}
+
+/* Homepage FAQ Section */
+.homepage-faq-section {
+  padding: 96px 20px;
+  background: #FFFFFF;
+}
+
+.homepage-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1120px;
+  margin: 44px auto 0;
+}
+
+.homepage-faq-item {
+  border: 1px solid #E5E7EB;
+  border-radius: 18px;
+  background: #FFFFFF;
+  padding: 24px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.055);
+}
+
+.homepage-faq-item h3 {
+  margin: 0 0 12px;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.homepage-faq-item p {
+  margin: 0;
+  color: #4B5563;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.homepage-faq-item a {
+  color: #6D28D9;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.homepage-faq-item a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .homepage-link-hub-inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .homepage-faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage-link-hub-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .homepage-link-hub a {
+    justify-content: flex-start;
+  }
+  .homepage-faq-section {
+    padding: 72px 16px;
+  }
+  .homepage-faq-item {
+    padding: 20px;
+  }
+}
 /* Country Flag Selector */
 .country-selector {
     text-align: center;

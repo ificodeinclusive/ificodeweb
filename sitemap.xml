@@ -2,122 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ificode.com/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://ificode.com/services</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://ificode.com/web-development</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+  </url>
+  <url>
+    <loc>https://ificode.com/seo-services</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
   </url>
   <url>
-    <loc>https://ificode.com/web-development</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://ificode.com/digital-marketing</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.97</priority>
   </url>
   <url>
-    <loc>https://ificode.com/seo-services</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://ificode.com/services</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.96</priority>
   </url>
   <url>
-    <loc>https://ificode.com/digital-marketing</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://ificode.com/our-work</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.94</priority>
   </url>
   <url>
-    <loc>https://ificode.com/digital-business-solutions</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://ificode.com/about</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.93</priority>
   </url>
   <url>
-    <loc>https://ificode.com/graphic-design</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://ificode.com/contact</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://ificode.com/visual-identity</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.91</priority>
-  </url>
-  <url>
-    <loc>https://ificode.com/app-development</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
     <loc>https://ificode.com/pricing</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://ificode.com/contact</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://ificode.com/digital-business-solutions</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://ificode.com/about</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.84</priority>
+    <loc>https://ificode.com/graphic-design</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.87</priority>
   </url>
   <url>
-    <loc>https://ificode.com/our-work</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.84</priority>
-  </url>
-  <url>
-    <loc>https://ificode.com/insights</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://ificode.com/visual-identity</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.86</priority>
   </url>
   <url>
-    <loc>https://ificode.com/insights/website-development-company-nepal</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
+    <loc>https://ificode.com/app-development</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ificode.com/insights/website-development-cost-nepal</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://ificode.com/insights</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://ificode.com/insights/website-development-process-nepal</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://ificode.com/insights/website-development-company-nepal</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://ificode.com/insights/website-development-cost-nepal</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://ificode.com/insights/website-development-process-nepal</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.79</priority>
   </url>
   <url>
     <loc>https://ificode.com/insights/custom-website-development-nepal</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.83</priority>
+    <priority>0.79</priority>
   </url>
   <url>
     <loc>https://ificode.com/insights/why-follow-ui-ux-design-principles</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
+    <priority>0.76</priority>
   </url>
   <url>
     <loc>https://ificode.com/insights/react-native-seo</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.76</priority>
+    <priority>0.74</priority>
   </url>
 </urlset>

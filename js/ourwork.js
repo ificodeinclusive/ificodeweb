@@ -308,6 +308,66 @@ document.addEventListener('DOMContentLoaded', function() {
             image: 'images/projects/school.webp',
             challenges: 'Organizing school information so parents, students, and visitors can quickly find admissions, programs, notices, and contact details.',
             results: 'Created a polished school website concept with clear navigation, education-focused presentation, and a practical structure for future content updates.'
+        },
+        'banquet-party-palace': {
+            title: 'Banquet & Party Palace Website',
+            category: 'Hospitality',
+            description: 'Premium banquet and event venue website designed to showcase services, galleries, booking inquiries, and event packages.',
+            features: ['Event package presentation', 'Gallery-focused visual sections', 'Booking inquiry flow', 'Service and venue highlights', 'Mobile-responsive browsing', 'Trust-focused hospitality layout'],
+            technologies: ['Responsive Web Design', 'Booking UX', 'Gallery Layout', 'Hospitality Website'],
+            image: 'images/projects/banquetsample.webp',
+            challenges: 'Presenting a premium event venue experience while keeping booking enquiries and package discovery simple for visitors.',
+            results: 'Created a polished hospitality website sample with strong visual hierarchy, clear venue storytelling, and conversion-ready enquiry paths.'
+        },
+        'luxury-cafe': {
+            title: 'Luxury Caf\u00e9 Website',
+            category: 'Caf\u00e9 & Restaurant',
+            description: 'Elegant caf\u00e9 website focused on branding, menu presentation, reservations, and customer engagement.',
+            features: ['Brand-forward homepage', 'Menu presentation sections', 'Reservation-ready CTA flow', 'Customer engagement areas', 'Mobile-friendly design', 'Social and location touchpoints'],
+            technologies: ['Restaurant Website', 'Branding', 'Menu UX', 'Responsive Design'],
+            image: 'images/projects/cafesample.webp',
+            challenges: 'Balancing premium caf\u00e9 branding with practical menu discovery, reservation prompts, and local customer engagement.',
+            results: 'Delivered an elegant caf\u00e9 website concept that supports brand recall, menu browsing, and customer conversion.'
+        },
+        'law-firm-sample': {
+            title: 'Law Firm Website',
+            category: 'Legal Services',
+            description: 'Professional law firm website featuring legal services, attorney profiles, consultation booking, and trust-focused design.',
+            features: ['Legal service presentation', 'Attorney profile sections', 'Consultation booking flow', 'Trust and credibility cues', 'SEO-friendly page structure', 'Responsive professional layout'],
+            technologies: ['Legal UX', 'Consultation Flow', 'SEO Structure', 'Responsive Web'],
+            image: 'images/projects/lawfirmsample.webp',
+            challenges: 'Making legal services feel trustworthy, easy to understand, and simple to act on without overwhelming potential clients.',
+            results: 'Built a professional legal website sample with clearer service pathways and consultation-focused user experience.'
+        },
+        'restaurant-sample': {
+            title: 'Restaurant Website',
+            category: 'Restaurant & Dining',
+            description: 'Modern restaurant website with menu showcase, reservations, gallery, and customer-focused user experience.',
+            features: ['Menu showcase', 'Reservation CTA flow', 'Gallery presentation', 'Location and contact sections', 'Mobile responsive interface', 'Dining-focused visual hierarchy'],
+            technologies: ['Restaurant UX', 'Menu Layout', 'Reservation Flow', 'Responsive Design'],
+            image: 'images/projects/restrosample.webp',
+            challenges: 'Creating a restaurant page experience that feels appetizing while keeping menu access and reservation actions immediate.',
+            results: 'Created a modern dining website sample that supports menu discovery, gallery browsing, and reservation conversion.'
+        },
+        'travel-agency-sample': {
+            title: 'Travel Agency Website',
+            category: 'Travel & Tourism',
+            description: 'Conversion-focused travel website highlighting destinations, packages, inquiry forms, and booking workflows.',
+            features: ['Destination highlights', 'Travel package sections', 'Inquiry form flow', 'Booking workflow direction', 'Visual itinerary storytelling', 'Responsive tourism layout'],
+            technologies: ['Travel Website', 'Package UX', 'Inquiry Flow', 'Tourism Design'],
+            image: 'images/projects/travelagencysample.webp',
+            challenges: 'Showing enough destination and package detail while keeping travellers focused on enquiry and booking actions.',
+            results: 'Designed a travel agency website sample that improves package clarity, destination appeal, and lead generation.'
+        },
+        'clinic-sample': {
+            title: 'Healthcare & Clinic Website',
+            category: 'Healthcare',
+            description: 'Professional clinic website featuring appointment booking, doctor information, services, and patient-focused design.',
+            features: ['Appointment booking CTA', 'Doctor information sections', 'Healthcare service pages', 'Patient-focused content flow', 'Trust and care cues', 'Responsive clinic layout'],
+            technologies: ['Healthcare UX', 'Appointment Flow', 'Service Pages', 'Responsive Web'],
+            image: 'images/projects/clinicsample.webp',
+            challenges: 'Designing a clinic website that feels calm and credible while making appointments and service discovery easy.',
+            results: 'Created a professional clinic website sample with clear patient pathways, service visibility, and appointment-focused conversion.'
         }
     };
     

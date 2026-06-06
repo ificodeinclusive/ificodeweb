@@ -1,75 +1,5 @@
 // Web Development Page JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Pricing functionality
-    const pricingData = {
-        nepal: {
-            currency: 'NPR',
-            prices: ['14,999', '14,999', '29,999']
-        },
-        usa: {
-            currency: '$',
-            prices: ['119', '119', '239']
-        },
-        australia: {
-            currency: 'AUD',
-            prices: ['179', '179', '359']
-        },
-        india: {
-            currency: '₹',
-            prices: ['9,999', '9,999', '19,999']
-        },
-        newzealand: {
-            currency: 'NZD',
-            prices: ['189', '189', '379']
-        },
-        canada: {
-            currency: 'CAD',
-            prices: ['159', '159', '319']
-        },
-        england: {
-            currency: '£',
-            prices: ['95', '95', '189']
-        },
-        croatia: {
-            currency: '€',
-            prices: ['109', '109', '219']
-        }
-    };
-
-    // Function to update pricing
-    function updatePricing(country) {
-        const data = pricingData[country];
-        if (!data) return;
-
-        // Update currency symbols
-        document.getElementById('currency-1').textContent = data.currency;
-        document.getElementById('currency-2').textContent = data.currency;
-        document.getElementById('currency-3').textContent = data.currency;
-
-        // Update amounts
-        document.getElementById('amount-1').textContent = data.prices[0];
-        document.getElementById('amount-2').textContent = data.prices[1];
-        document.getElementById('amount-3').textContent = data.prices[2];
-    }
-
-    // Country flag button functionality
-    const flagButtons = document.querySelectorAll('.flag-btn');
-    flagButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            flagButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            // Get country from data attribute
-            const country = this.getAttribute('data-country');
-            
-            // Update pricing
-            updatePricing(country);
-        });
-    });
 
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -86,6 +16,39 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
+    });
+
+    // Package comparison modal
+    const comparisonModal = document.getElementById('packageComparisonModal');
+    const comparisonOpeners = document.querySelectorAll('[data-comparison-open]');
+    const comparisonClosers = document.querySelectorAll('[data-comparison-close]');
+
+    function openComparisonModal() {
+        if (!comparisonModal) return;
+        comparisonModal.classList.add('is-open');
+        comparisonModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeComparisonModal() {
+        if (!comparisonModal) return;
+        comparisonModal.classList.remove('is-open');
+        comparisonModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    comparisonOpeners.forEach(button => {
+        button.addEventListener('click', openComparisonModal);
+    });
+
+    comparisonClosers.forEach(button => {
+        button.addEventListener('click', closeComparisonModal);
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeComparisonModal();
+        }
     });
 
     // Scroll animations for sections

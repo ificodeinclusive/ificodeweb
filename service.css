@@ -1155,6 +1155,313 @@
     box-shadow: 0 12px 24px rgba(15, 23, 42, 0.10);
 }
 
+/* Web Development Brochure Pricing */
+.web-pricing-section .section-description {
+    max-width: 760px;
+}
+
+.web-pricing-section .web-package-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 28px;
+    max-width: 1240px;
+}
+
+.web-pricing-section .brochure-pricing-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 560px;
+    padding: 34px 28px 28px;
+    overflow: hidden;
+    border: 1px solid #E5E7EB;
+    border-radius: 22px;
+    background: #FFFFFF;
+    box-shadow: 0 16px 34px rgba(15, 23, 42, 0.07);
+    transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-header {
+    display: grid;
+    gap: 14px;
+    align-content: start;
+    min-height: 210px;
+    margin: 0 0 28px;
+    padding: 0 0 26px;
+    border-bottom: 1px solid #EEF2F7;
+    background: transparent;
+    text-align: left;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-badge {
+    justify-self: start;
+    margin: 0;
+    padding: 7px 13px;
+    border: 1px solid #DDD6FE;
+    border-radius: 999px;
+    background: #F5F3FF;
+    color: #6D28D9;
+    box-shadow: none;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+}
+
+.web-pricing-section .brochure-pricing-card h3 {
+    margin: 0;
+    color: #111827;
+    font-size: clamp(1.45rem, 2vw, 1.8rem);
+    line-height: 1.12;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-price {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-price .amount {
+    font-size: clamp(2.1rem, 3vw, 2.9rem);
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-subtitle {
+    max-width: none;
+    margin: 0;
+    color: #6B7280;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-features {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-features h4 {
+    margin: 0 0 16px;
+    color: #111827;
+    font-size: 0.95rem;
+    font-weight: 800;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-features ul {
+    display: grid;
+    gap: 13px;
+    margin: 0;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-features li {
+    align-items: flex-start;
+    color: #4B5563;
+    font-size: 0.94rem;
+    line-height: 1.45;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-features li i {
+    margin-top: 3px;
+}
+
+.web-pricing-section .brochure-pricing-card .pricing-action {
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.web-pricing-section .brochure-pricing-card .btn-primary,
+.web-pricing-section .package-comparison-toggle,
+.web-pricing-section .comparison-actions .btn-primary {
+    width: 100%;
+    min-height: 52px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #6D28D9 0%, #7C3AED 100%);
+    color: #FFFFFF;
+    font-weight: 800;
+    box-shadow: 0 14px 28px rgba(109, 40, 217, 0.18);
+}
+
+.web-pricing-section .brochure-pricing-card:hover {
+    transform: translateY(-6px);
+    border-color: #C4B5FD;
+    box-shadow: 0 26px 56px rgba(15, 23, 42, 0.12);
+}
+
+.web-pricing-section .brochure-featured {
+    border: 2px solid #6D28D9;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F7FF 100%);
+    box-shadow: 0 28px 66px rgba(109, 40, 217, 0.20);
+}
+
+.web-pricing-section .brochure-featured .pricing-badge {
+    background: linear-gradient(135deg, #6D28D9 0%, #7C3AED 100%);
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+.web-pricing-section .package-comparison-cta {
+    margin-top: 42px;
+    text-align: center;
+}
+
+.web-pricing-section .package-comparison-toggle {
+    width: auto;
+    min-width: min(100%, 320px);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-ui);
+}
+
+.package-comparison-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.package-comparison-modal.is-open {
+    display: flex;
+}
+
+.package-comparison-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.62);
+    backdrop-filter: blur(8px);
+}
+
+.package-comparison-dialog {
+    position: relative;
+    width: min(1180px, 100%);
+    max-height: min(86vh, 820px);
+    overflow: hidden;
+    border: 1px solid #E5E7EB;
+    border-radius: 24px;
+    background: #FFFFFF;
+    box-shadow: 0 34px 90px rgba(15, 23, 42, 0.24);
+}
+
+.comparison-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 3;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #E5E7EB;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #111827;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.comparison-close:hover {
+    color: #6D28D9;
+    border-color: #C4B5FD;
+    transform: rotate(90deg);
+}
+
+.comparison-head {
+    padding: 34px 34px 22px;
+    border-bottom: 1px solid #EEF2F7;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFF 100%);
+}
+
+.comparison-head h3 {
+    max-width: 760px;
+    margin: 14px 0 10px;
+    color: #111827;
+    font-size: clamp(1.6rem, 3vw, 2.45rem);
+    line-height: 1.12;
+}
+
+.comparison-head p {
+    max-width: 720px;
+    margin: 0;
+    color: #6B7280;
+    line-height: 1.7;
+}
+
+.comparison-table-wrap {
+    max-height: 52vh;
+    overflow: auto;
+    padding: 0 34px 28px;
+}
+
+.package-comparison-table {
+    width: 100%;
+    min-width: 860px;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.package-comparison-table th,
+.package-comparison-table td {
+    padding: 16px 14px;
+    border-bottom: 1px solid #EEF2F7;
+    text-align: left;
+    vertical-align: top;
+}
+
+.package-comparison-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #FFFFFF;
+    color: #111827;
+    font-weight: 900;
+}
+
+.package-comparison-table tbody th {
+    color: #111827;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.package-comparison-table td {
+    color: #4B5563;
+    line-height: 1.5;
+}
+
+.comparison-actions {
+    padding: 22px 34px 34px;
+    border-top: 1px solid #EEF2F7;
+    text-align: center;
+}
+
+.comparison-actions .btn-primary {
+    width: auto;
+    min-width: min(100%, 280px);
+}
+
+@media (max-width: 1200px) {
+    .web-pricing-section .web-package-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .web-pricing-section .web-package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .web-pricing-section .brochure-pricing-card {
+        min-height: 0;
+    }
+
+    .package-comparison-modal {
+        padding: 12px;
+    }
+
+    .comparison-head,
+    .comparison-table-wrap,
+    .comparison-actions {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
 .process-cta,
 .ready-buttons {
     margin-top: 40px;

@@ -44,6 +44,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Make mobile service cards behave like full touch targets.
+    document.querySelectorAll('.modern-solutions-dropdown .modern-solution-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (window.innerWidth > 768 || e.target.closest('a')) {
+                return;
+            }
+
+            const cardLink = item.querySelector('.solution-content a');
+            if (cardLink) {
+                window.location.href = cardLink.href;
+            }
+        });
+    });
+
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!header.contains(e.target)) {

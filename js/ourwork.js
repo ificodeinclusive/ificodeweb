@@ -241,23 +241,6 @@ document.addEventListener('DOMContentLoaded', function() {
             challenges: 'Creating a gym website that feels energetic and visually strong while still making memberships and enquiries easy to act on.',
             results: 'Built a clean fitness website sample that supports brand energy, service discovery, and membership conversion.'
         },
-        pforpeace: {
-            title: 'PforPeace - Anonymous Counselling Platform',
-            category: 'Counselling Platform',
-            description: 'PforPeace is an anonymous counselling platform designed to help people seek emotional support with privacy, clarity, and a calm digital experience.',
-            features: [
-                'Anonymous counselling-focused user journey',
-                'Private and approachable support experience',
-                'Clear entry points for people seeking help',
-                'Trust-focused content and interface direction',
-                'Support platform structure for sensitive conversations',
-                'Responsive design for discreet access across devices'
-            ],
-            technologies: ['Platform Design', 'Counselling UX', 'Privacy-First Flow', 'Responsive Web'],
-            image: 'images/projects/pforpeace.webp',
-            challenges: 'Designing a support platform that feels calm, private, and trustworthy while keeping the path to counselling simple and low-pressure.',
-            results: 'Created a thoughtful anonymous counselling platform concept focused on privacy, emotional safety, and accessible support.'
-        },
         wordpressecommerce: {
             title: 'WordPress Ecommerce Setup',
             category: 'Ecommerce Setup',

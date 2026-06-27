@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             technologies: ['React', 'Express.js', 'MongoDB', 'Socket.io', 'Google Maps API', 'Stripe'],
             image: 'images/iFiCodeFood.png',
+            liveUrl: 'https://ificode.online',
             challenges: 'Implementing real-time tracking, optimizing delivery routes, and managing multiple restaurant integrations simultaneously.',
             results: 'Served 10,000+ orders, achieved 4.8/5 customer rating, and reduced average delivery time by 25%.'
         },
@@ -408,6 +409,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h3>Results & Impact</h3>
                     <p>${project.results}</p>
                 </div>
+                ${project.liveUrl ? `
+                <div class="modal-section">
+                    <a class="project-live-preview modal-live-preview" href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit ificode.online for live preview
+                    </a>
+                </div>
+                ` : ''}
             </div>
         `;
         
